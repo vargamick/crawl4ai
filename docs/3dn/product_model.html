@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog Data Model</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            border-left: 4px solid #764ba2;
+            padding-left: 10px;
+        }
+        
+        .diagram-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        svg {
+            width: 100%;
+            height: auto;
+        }
+        
+        .entity {
+            fill: white;
+            stroke: #667eea;
+            stroke-width: 2;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .entity-title {
+            fill: #667eea;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .attribute {
+            fill: #333;
+            font-size: 12px;
+        }
+        
+        .relationship {
+            stroke: #764ba2;
+            stroke-width: 2;
+            fill: none;
+        }
+        
+        .json-structure {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .key { color: #66d9ef; }
+        .string { color: #a6e22e; }
+        .number { color: #ae81ff; }
+        .boolean { color: #fd971f; }
+        .null { color: #75715e; }
+        
+        .legend {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .legend-symbol {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Product Catalog Data Model</h1>
+        
+        <h2>Entity-Relationship Diagram</h2>
+        <div class="diagram-container">
+            <svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+                <!-- Product Entity -->
+                <rect class="entity" x="400" y="50" width="200" height="150" rx="5"/>
+                <text class="entity-title" x="500" y="75" text-anchor="middle">PRODUCT</text>
+                <line x1="400" y1="85" x2="600" y2="85" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="410" y="105">• product_id (PK)</text>
+                <text class="attribute" x="410" y="125">• product_name</text>
+                <text class="attribute" x="410" y="145">• product_url</text>
+                <text class="attribute" x="410" y="165">• created_at</text>
+                <text class="attribute" x="410" y="185">• updated_at</text>
+                
+                <!-- Media Entity -->
+                <rect class="entity" x="50" y="300" width="200" height="170" rx="5"/>
+                <text class="entity-title" x="150" y="325" text-anchor="middle">MEDIA</text>
+                <line x1="50" y1="335" x2="250" y2="335" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="60" y="355">• media_id (PK)</text>
+                <text class="attribute" x="60" y="375">• product_id (FK)</text>
+                <text class="attribute" x="60" y="395">• media_type</text>
+                <text class="attribute" x="60" y="415">• media_format</text>
+                <text class="attribute" x="60" y="435">• media_url</text>
+                <text class="attribute" x="60" y="455">• sequence_order</text>
+                
+                <!-- Document Entity -->
+                <rect class="entity" x="400" y="300" width="200" height="170" rx="5"/>
+                <text class="entity-title" x="500" y="325" text-anchor="middle">DOCUMENT</text>
+                <line x1="400" y1="335" x2="600" y2="335" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="410" y="355">• document_id (PK)</text>
+                <text class="attribute" x="410" y="375">• product_id (FK)</text>
+                <text class="attribute" x="410" y="395">• document_type</text>
+                <text class="attribute" x="410" y="415">• document_url</text>
+                <text class="attribute" x="410" y="435">• version</text>
+                <text class="attribute" x="410" y="455">• uploaded_at</text>
+                
+                <!-- Category Entity -->
+                <rect class="entity" x="750" y="300" width="200" height="130" rx="5"/>
+                <text class="entity-title" x="850" y="325" text-anchor="middle">CATEGORY</text>
+                <line x1="750" y1="335" x2="950" y2="335" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="760" y="355">• category_id (PK)</text>
+                <text class="attribute" x="760" y="375">• category_name</text>
+                <text class="attribute" x="760" y="395">• parent_category_id</text>
+                <text class="attribute" x="760" y="415">• description</text>
+                
+                <!-- Distributor Entity -->
+                <rect class="entity" x="50" y="50" width="200" height="170" rx="5"/>
+                <text class="entity-title" x="150" y="75" text-anchor="middle">DISTRIBUTOR</text>
+                <line x1="50" y1="85" x2="250" y2="85" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="60" y="105">• distributor_id (PK)</text>
+                <text class="attribute" x="60" y="125">• company_name</text>
+                <text class="attribute" x="60" y="145">• contact_email</text>
+                <text class="attribute" x="60" y="165">• contact_phone</text>
+                <text class="attribute" x="60" y="185">• website</text>
+                <text class="attribute" x="60" y="205">• region</text>
+                
+                <!-- Industry Entity -->
+                <rect class="entity" x="750" y="50" width="200" height="150" rx="5"/>
+                <text class="entity-title" x="850" y="75" text-anchor="middle">INDUSTRY</text>
+                <line x1="750" y1="85" x2="950" y2="85" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="760" y="105">• industry_id (PK)</text>
+                <text class="attribute" x="760" y="125">• industry_name</text>
+                <text class="attribute" x="760" y="145">• industry_code</text>
+                <text class="attribute" x="760" y="165">• description</text>
+                <text class="attribute" x="760" y="185">• parent_industry_id</text>
+                
+                <!-- Product_Distributor Junction Table -->
+                <rect class="entity" x="200" y="150" width="180" height="110" rx="5"/>
+                <text class="entity-title" x="290" y="175" text-anchor="middle">PRODUCT_DISTRIBUTOR</text>
+                <line x1="200" y1="185" x2="380" y2="185" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="210" y="205">• product_id (FK)</text>
+                <text class="attribute" x="210" y="225">• distributor_id (FK)</text>
+                <text class="attribute" x="210" y="245">• is_active</text>
+                
+                <!-- Product_Industry Junction Table -->
+                <rect class="entity" x="620" y="150" width="180" height="130" rx="5"/>
+                <text class="entity-title" x="710" y="175" text-anchor="middle">PRODUCT_INDUSTRY</text>
+                <line x1="620" y1="185" x2="800" y2="185" stroke="#667eea" stroke-width="1"/>
+                <text class="attribute" x="630" y="205">• product_id (FK)</text>
+                <text class="attribute" x="630" y="225">• industry_id (FK)</text>
+                <text class="attribute" x="630" y="245">• relevance_score</text>
+                <text class="attribute" x="630" y="265">• use_case</text>
+                
+                <!-- Relationships -->
+                <!-- Product to Distributor (M:N) -->
+                <path class="relationship" d="M 250 135 L 400 125" marker-end="url(#arrowhead)"/>
+                <text x="295" y="120" fill="#764ba2" font-size="11">sold by (M:N)</text>
+                
+                <!-- Product to Industry (M:N) -->
+                <path class="relationship" d="M 600 125 L 750 125" marker-end="url(#arrowhead)"/>
+                <text x="650" y="120" fill="#764ba2" font-size="11">used in (M:N)</text>
+                
+                <!-- Product to Media (1:M) -->
+                <path class="relationship" d="M 400 125 L 250 385" marker-end="url(#arrowhead)"/>
+                <text x="300" y="250" fill="#764ba2" font-size="11">has (1:M)</text>
+                
+                <!-- Product to Document (1:M) -->
+                <path class="relationship" d="M 500 200 L 500 300" marker-end="url(#arrowhead)"/>
+                <text x="510" y="250" fill="#764ba2" font-size="11">has (1:M)</text>
+                
+                <!-- Product to Category (M:N) -->
+                <path class="relationship" d="M 600 125 L 750 365" marker-end="url(#arrowhead)"/>
+                <text x="660" y="250" fill="#764ba2" font-size="11">belongs to (M:N)</text>
+                
+                <!-- Arrow markers -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <polygon points="0 0, 10 3, 0 6" fill="#764ba2"/>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+        
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-item">
+                <span class="legend-symbol" style="background: white; border: 2px solid #667eea;"></span>
+                Entity (Table)
+            </div>
+            <div class="legend-item">
+                <span class="legend-symbol" style="background: #764ba2; height: 2px;"></span>
+                Relationship
+            </div>
+            <div class="legend-item">
+                <strong>PK</strong> = Primary Key
+            </div>
+            <div class="legend-item">
+                <strong>FK</strong> = Foreign Key
+            </div>
+            <div class="legend-item">
+                <strong>1:M</strong> = One-to-Many
+            </div>
+            <div class="legend-item">
+                <strong>M:N</strong> = Many-to-Many
+            </div>
+        </div>
+        
+        <h2>Normalized JSON Structure</h2>
+        <div class="json-structure">
+            <pre>{
+  <span class="key">"products"</span>: [
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"product_name"</span>: <span class="string">"First Base"</span>,
+      <span class="key">"product_url"</span>: <span class="string">"https://agar.com.au/product/first-base/"</span>,
+      <span class="key">"created_at"</span>: <span class="string">"2024-01-15T10:00:00Z"</span>,
+      <span class="key">"updated_at"</span>: <span class="string">"2024-12-01T14:30:00Z"</span>,
+      <span class="key">"category_ids"</span>: [<span class="string">"cat_001"</span>, <span class="string">"cat_003"</span>]
+    }
+  ],
+  
+  <span class="key">"media"</span>: [
+    {
+      <span class="key">"media_id"</span>: <span class="string">"med_001"</span>,
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"media_type"</span>: <span class="string">"image"</span>,
+      <span class="key">"media_format"</span>: <span class="string">"png"</span>,
+      <span class="key">"media_url"</span>: <span class="string">"https://agar.com.au/wp-content/uploads/2023/08/First-Base-5L.png"</span>,
+      <span class="key">"sequence_order"</span>: <span class="number">1</span>,
+      <span class="key">"alt_text"</span>: <span class="string">"First Base 5L product image"</span>,
+      <span class="key">"dimensions"</span>: {
+        <span class="key">"width"</span>: <span class="number">800</span>,
+        <span class="key">"height"</span>: <span class="number">600</span>
+      }
+    },
+    {
+      <span class="key">"media_id"</span>: <span class="string">"med_002"</span>,
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"media_type"</span>: <span class="string">"image"</span>,
+      <span class="key">"media_format"</span>: <span class="string">"png"</span>,
+      <span class="key">"media_url"</span>: <span class="string">"https://agar.com.au/wp-content/uploads/2024/05/First-Base-20L.png"</span>,
+      <span class="key">"sequence_order"</span>: <span class="number">2</span>,
+      <span class="key">"alt_text"</span>: <span class="string">"First Base 20L product image"</span>
+    },
+    {
+      <span class="key">"media_id"</span>: <span class="string">"med_003"</span>,
+      <span class="key">"product_id"</span>: <span class="string">"prod_010"</span>,
+      <span class="key">"media_type"</span>: <span class="string">"video"</span>,
+      <span class="key">"media_format"</span>: <span class="string">"youtube"</span>,
+      <span class="key">"media_url"</span>: <span class="string">"https://www.youtube.com/embed/7R5r8zzPAsA"</span>,
+      <span class="key">"sequence_order"</span>: <span class="number">1</span>
+    }
+  ],
+  
+  <span class="key">"documents"</span>: [
+    {
+      <span class="key">"document_id"</span>: <span class="string">"doc_001"</span>,
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"document_type"</span>: <span class="string">"PDS"</span>,
+      <span class="key">"document_name"</span>: <span class="string">"Product Data Sheet"</span>,
+      <span class="key">"document_url"</span>: <span class="string">"https://agar.com.au/product/first-base/?attachment_id=22088"</span>,
+      <span class="key">"version"</span>: <span class="string">"2.1"</span>,
+      <span class="key">"uploaded_at"</span>: <span class="string">"2024-11-20T09:00:00Z"</span>,
+      <span class="key">"file_size_kb"</span>: <span class="number">245</span>
+    },
+    {
+      <span class="key">"document_id"</span>: <span class="string">"doc_002"</span>,
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"document_type"</span>: <span class="string">"SDS"</span>,
+      <span class="key">"document_name"</span>: <span class="string">"Safety Data Sheet - Primary"</span>,
+      <span class="key">"document_url"</span>: <span class="string">"https://agar.com.au/product/first-base/?attachment_id=23385"</span>,
+      <span class="key">"version"</span>: <span class="string">"3.0"</span>,
+      <span class="key">"uploaded_at"</span>: <span class="string">"2024-11-25T11:30:00Z"</span>
+    },
+    {
+      <span class="key">"document_id"</span>: <span class="string">"doc_003"</span>,
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"document_type"</span>: <span class="string">"SDS"</span>,
+      <span class="key">"document_name"</span>: <span class="string">"Safety Data Sheet - Archive"</span>,
+      <span class="key">"document_url"</span>: <span class="string">"https://agar.com.au/sds/"</span>,
+      <span class="key">"version"</span>: <span class="string">"2.0"</span>,
+      <span class="key">"uploaded_at"</span>: <span class="string">"2024-01-15T10:00:00Z"</span>
+    }
+  ],
+  
+  <span class="key">"distributors"</span>: [
+    {
+      <span class="key">"distributor_id"</span>: <span class="string">"dist_001"</span>,
+      <span class="key">"company_name"</span>: <span class="string">"CleanSupply Co"</span>,
+      <span class="key">"contact_email"</span>: <span class="string">"sales@cleansupply.com"</span>,
+      <span class="key">"contact_phone"</span>: <span class="string">"+61 2 9555 1234"</span>,
+      <span class="key">"website"</span>: <span class="string">"https://www.cleansupply.com"</span>,
+      <span class="key">"region"</span>: <span class="string">"NSW/ACT"</span>,
+      <span class="key">"address"</span>: {
+        <span class="key">"street"</span>: <span class="string">"123 Industrial Ave"</span>,
+        <span class="key">"city"</span>: <span class="string">"Sydney"</span>,
+        <span class="key">"state"</span>: <span class="string">"NSW"</span>,
+        <span class="key">"postal_code"</span>: <span class="string">"2000"</span>,
+        <span class="key">"country"</span>: <span class="string">"Australia"</span>
+      },
+      <span class="key">"distributor_type"</span>: <span class="string">"wholesale"</span>,
+      <span class="key">"status"</span>: <span class="string">"active"</span>
+    },
+    {
+      <span class="key">"distributor_id"</span>: <span class="string">"dist_002"</span>,
+      <span class="key">"company_name"</span>: <span class="string">"Industrial Solutions Ltd"</span>,
+      <span class="key">"contact_email"</span>: <span class="string">"orders@industrialsolutions.com.au"</span>,
+      <span class="key">"contact_phone"</span>: <span class="string">"+61 3 9555 5678"</span>,
+      <span class="key">"website"</span>: <span class="string">"https://www.industrialsolutions.com.au"</span>,
+      <span class="key">"region"</span>: <span class="string">"VIC/TAS"</span>,
+      <span class="key">"distributor_type"</span>: <span class="string">"retail"</span>,
+      <span class="key">"status"</span>: <span class="string">"active"</span>
+    }
+  ],
+  
+  <span class="key">"industries"</span>: [
+    {
+      <span class="key">"industry_id"</span>: <span class="string">"ind_001"</span>,
+      <span class="key">"industry_name"</span>: <span class="string">"Healthcare"</span>,
+      <span class="key">"industry_code"</span>: <span class="string">"ANZSIC-Q"</span>,
+      <span class="key">"description"</span>: <span class="string">"Hospitals, clinics, and medical facilities"</span>,
+      <span class="key">"parent_industry_id"</span>: <span class="null">null</span>
+    },
+    {
+      <span class="key">"industry_id"</span>: <span class="string">"ind_002"</span>,
+      <span class="key">"industry_name"</span>: <span class="string">"Hospitality"</span>,
+      <span class="key">"industry_code"</span>: <span class="string">"ANZSIC-H"</span>,
+      <span class="key">"description"</span>: <span class="string">"Hotels, restaurants, and food service"</span>,
+      <span class="key">"parent_industry_id"</span>: <span class="null">null</span>
+    },
+    {
+      <span class="key">"industry_id"</span>: <span class="string">"ind_003"</span>,
+      <span class="key">"industry_name"</span>: <span class="string">"Education"</span>,
+      <span class="key">"industry_code"</span>: <span class="string">"ANZSIC-P"</span>,
+      <span class="key">"description"</span>: <span class="string">"Schools, universities, and training centers"</span>,
+      <span class="key">"parent_industry_id"</span>: <span class="null">null</span>
+    }
+  ],
+  
+  <span class="key">"product_distributors"</span>: [
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"distributor_id"</span>: <span class="string">"dist_001"</span>,
+      <span class="key">"is_active"</span>: <span class="boolean">true</span>,
+      <span class="key">"start_date"</span>: <span class="string">"2023-01-01"</span>,
+      <span class="key">"contract_terms"</span>: <span class="string">"standard_wholesale"</span>,
+      <span class="key">"minimum_order_qty"</span>: <span class="number">10</span>,
+      <span class="key">"discount_tier"</span>: <span class="string">"gold"</span>
+    },
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"distributor_id"</span>: <span class="string">"dist_002"</span>,
+      <span class="key">"is_active"</span>: <span class="boolean">true</span>,
+      <span class="key">"start_date"</span>: <span class="string">"2023-06-15"</span>,
+      <span class="key">"contract_terms"</span>: <span class="string">"retail_partner"</span>,
+      <span class="key">"minimum_order_qty"</span>: <span class="number">5</span>,
+      <span class="key">"discount_tier"</span>: <span class="string">"silver"</span>
+    }
+  ],
+  
+  <span class="key">"product_industries"</span>: [
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"industry_id"</span>: <span class="string">"ind_001"</span>,
+      <span class="key">"relevance_score"</span>: <span class="number">0.95</span>,
+      <span class="key">"use_case"</span>: <span class="string">"Hospital floor cleaning and disinfection"</span>,
+      <span class="key">"compliance_standards"</span>: [<span class="string">"AS/NZS 4187"</span>, <span class="string">"TGA approved"</span>],
+      <span class="key">"typical_applications"</span>: [
+        <span class="string">"Operating theaters"</span>,
+        <span class="string">"Patient rooms"</span>,
+        <span class="string">"ICU areas"</span>
+      ]
+    },
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"industry_id"</span>: <span class="string">"ind_002"</span>,
+      <span class="key">"relevance_score"</span>: <span class="number">0.85</span>,
+      <span class="key">"use_case"</span>: <span class="string">"Commercial kitchen and dining area maintenance"</span>,
+      <span class="key">"compliance_standards"</span>: [<span class="string">"HACCP certified"</span>],
+      <span class="key">"typical_applications"</span>: [
+        <span class="string">"Kitchen floors"</span>,
+        <span class="string">"Dining areas"</span>,
+        <span class="string">"Restrooms"</span>
+      ]
+    }
+  ],
+  
+  <span class="key">"categories"</span>: [
+    {
+      <span class="key">"category_id"</span>: <span class="string">"cat_001"</span>,
+      <span class="key">"category_name"</span>: <span class="string">"Cleaning Products"</span>,
+      <span class="key">"parent_category_id"</span>: <span class="null">null</span>,
+      <span class="key">"description"</span>: <span class="string">"Industrial and commercial cleaning solutions"</span>
+    },
+    {
+      <span class="key">"category_id"</span>: <span class="string">"cat_002"</span>,
+      <span class="key">"category_name"</span>: <span class="string">"Floor Care"</span>,
+      <span class="key">"parent_category_id"</span>: <span class="string">"cat_001"</span>,
+      <span class="key">"description"</span>: <span class="string">"Specialized floor cleaning and maintenance products"</span>
+    }
+  ],
+  
+  <span class="key">"product_categories"</span>: [
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"category_id"</span>: <span class="string">"cat_001"</span>
+    },
+    {
+      <span class="key">"product_id"</span>: <span class="string">"prod_001"</span>,
+      <span class="key">"category_id"</span>: <span class="string">"cat_003"</span>
+    }
+  ]
+}</pre>
+        </div>
+        
+        <h2>Key Normalization Benefits</h2>
+        <ul style="line-height: 1.8;">
+            <li><strong>Eliminated Redundancy:</strong> Separated repeating groups (images, documents) into dedicated entities</li>
+            <li><strong>Improved Scalability:</strong> Can handle unlimited media files and documents per product</li>
+            <li><strong>Flexible Media Types:</strong> Supports images (PNG, JPG), videos, and future media formats</li>
+            <li><strong>Document Versioning:</strong> Tracks multiple versions of PDFs (PDS, SDS)</li>
+            <li><strong>Category Management:</strong> Hierarchical category structure with many-to-many relationships</li>
+            <li><strong>Data Integrity:</strong> Foreign key relationships ensure referential integrity</li>
+            <li><strong>Query Optimization:</strong> Indexed fields enable efficient data retrieval</li>
+        </ul>
+        
+        <h2>Database Schema Summary</h2>
+        <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <h3>Tables Created:</h3>
+            <ol>
+                <li><strong>products</strong> - Core product information</li>
+                <li><strong>media</strong> - All product images and videos</li>
+                <li><strong>documents</strong> - PDF documents (PDS, SDS, etc.)</li>
+                <li><strong>categories</strong> - Product categorization</li>
+                <li><strong>distributors</strong> - Retailers and wholesalers selling products</li>
+                <li><strong>industries</strong> - Industry sectors using products</li>
+                <li><strong>product_categories</strong> - Junction table for product-category relationship</li>
+                <li><strong>product_distributors</strong> - Junction table with distributor terms and status</li>
+                <li><strong>product_industries</strong> - Junction table with relevance scores and use cases</li>
+            </ol>
+            
+            <h3>New Relationship Features:</h3>
+            <ul>
+                <li><strong>Distributor Management:</strong>
+                    <ul>
+                        <li>Track multiple distributors per product</li>
+                        <li>Store contact information and regions</li>
+                        <li>Manage active/inactive status</li>
+                        <li>Track contract terms and discount tiers</li>
+                    </ul>
+                </li>
+                <li><strong>Industry Targeting:</strong>
+                    <ul>
+                        <li>Link products to multiple industry sectors</li>
+                        <li>Score relevance for each industry (0-1 scale)</li>
+                        <li>Document specific use cases per industry</li>
+                        <li>Track compliance standards and certifications</li>
+                        <li>List typical applications within each industry</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

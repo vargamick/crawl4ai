@@ -1,0 +1,173 @@
+{
+  "products": [
+    {
+      "product_id": "prod_country-garden_2a79b086",
+      "product_name": "Country Garden",
+      "product_url": "https://agar.com.au/product/country-garden/",
+      "description": "What is Country Garden?COUNTRY GARDEN is a powerful air-freshener with the lingering perfume of honeysuckle and roses.Key BenefitsCOUNTRY GARDEN is a PERFUME CONCENTRATEIt will outlast conventional reodorant detergentsCOUNTRY GARDEN provides a solution to both highly ventilated and poorly-ventilated problem washrooms where a lingering perfume is required DescriptionDownload SDS / PDSReviews (3)DescriptionHow Does It Work?COUNTRY GARDEN Air Freshener Concentrate is designed to provide a lasting fragrance in areas where normal detergent and disinfectant perfumes disappear sooner than desired. COUNTRY GARDEN is a super-strong perfume concentrate which is spirit based. It has a pleasing floral fragrance which lingers for many hours, even days.For Use On…Primarily for toilet cubicles and washrooms, COUNTRY GARDEN may also be used in waste and garbage holding or disposal areas to mask undesirable odours. COUNTRY GARDEN may even be used after cleaning to let your customers know you’ve been and that their home or office is clean and fresh.Country Garden PDSDownloadCountry Garden SDSDownload3 reviews forCountry GardenRated5out of 5Dianne Hearn–January 12, 2015Very Highly Recommended. I have ran out,I need to buy some asap.Rated5out of 5admin@caseyqualitycleans.com.au–August 26, 2020great product, dont need a lot to leave lasting freshness. highly recommendedRated5out of 5Chris–June 7, 2025I wipe it on skirting boards, architraves, window sills and the house smells so fresh. Everyone compliments it when they walk in asking what it is. Re-apply in 3 days if you want it to constantly linger. Highly recommend.Add a reviewYour email address will not be published.Required fields are marked*Your rating*1 of 5 stars2 of 5 stars3 of 5 stars4 of 5 stars5 of 5 starsRate…PerfectGoodAverageNot that badVery poorYour review*NameEmailΔ",
+      "created_at": "2025-09-22T17:39:19.720029",
+      "updated_at": "2025-09-22T17:39:19.720030",
+      "category_ids": [],
+      "metadata": {
+        "raw_extracted_data": {
+          "product_title": "Country Garden",
+          "product_description": "What is Country Garden?COUNTRY GARDEN is a powerful air-freshener with the lingering perfume of honeysuckle and roses.Key BenefitsCOUNTRY GARDEN is a PERFUME CONCENTRATEIt will outlast conventional reodorant detergentsCOUNTRY GARDEN provides a solution to both highly ventilated and poorly-ventilated problem washrooms where a lingering perfume is required",
+          "product_content": "DescriptionDownload SDS / PDSReviews (3)DescriptionHow Does It Work?COUNTRY GARDEN Air Freshener Concentrate is designed to provide a lasting fragrance in areas where normal detergent and disinfectant perfumes disappear sooner than desired. COUNTRY GARDEN is a super-strong perfume concentrate which is spirit based. It has a pleasing floral fragrance which lingers for many hours, even days.For Use On…Primarily for toilet cubicles and washrooms, COUNTRY GARDEN may also be used in waste and garbage holding or disposal areas to mask undesirable odours. COUNTRY GARDEN may even be used after cleaning to let your customers know you’ve been and that their home or office is clean and fresh.Country Garden PDSDownloadCountry Garden SDSDownload3 reviews forCountry GardenRated5out of 5Dianne Hearn–January 12, 2015Very Highly Recommended. I have ran out,I need to buy some asap.Rated5out of 5admin@caseyqualitycleans.com.au–August 26, 2020great product, dont need a lot to leave lasting freshness. highly recommendedRated5out of 5Chris–June 7, 2025I wipe it on skirting boards, architraves, window sills and the house smells so fresh. Everyone compliments it when they walk in asking what it is. Re-apply in 3 days if you want it to constantly linger. Highly recommend.Add a reviewYour email address will not be published.Required fields are marked*Your rating*1 of 5 stars2 of 5 stars3 of 5 stars4 of 5 stars5 of 5 starsRate…PerfectGoodAverageNot that badVery poorYour review*NameEmailΔ",
+          "product_images": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png",
+          "product_image_alts": "Country Garden",
+          "attachment_links": "https://agar.com.au/product/country-garden/?attachment_id=25657&download_file=urlyzvfn7ifav",
+          "attachment_texts": "Country Garden PDS",
+          "categories": "Air Fresheners & Deodorisers",
+          "category_links": "https://agar.com.au/product-category/air-fresheners/"
+        },
+        "original_data_structure": "<class 'list'>",
+        "extraction_timestamp": "2025-09-22T17:39:19.719973"
+      }
+    }
+  ],
+  "media": [
+    {
+      "media_id": "med_prod_country-garden_2a79b086_001_2fabe742",
+      "product_id": "prod_country-garden_2a79b086",
+      "media_type": "image",
+      "media_format": "png",
+      "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png",
+      "sequence_order": 1,
+      "alt_text": "Country Garden",
+      "dimensions": null,
+      "file_size_kb": null,
+      "created_at": "2025-09-22T17:39:19.836913",
+      "metadata": {
+        "extracted_from": "product_images",
+        "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png"
+      }
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "doc_prod_country-garden_2a79b086_61fd4d53",
+      "product_id": "prod_country-garden_2a79b086",
+      "document_type": "PDS",
+      "document_name": "Country Garden PDS",
+      "document_url": "https://agar.com.au/product/country-garden/?attachment_id=25657&download_file=urlyzvfn7ifav",
+      "version": null,
+      "uploaded_at": null,
+      "file_size_kb": null,
+      "created_at": "2025-09-22T17:39:20.840067",
+      "metadata": {
+        "link_text": "Country Garden PDS",
+        "filename": "",
+        "extraction_source": "attachment_links"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "category_id": "cat_air_fresheners_deodorisers_281065",
+      "category_name": "Air Fresheners & Deodorisers",
+      "parent_category_id": null,
+      "description": null,
+      "slug": "air-fresheners-deodorisers",
+      "level": 0,
+      "created_at": "2025-09-22T17:39:20.840488",
+      "metadata": {
+        "category_url": "https://agar.com.au/product-category/air-fresheners/",
+        "extraction_source": "product_categories"
+      }
+    },
+    {
+      "category_id": "cat_bathroom_cleaning_d1d283",
+      "category_name": "Bathroom Cleaning",
+      "parent_category_id": "cat_cleaning_products_b0f70e",
+      "description": null,
+      "slug": "bathroom-cleaning",
+      "level": 0,
+      "created_at": "2025-09-22T17:39:20.841089",
+      "metadata": {
+        "category_url": null,
+        "extraction_source": "product_categories"
+      }
+    },
+    {
+      "category_id": "cat_commercial_cleaning_36e895",
+      "category_name": "Commercial Cleaning",
+      "parent_category_id": null,
+      "description": null,
+      "slug": "commercial-cleaning",
+      "level": 0,
+      "created_at": "2025-09-22T17:39:20.841140",
+      "metadata": {
+        "category_url": null,
+        "extraction_source": "product_categories"
+      }
+    },
+    {
+      "category_id": "cat_concentrates_691208",
+      "category_name": "Concentrates",
+      "parent_category_id": null,
+      "description": null,
+      "slug": "concentrates",
+      "level": 0,
+      "created_at": "2025-09-22T17:39:20.841308",
+      "metadata": {
+        "category_url": null,
+        "extraction_source": "product_categories"
+      }
+    },
+    {
+      "category_id": "cat_glass_cleaners_631ec0",
+      "category_name": "Glass Cleaners",
+      "parent_category_id": null,
+      "description": null,
+      "slug": "glass-cleaners",
+      "level": 2,
+      "created_at": "2025-09-22T17:39:20.840960",
+      "metadata": {
+        "category_url": null,
+        "extraction_source": "product_categories"
+      }
+    }
+  ],
+  "product_categories": [
+    {
+      "product_id": "prod_country-garden_2a79b086",
+      "category_id": "cat_air_fresheners_deodorisers_281065",
+      "primary": true,
+      "created_at": "2025-09-22T17:39:20.840496"
+    },
+    {
+      "product_id": "prod_country-garden_2a79b086",
+      "category_id": "cat_glass_cleaners_631ec0",
+      "primary": false,
+      "created_at": "2025-09-22T17:39:20.840963"
+    },
+    {
+      "product_id": "prod_country-garden_2a79b086",
+      "category_id": "cat_bathroom_cleaning_d1d283",
+      "primary": false,
+      "created_at": "2025-09-22T17:39:20.841092"
+    },
+    {
+      "product_id": "prod_country-garden_2a79b086",
+      "category_id": "cat_commercial_cleaning_36e895",
+      "primary": false,
+      "created_at": "2025-09-22T17:39:20.841142"
+    },
+    {
+      "product_id": "prod_country-garden_2a79b086",
+      "category_id": "cat_concentrates_691208",
+      "primary": false,
+      "created_at": "2025-09-22T17:39:20.841310"
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-09-22T17:39:20.841445",
+    "total_products": 1,
+    "total_media": 1,
+    "total_documents": 1,
+    "total_categories": 5,
+    "total_relationships": 5,
+    "generator": "crawl4ai-agar-scraper",
+    "version": "1.0.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "extraction_timestamp": "2025-09-22T17:39:20.844589",
+  "totals": {
+    "products": 1,
+    "media_items": 1,
+    "documents": 1,
+    "categories": 5,
+    "product_category_relationships": 5
+  },
+  "media_statistics": {
+    "by_type": {
+      "image": 1
+    },
+    "by_format": {
+      "png": 1
+    },
+    "products_with_media": 1,
+    "average_media_per_product": 1.0
+  },
+  "document_statistics": {
+    "by_type": {
+      "PDS": 1
+    },
+    "products_with_documents": 1,
+    "average_documents_per_product": 1.0
+  },
+  "category_statistics": {
+    "by_level": {
+      "0": 4,
+      "2": 1
+    },
+    "products_with_categories": 1,
+    "average_categories_per_product": 5.0
+  },
+  "data_completeness": {
+    "products_with_descriptions": 1,
+    "products_with_media": 1,
+    "products_with_documents": 1,
+    "products_with_categories": 1
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "media_id": "med_prod_country-garden_2a79b086_001_2fabe742",
+    "product_id": "prod_country-garden_2a79b086",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Country Garden",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2025-09-22T17:39:19.836913",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png"
+    }
+  }
+]

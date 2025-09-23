@@ -1,0 +1,67 @@
+[
+  {
+    "category_id": "cat_air_fresheners_deodorisers_281065",
+    "category_name": "Air Fresheners & Deodorisers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "air-fresheners-deodorisers",
+    "level": 0,
+    "created_at": "2025-09-22T17:39:20.840488",
+    "metadata": {
+      "category_url": "https://agar.com.au/product-category/air-fresheners/",
+      "extraction_source": "product_categories"
+    }
+  },
+  {
+    "category_id": "cat_bathroom_cleaning_d1d283",
+    "category_name": "Bathroom Cleaning",
+    "parent_category_id": "cat_cleaning_products_b0f70e",
+    "description": null,
+    "slug": "bathroom-cleaning",
+    "level": 0,
+    "created_at": "2025-09-22T17:39:20.841089",
+    "metadata": {
+      "category_url": null,
+      "extraction_source": "product_categories"
+    }
+  },
+  {
+    "category_id": "cat_commercial_cleaning_36e895",
+    "category_name": "Commercial Cleaning",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "commercial-cleaning",
+    "level": 0,
+    "created_at": "2025-09-22T17:39:20.841140",
+    "metadata": {
+      "category_url": null,
+      "extraction_source": "product_categories"
+    }
+  },
+  {
+    "category_id": "cat_concentrates_691208",
+    "category_name": "Concentrates",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "concentrates",
+    "level": 0,
+    "created_at": "2025-09-22T17:39:20.841308",
+    "metadata": {
+      "category_url": null,
+      "extraction_source": "product_categories"
+    }
+  },
+  {
+    "category_id": "cat_glass_cleaners_631ec0",
+    "category_name": "Glass Cleaners",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "glass-cleaners",
+    "level": 2,
+    "created_at": "2025-09-22T17:39:20.840960",
+    "metadata": {
+      "category_url": null,
+      "extraction_source": "product_categories"
+    }
+  }
+]
