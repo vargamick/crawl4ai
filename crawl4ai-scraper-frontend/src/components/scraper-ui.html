@@ -1,0 +1,91 @@
+<!-- Crawl4AI Scraper Management Component -->
+<div class="crawl4ai-scraper-panel">
+    <div class="panel-header">
+        <div class="header-left">
+            🕷️ Web Scraper Management
+        </div>
+        <div class="header-right">
+            <button class="btn btn-small btn-info" onclick="Crawl4AIScraper.refreshStatus()">🔄 Refresh</button>
+            <button class="btn btn-small btn-secondary" onclick="Crawl4AIScraper.showConfigModal()">⚙️ Configure</button>
+            <span id="scraperHealthIndicator" class="health-indicator">⚪</span>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <button class="btn btn-primary" onclick="Crawl4AIScraper.triggerQuickScraping()" id="quickScrapeBtn">
+            <i class="fas fa-play"></i> Quick Scrape
+        </button>
+        <button class="btn btn-success" onclick="Crawl4AIScraper.triggerFullScraping()" id="fullScrapeBtn">
+            <i class="fas fa-download"></i> Full Scrape
+        </button>
+        <button class="btn btn-warning" onclick="Crawl4AIScraper.pauseCurrentJob()" id="pauseJobBtn" disabled>
+            <i class="fas fa-pause"></i> Pause Job
+        </button>
+        <button class="btn btn-secondary" onclick="Crawl4AIScraper.checkScrapingStatus()">
+            <i class="fas fa-info-circle"></i> Status
+        </button>
+    </div>
+
+    <!-- Real-time Progress Display -->
+    <div class="progress-section" id="progressSection" style="display: none;">
+        <div class="progress-header">
+            <h5>📊 Scraping Progress</h5>
+            <span class="progress-time" id="progressTime">00:00</span>
+        </div>
+        <div class="progress-bars">
+            <div class="progress-item">
+                <label>Overall Progress:</label>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="overallProgress" style="width: 0%"></div>
+                </div>
+                <span class="progress-text" id="overallProgressText">0%</span>
+            </div>
+            <div class="progress-item">
+                <label>Items Processed:</label>
+                <div class="progress-counter" id="itemsProgress">0 / 0</div>
+            </div>
+            <div class="progress-item">
+                <label>Current Rate:</label>
+                <div class="progress-counter" id="processingRate">0 items/min</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Display -->
+    <div class="scraper-status" id="scraperStatus">
+        <div class="status-info">Click "Check Status" to see scraping information</div>
+    </div>
+
+    <!-- Results Browser -->
+    <div class="results-browser">
+        <h4>📦 Scraped Results Browser</h4>
+        <div class="browser-controls">
+            <div class="form-group">
+                <input type="text" id="resultSearch" class="form-control" placeholder="Search results..." onkeyup="Crawl4AIScraper.searchResults()">
+            </div>
+            <div class="form-group">
+                <select id="categoryFilter" class="form-control" onchange="Crawl4AIScraper.filterByCategory()" title="Filter by category">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-secondary btn-small" onclick="Crawl4AIScraper.loadResults()">Load Results</button>
+                <button class="btn btn-info btn-small" onclick="Crawl4AIScraper.loadCategories()">Load Categories</button>
+                <button class="btn btn-success btn-small" onclick="Crawl4AIScraper.showScraperStats()">Show Stats</button>
+            </div>
+        </div>
+        
+        <div class="results-list" id="resultsList">
+            <div class="status-info">Click "Load Results" to view scraped data</div>
+        </div>
+        
+        <div class="results-pagination" id="resultsPagination" style="display: none;">
+            <button class="btn btn-small" id="prevResultsBtn" onclick="Crawl4AIScraper.previousResultPage()" disabled>Previous</button>
+            <span id="resultPageInfo">Page 1 of 1</span>
+            <button class="btn btn-small" id="nextResultsBtn" onclick="Crawl4AIScraper.nextResultPage()" disabled>Next</button>
+        </div>
+    </div>
+
+    <div id="scraperStatusIndicator" class="status-indicator status-info" style="display: none;"></div>
+</div>

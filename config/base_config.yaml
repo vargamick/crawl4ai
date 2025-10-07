@@ -1,0 +1,74 @@
+# Base Configuration - Shared across all clients
+# Crawl4AI Product Discovery Framework
+
+version: "1.0"
+
+# Browser settings
+browser:
+  headless: true
+  verbose: false
+  browser_type: chromium
+  timeout: 30000
+  user_agent: null
+
+# Crawling settings
+crawling:
+  max_pages: 100
+  max_depth: 5
+  max_concurrent: 5
+  respect_robots_txt: true
+
+# Rate limiting
+rate_limit:
+  delay: 1
+  max_requests_per_second: 2
+  
+# Extraction settings
+extraction:
+  enable_javascript: true
+  wait_for_network: true
+  scroll_to_bottom: true
+  
+# Download settings
+downloads:
+  enabled: true
+  path: "./downloads"
+  max_file_size: 100  # MB
+  timeout: 30  # seconds
+  retry_attempts: 3
+  
+# Output settings
+output:
+  path: "./output"
+  generate_sql: true
+  generate_json: true
+  generate_csv: true
+  
+# Logging
+logging:
+  level: INFO
+  file: "discovery.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Extension points (hooks)
+hooks:
+  - pre_discovery
+  - post_discovery
+  - pre_extraction
+  - post_extraction
+  - pre_download
+  - post_download
+  - categorize_product
+  - map_industries
+
+# LLM settings (optional)
+llm:
+  provider: null  # e.g., "openai/gpt-4-mini", "anthropic/claude-3"
+  api_key: null
+  
+# Plugin system
+plugins:
+  auto_discover: true
+  directories:
+    - "extensions"
+    - "src/clients/{client}/plugins"

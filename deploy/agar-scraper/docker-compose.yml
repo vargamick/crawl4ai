@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  agar-scraper:
+    build:
+      context: ../..
+      dockerfile: deploy/agar-scraper/Dockerfile
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@askagar-postgres:5432/${POSTGRES_DB}
+      - AGAR_BASE_URL=https://agar.com.au/products/
+      - FLASK_API_URL=http://askagar-api:5000
+      - MAX_PRODUCTS=0  # 0 = unlimited
+      - DELAY_SECONDS=2.0
+      - PORT=8080
+      - SCRAPE_SCHEDULE=0 2 * * *  # Daily at 2 AM
+    ports:
+      - "8080:8080"
+    volumes:
+      - agar_data:/app/output
+      - agar_logs:/app/logs
+    networks:
+      - askagar_network
+    depends_on:
+      - askagar-postgres
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.agar-scraper.rule=Host(`agar-scraper.yourdomain.com`)"
+      - "traefik.http.services.agar-scraper.loadbalancer.server.port=8080"
+
+  askagar-postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-agar-db.sql:/docker-entrypoint-initdb.d/init-agar-db.sql
+    networks:
+      - askagar_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  agar_data:
+    driver: local
+  agar_logs:
+    driver: local
+  postgres_data:
+    driver: local
+
+networks:
+  askagar_network:
+    external: true

@@ -1,0 +1,43 @@
+{
+  "name": "crawl4ai-scraper-frontend",
+  "version": "1.0.0",
+  "description": "Frontend UI components for web scraping with crawl4ai integration",
+  "main": "src/js/index.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "cat src/css/*.css > dist/crawl4ai-scraper.css",
+    "build:js": "cat src/js/core/*.js src/js/modules/*.js > dist/crawl4ai-scraper.js",
+    "serve": "python -m http.server 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawl4ai",
+    "web-scraping",
+    "frontend",
+    "ui-components",
+    "agar",
+    "scraper"
+  ],
+  "author": "Ask Agar Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unclecode/crawl4ai"
+  },
+  "bugs": {
+    "url": "https://github.com/unclecode/crawl4ai/issues"
+  },
+  "homepage": "https://github.com/unclecode/crawl4ai#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "src/",
+    "dist/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,173 @@
+<!-- Crawl4AI Scraper Configuration Modal -->
+<div id="scraperConfigModal" class="modal" style="display: none;">
+    <div class="modal-content large">
+        <div class="modal-header">
+            <h3>⚙️ Scraper Configuration</h3>
+            <span class="close" onclick="Crawl4AIScraper.closeConfigModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <!-- Configuration Tabs -->
+            <div class="config-tabs">
+                <button class="tab-button active" onclick="Crawl4AIScraper.switchConfigTab('general')">General</button>
+                <button class="tab-button" onclick="Crawl4AIScraper.switchConfigTab('advanced')">Advanced</button>
+                <button class="tab-button" onclick="Crawl4AIScraper.switchConfigTab('schedule')">Schedule</button>
+                <button class="tab-button" onclick="Crawl4AIScraper.switchConfigTab('presets')">Presets</button>
+            </div>
+
+            <!-- General Tab -->
+            <div id="general-tab" class="config-tab-content">
+                <h4>General Settings</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="configBaseUrl">Base URL:</label>
+                        <input type="text" id="configBaseUrl" class="form-control" value="https://example.com/">
+                    </div>
+                    <div class="form-group">
+                        <label for="configMaxItems">Max Items (empty = all):</label>
+                        <input type="number" id="configMaxItems" class="form-control" placeholder="Leave empty for all">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="configScrapeDepth">Scrape Depth:</label>
+                        <select id="configScrapeDepth" class="form-control">
+                            <option value="1">Level 1 - Single page only</option>
+                            <option value="2" selected>Level 2 - Pages + linked content</option>
+                            <option value="3">Level 3 - Deep crawl</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="includeMedia" checked>
+                        <span class="checkmark"></span>
+                        Include Media (images, videos)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="includeDocuments" checked>
+                        <span class="checkmark"></span>
+                        Include Documents (PDFs, files)
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="includeMetadata" checked>
+                        <span class="checkmark"></span>
+                        Include Metadata
+                    </label>
+                </div>
+            </div>
+
+            <!-- Advanced Tab -->
+            <div id="advanced-tab" class="config-tab-content" style="display: none;">
+                <h4>Advanced Settings</h4>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="configRequestDelay">Request Delay (ms):</label>
+                        <input type="number" id="configRequestDelay" class="form-control" value="1000" min="100" max="10000">
+                        <small>Time between requests to avoid overwhelming the server</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="configTimeout">Timeout (seconds):</label>
+                        <input type="number" id="configTimeout" class="form-control" value="30" min="10" max="300">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="configRetryAttempts">Retry Attempts:</label>
+                        <input type="number" id="configRetryAttempts" class="form-control" value="3" min="0" max="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="configUserAgent">Custom User Agent:</label>
+                        <input type="text" id="configUserAgent" class="form-control" placeholder="Leave empty for default">
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="enableJS" checked>
+                        <span class="checkmark"></span>
+                        Enable JavaScript Rendering
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="loadImages" checked>
+                        <span class="checkmark"></span>
+                        Load Images During Scraping
+                    </label>
+                </div>
+            </div>
+
+            <!-- Schedule Tab -->
+            <div id="schedule-tab" class="config-tab-content" style="display: none;">
+                <h4>Scheduling Options</h4>
+                <div class="schedule-options">
+                    <label class="radio-container">
+                        <input type="radio" name="scheduleType" value="manual" checked>
+                        <span class="radio-mark"></span>
+                        Manual (Run on demand)
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="scheduleType" value="daily">
+                        <span class="radio-mark"></span>
+                        Daily
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="scheduleType" value="weekly">
+                        <span class="radio-mark"></span>
+                        Weekly
+                    </label>
+                </div>
+                <div class="form-group" id="scheduleTimeGroup" style="display: none;">
+                    <label for="scheduleTime">Schedule Time:</label>
+                    <input type="time" id="scheduleTime" class="form-control" value="02:00">
+                </div>
+                <div class="form-group" id="scheduleDayGroup" style="display: none;">
+                    <label for="scheduleDay">Day of Week:</label>
+                    <select id="scheduleDay" class="form-control">
+                        <option value="1">Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thursday</option>
+                        <option value="5">Friday</option>
+                        <option value="6">Saturday</option>
+                        <option value="0">Sunday</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Presets Tab -->
+            <div id="presets-tab" class="config-tab-content" style="display: none;">
+                <h4>Configuration Presets</h4>
+                <div class="preset-buttons">
+                    <button class="btn btn-info" onclick="Crawl4AIScraper.loadPreset('quick')">
+                        <i class="fas fa-bolt"></i> Quick Scrape
+                        <small>100 items, no media</small>
+                    </button>
+                    <button class="btn btn-primary" onclick="Crawl4AIScraper.loadPreset('standard')">
+                        <i class="fas fa-cog"></i> Standard
+                        <small>1000 items, all content</small>
+                    </button>
+                    <button class="btn btn-success" onclick="Crawl4AIScraper.loadPreset('full')">
+                        <i class="fas fa-download"></i> Full Scrape
+                        <small>All items, all content</small>
+                    </button>
+                </div>
+                
+                <h5>Import/Export Configuration</h5>
+                <div class="import-export">
+                    <div class="form-group">
+                        <input type="file" id="importConfigFile" accept=".json" style="display: none;">
+                        <button class="btn btn-secondary" onclick="document.getElementById('importConfigFile').click()">
+                            <i class="fas fa-upload"></i> Import Config
+                        </button>
+                        <button class="btn btn-secondary" onclick="Crawl4AIScraper.exportConfig()">
+                            <i class="fas fa-download"></i> Export Config
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" onclick="Crawl4AIScraper.saveConfiguration()">Save Configuration</button>
+            <button class="btn btn-success" onclick="Crawl4AIScraper.applyConfigAndScrape()">Apply & Start Scraping</button>
+            <button class="btn btn-secondary" onclick="Crawl4AIScraper.closeConfigModal()">Cancel</button>
+        </div>
+    </div>
+</div>
