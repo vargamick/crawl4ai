@@ -1,367 +1,418 @@
-# Crawl4AI Scraper Frontend
+# 🕷️ Crawl4AI Scraper Frontend
 
-A modular, reusable frontend UI package for web scraping applications built for integration with the [Crawl4AI](https://github.com/unclecode/crawl4ai) project.
+Embeddable web scraper interface for Crawl4AI - easily integrate web scraping capabilities into any web application.
 
-## Features
+## ✨ Features
 
-- 🕷️ **Complete Scraper UI** - Ready-to-use web scraping interface
-- 🎛️ **Configurable Settings** - Advanced scraper configuration with presets
-- 📊 **Real-time Progress** - Live scraping progress monitoring
-- 🔍 **Results Browser** - Search, filter, and paginate through scraped data
-- 📈 **Statistics Dashboard** - Comprehensive scraping statistics
-- 🎨 **Modern UI** - Clean, responsive interface
-- 🔧 **Easy Integration** - Simple drop-in solution for existing projects
-- 📱 **Responsive Design** - Works on all device sizes
-- ⚡ **Fast & Lightweight** - Minimal dependencies, optimized performance
+- **🚀 Easy Integration**: Single script tag deployment
+- **🎨 Modern UI**: Responsive design with comprehensive scraping controls
+- **🔧 Configurable**: Extensive configuration options via UI or API
+- **🔒 Secure**: CSS scoping to prevent conflicts with host applications
+- **📱 Responsive**: Works on desktop, tablet, and mobile devices
+- **⚡ Performance**: Optimized bundling with webpack
+- **🌐 API Integration**: RESTful API communication with error handling
+- **📊 Real-time Updates**: Live status monitoring and progress tracking
 
-## Quick Start
+## 🚀 Quick Start
 
-### 1. Installation
+### 1. Basic Integration
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App with Crawl4AI</title>
+</head>
+<body>
+    <div id="scraper-container"></div>
+    
+    <!-- Load Crawl4AI Scraper -->
+    <script src="https://cdn.jsdelivr.net/npm/crawl4ai-scraper-frontend/dist/crawl4ai-scraper.min.js"></script>
+    <script>
+        Crawl4AIScraper.embed('#scraper-container', {
+            apiUrl: 'http://localhost:8000'
+        });
+    </script>
+</body>
+</html>
+```
+
+### 2. Advanced Integration
+
+```javascript
+// Create instance with custom configuration
+const scraper = await Crawl4AIScraper.embed('#my-container', {
+    apiUrl: 'https://my-api.example.com',
+    apiPrefix: '/api/v1/scraper',
+    theme: 'compact',
+    enableShadowDOM: true,
+    autoInit: true
+});
+
+// Listen for events
+scraper.addEventListener('scrapingStarted', (event) => {
+    console.log('Scraping started:', event.detail);
+});
+
+scraper.addEventListener('error', (event) => {
+    console.error('Scraper error:', event.detail);
+});
+
+// Configure programmatically
+scraper.configure({
+    maxItems: 500,
+    includeMedia: false,
+    autoRefreshInterval: 60000
+});
+```
+
+## 📦 Installation
+
+### Via CDN (Recommended)
+```html
+<script src="https://cdn.jsdelivr.net/npm/crawl4ai-scraper-frontend/dist/crawl4ai-scraper.min.js"></script>
+```
+
+### Via NPM
 ```bash
-# Clone or download the package
-git clone https://github.com/unclecode/crawl4ai
-cd crawl4ai/frontend-packages/crawl4ai-scraper-frontend
-
-# Or install via npm (when published)
 npm install crawl4ai-scraper-frontend
 ```
 
-### 2. Include in Your Project
-
-#### Option A: Use Built Files (Recommended)
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Scraper App</title>
-    <!-- Include CSS -->
-    <link rel="stylesheet" href="dist/crawl4ai-scraper.css">
-</head>
-<body>
-    <!-- Include the scraper UI component -->
-    <div id="scraper-container">
-        <!-- Scraper UI will be loaded here -->
-    </div>
-    
-    <!-- Include JavaScript -->
-    <script src="dist/crawl4ai-scraper.js"></script>
-    <script>
-        // Initialize the scraper
-        const scraperUI = new Crawl4AIScraper({
-            apiBaseUrl: 'http://localhost:8000',
-            apiPrefix: '/api/scraper'
-        });
-        
-        scraperUI.initialize();
-    </script>
-</body>
-</html>
-```
-
-#### Option B: Use Individual Components
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Scraper App</title>
-    <!-- Include your own styles -->
-    <link rel="stylesheet" href="src/css/scraper-ui.css">
-</head>
-<body>
-    <!-- Load scraper UI component -->
-    <div id="scraper-container"></div>
-    
-    <!-- Include individual JS modules -->
-    <script src="src/js/core/api-client.js"></script>
-    <script src="src/js/modules/scraper-ui.js"></script>
-    <script>
-        // Configure and initialize
-        const apiClient = new Crawl4AIApiClient({
-            baseUrl: 'http://localhost:8000',
-            apiPrefix: '/api/scraper'
-        });
-        
-        const scraperUI = new Crawl4AIScraperUI(apiClient);
-        scraperUI.initialize();
-    </script>
-</body>
-</html>
-```
-
-## API Integration
-
-Your backend API should implement these endpoints:
-
-### Required Endpoints
-
 ```javascript
-GET    /api/scraper/health         // Scraper health check
-POST   /api/scraper/trigger        // Start scraping job
-GET    /api/scraper/status         // Get current job status
-GET    /api/scraper/results        // Get scraped results
-GET    /api/scraper/stats          // Get scraping statistics
-GET    /api/scraper/categories     // Get result categories
-GET    /api/scraper/search         // Search results
+import Crawl4AIScraper from 'crawl4ai-scraper-frontend';
+
+Crawl4AIScraper.embed('#container', { apiUrl: 'http://localhost:8000' });
 ```
 
-### API Response Format
+### Local Build
+```bash
+git clone https://github.com/unclecode/crawl4ai.git
+cd crawl4ai/crawl4ai-scraper-frontend
+npm install
+npm run build
+```
 
-All endpoints should return JSON in this format:
+## 🎛️ Configuration Options
 
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `apiUrl` | string | `'http://localhost:8000'` | Base URL for Crawl4AI API |
+| `apiPrefix` | string | `'/api/scraper'` | API endpoint prefix |
+| `container` | string\|Element | - | Container selector or element |
+| `theme` | string | `'default'` | UI theme (`'default'`, `'compact'`) |
+| `enableShadowDOM` | boolean | `false` | Use Shadow DOM for isolation |
+| `cssPrefix` | string | `'c4ai-'` | CSS class prefix for scoping |
+| `autoInit` | boolean | `true` | Auto-initialize after embedding |
+| `autoRefresh` | boolean | `true` | Enable automatic status refresh |
+| `refreshInterval` | number | `30000` | Auto-refresh interval (ms) |
+| `resultsPerPage` | number | `10` | Results per page in browser |
+
+### API Configuration
 ```javascript
 {
-  "success": true,
-  "data": { /* endpoint-specific data */ },
-  "error": null,           // Error message if success is false
-  "timestamp": "2023-01-01T00:00:00Z"
-}
-```
-
-### Example API Responses
-
-#### Health Check
-```javascript
-GET /api/scraper/health
-{
-  "success": true,
-  "data": {
-    "status": "healthy",    // "healthy", "degraded", "error"
-    "message": "All systems operational"
-  }
-}
-```
-
-#### Trigger Scraping
-```javascript
-POST /api/scraper/trigger
-{
-  "max_items": 100,
-  "include_media": true,
-  "include_documents": true,
-  "base_url": "https://example.com"
-}
-
-Response:
-{
-  "success": true,
-  "data": {
-    "job_id": "job_123",
-    "status": "started",
-    "message": "Scraping job started successfully"
-  }
-}
-```
-
-#### Get Results
-```javascript
-GET /api/scraper/results?page=1&limit=20&search=keyword&category=news
-{
-  "success": true,
-  "data": [
-    {
-      "id": "result_1",
-      "title": "Example Page",
-      "description": "Page description",
-      "url": "https://example.com/page1",
-      "scraped_at": "2023-01-01T00:00:00Z",
-      "content": "Page content...",
-      "metadata": { /* additional data */ }
-    }
-  ]
-}
-```
-
-## Configuration
-
-### API Client Configuration
-
-```javascript
-const apiClient = new Crawl4AIApiClient({
-    baseUrl: 'http://localhost:8000',
+    apiUrl: 'https://api.example.com',
     apiPrefix: '/api/scraper',
     headers: {
         'Authorization': 'Bearer your-token',
-        'Custom-Header': 'value'
-    },
-    endpoints: {
-        health: '/custom/health',
-        trigger: '/custom/start',
-        // ... override any endpoint
+        'X-API-Key': 'your-api-key'
     }
-});
+}
 ```
 
 ### UI Configuration
-
 ```javascript
-const scraperUI = new Crawl4AIScraperUI(apiClient, {
-    resultsPerPage: 20,
-    autoRefresh: true,
-    refreshInterval: 30000,  // 30 seconds
-    enableProgress: true
+{
+    theme: 'compact',
+    enableShadowDOM: true,
+    cssPrefix: 'my-scraper-',
+    autoRefresh: false,
+    resultsPerPage: 20
+}
+```
+
+## 📡 API Integration
+
+The frontend expects a REST API with these endpoints:
+
+### Health Check
+```
+GET /api/scraper/health
+Response: { status: 'healthy', message: 'OK' }
+```
+
+### Trigger Scraping
+```
+POST /api/scraper/trigger
+Body: { max_items: 100, include_media: true }
+Response: { success: true, job_id: 'abc123' }
+```
+
+### Get Status
+```
+GET /api/scraper/status
+Response: { 
+    current_job: { job_id: 'abc123', status: 'running' },
+    last_successful_scrape: { completed_at: '2024-01-01T00:00:00Z' }
+}
+```
+
+### Get Results
+```
+GET /api/scraper/results?page=1&limit=10&search=query
+Response: { 
+    results: [...],
+    total: 100,
+    page: 1
+}
+```
+
+### Get Categories
+```
+GET /api/scraper/categories
+Response: ['category1', 'category2', ...]
+```
+
+### Get Statistics
+```
+GET /api/scraper/stats
+Response: { 
+    total_results: 1500,
+    total_categories: 25,
+    successful_jobs: 42
+}
+```
+
+## 🎨 UI Components
+
+### Main Interface
+- **Status Monitoring**: Real-time scraper health and job status
+- **Quick Actions**: Start quick or full scraping jobs
+- **Results Browser**: Browse and search scraped results
+- **Configuration**: Comprehensive settings modal
+
+### Features
+- **Pagination**: Navigate through large result sets
+- **Search & Filter**: Find specific results by keywords or categories
+- **Statistics**: View scraping performance metrics
+- **Progress Tracking**: Real-time job progress (when supported by API)
+
+## 🔧 Development
+
+### Project Structure
+```
+crawl4ai-scraper-frontend/
+├── src/
+│   ├── js/
+│   │   ├── embed.js          # Main embeddable entry point
+│   │   ├── index.js          # Legacy entry point
+│   │   ├── core/
+│   │   │   └── api-client.js # API communication
+│   │   └── modules/
+│   │       └── scraper-ui.js # UI components
+│   ├── css/
+│   │   └── scraper-ui.css    # Styles
+│   └── components/
+│       ├── scraper-ui.html   # Main UI template
+│       └── config-modal.html # Configuration modal
+├── examples/                 # Usage examples
+├── dist/                     # Built files
+└── docs/                     # Documentation
+```
+
+### Build Commands
+```bash
+npm run build          # Build both dev and production versions
+npm run build:dev      # Development build with source maps
+npm run build:prod     # Production build (minified)
+npm run watch          # Watch mode for development
+npm run serve          # Start local development server
+npm run serve:examples # Serve examples on port 8080
+```
+
+### Build Output
+- `dist/crawl4ai-scraper.js` - Development version with source maps
+- `dist/crawl4ai-scraper.min.js` - Production version (minified)
+- `dist/crawl4ai-scraper.css` - Standalone CSS (legacy)
+
+## 📚 Examples
+
+### Basic Embed
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Crawl4AI Integration</title>
+</head>
+<body>
+    <div id="scraper-container"></div>
+    <script src="dist/crawl4ai-scraper.min.js"></script>
+    <script>
+        Crawl4AIScraper.embed('#scraper-container', {
+            apiUrl: 'http://localhost:8000'
+        });
+    </script>
+</body>
+</html>
+```
+
+### Multiple Instances
+```javascript
+// Standard instance
+const scraper1 = Crawl4AIScraper.embed('#container-1', {
+    apiUrl: 'http://localhost:8000',
+    enableShadowDOM: false
+});
+
+// Shadow DOM instance  
+const scraper2 = Crawl4AIScraper.embed('#container-2', {
+    apiUrl: 'http://localhost:8000',
+    enableShadowDOM: true,
+    cssPrefix: 'scraper2-'
 });
 ```
 
-## Components
+### Event Handling
+```javascript
+const scraper = await Crawl4AIScraper.embed('#container', config);
 
-### 1. Scraper UI Component (`scraper-ui.html`)
+// Listen for initialization
+scraper.addEventListener('initialized', (event) => {
+    console.log('Scraper ready:', event.detail.instance);
+});
 
-Main interface with:
-- Health status indicator
-- Quick action buttons (Quick/Full scrape)
-- Real-time progress display
-- Results browser with search and pagination
+// Listen for errors
+scraper.addEventListener('error', (event) => {
+    console.error('Error:', event.detail.error);
+});
 
-### 2. Configuration Modal (`config-modal.html`)
+// Listen for scraping events
+scraper.addEventListener('scrapingStarted', (event) => {
+    console.log('Scraping started with config:', event.detail.config);
+});
 
-Advanced configuration interface:
-- General settings (URL, limits, depth)
-- Advanced options (delays, timeouts, retries)
-- Scheduling options
-- Preset configurations
-- Import/export functionality
+scraper.addEventListener('statsDisplayed', (event) => {
+    console.log('Stats:', event.detail.stats);
+});
+```
 
-### 3. API Client (`api-client.js`)
-
-Centralized API communication:
-- RESTful API wrapper
-- Error handling
-- Configurable endpoints
-- Request/response formatting
-
-### 4. UI Controller (`scraper-ui.js`)
-
-UI logic and interactions:
-- Status monitoring
-- Result display and pagination
-- Search and filtering
-- Progress tracking
-
-## Styling
-
-The package includes default CSS, but you can customize the appearance:
-
+### Custom Styling
 ```css
 /* Override default styles */
-.crawl4ai-scraper-panel {
-    border: 1px solid #your-color;
-    border-radius: 8px;
+[data-c4ai-instance] .crawl4ai-scraper-panel {
+    border: 2px solid #your-color;
+    border-radius: 12px;
 }
 
-.btn-primary {
+[data-c4ai-instance] .btn-primary {
     background-color: #your-primary-color;
 }
-
-/* Customize result items */
-.result-item {
-    padding: 20px;
-    margin: 10px 0;
-}
 ```
 
-## Advanced Usage
+## 🔒 Security Considerations
 
-### Custom Result Display
+### CSS Scoping
+The frontend automatically scopes CSS using unique instance IDs to prevent conflicts:
 
+```css
+/* Generated scoped CSS */
+[data-c4ai-instance="c4ai-abc123"] .crawl4ai-scraper-panel { ... }
+```
+
+### Shadow DOM
+Enable Shadow DOM for complete isolation:
 ```javascript
-class MyScraperUI extends Crawl4AIScraperUI {
-    displayResults(results) {
-        // Custom result rendering logic
-        const resultsList = document.getElementById('resultsList');
-        
-        const customHTML = results.map(result => `
-            <div class="my-custom-result">
-                <h3>${result.title}</h3>
-                <p>${result.description}</p>
-                <div class="my-metadata">
-                    <!-- Custom metadata display -->
-                </div>
-            </div>
-        `).join('');
-        
-        resultsList.innerHTML = customHTML;
-    }
-    
-    viewResultDetails(resultId) {
-        // Custom detail view logic
-        this.showCustomModal(resultId);
+Crawl4AIScraper.embed('#container', {
+    enableShadowDOM: true  // Complete CSS and JS isolation
+});
+```
+
+### API Security
+Configure authentication headers:
+```javascript
+{
+    apiUrl: 'https://secure-api.example.com',
+    headers: {
+        'Authorization': 'Bearer ' + getAuthToken(),
+        'X-API-Key': 'your-api-key'
     }
 }
 ```
 
-### Integration with Crawl4AI
+## 🐛 Troubleshooting
 
-```python
-# Example Flask/FastAPI backend integration
-from crawl4ai import WebCrawler
+### Common Issues
 
-@app.post('/api/scraper/trigger')
-async def trigger_scraping(config: dict):
-    crawler = WebCrawler()
-    
-    # Configure crawler based on frontend config
-    await crawler.astart()
-    
-    results = await crawler.arun(
-        url=config['base_url'],
-        # Map frontend config to crawl4ai parameters
-    )
-    
-    await crawler.aclose()
-    
-    return {
-        'success': True,
-        'data': {
-            'job_id': generate_job_id(),
-            'status': 'completed',
-            'results': process_results(results)
-        }
-    }
+**1. Container not found**
+```
+Error: Container not found: #my-container
+```
+- Ensure the container element exists in DOM before calling `embed()`
+- Use `document.addEventListener('DOMContentLoaded', ...)` if needed
+
+**2. API connection failed**
+```
+Error: Failed to connect to scraper service
+```
+- Verify `apiUrl` is correct and accessible
+- Check CORS configuration on your API server
+- Verify API endpoints match expected format
+
+**3. Styles not loading**
+```
+No styles applied to components
+```
+- Ensure build process completed successfully
+- Check browser console for CSS loading errors
+- Verify CSS scoping is working (inspect elements)
+
+**4. Multiple instances conflicting**
+```
+Global method conflicts between instances
+```
+- Use unique `cssPrefix` for each instance
+- Consider enabling `enableShadowDOM: true`
+- Avoid global variable conflicts
+
+### Debug Mode
+Enable debugging:
+```javascript
+Crawl4AIScraper.embed('#container', {
+    debug: true,  // Enable console logging
+    apiUrl: 'http://localhost:8000'
+});
 ```
 
-## Examples
-
-Check the `examples/` directory for complete integration examples:
-
-- `examples/basic/` - Simple integration
-- `examples/advanced/` - Custom styling and functionality  
-- `examples/flask-backend/` - Complete Flask backend
-- `examples/fastapi-backend/` - FastAPI integration
-
-## Browser Support
-
-- Chrome 60+
-- Firefox 60+
-- Safari 12+
-- Edge 79+
-
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
 3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+4. Run tests: `npm test`
+5. Build and verify: `npm run build`
+6. Commit changes: `git commit -m 'Add amazing feature'`
+7. Push to branch: `git push origin feature/amazing-feature`
+8. Submit a Pull Request
 
-## License
+### Development Setup
+```bash
+git clone https://github.com/unclecode/crawl4ai.git
+cd crawl4ai/crawl4ai-scraper-frontend
+npm install
+npm run watch    # Start development with auto-rebuild
+npm run serve:examples  # Test with examples
+```
 
-MIT License - see LICENSE file for details
+## 📄 License
 
-## Support
+MIT License - see the [LICENSE](LICENSE) file for details.
 
-- GitHub Issues: [Report bugs or request features](https://github.com/unclecode/crawl4ai/issues)
-- Documentation: [Full documentation](https://crawl4ai.readthedocs.io/)
-- Community: [Join discussions](https://github.com/unclecode/crawl4ai/discussions)
+## 🔗 Links
 
-## Changelog
+- **Main Project**: [Crawl4AI](https://github.com/unclecode/crawl4ai)
+- **Documentation**: [Crawl4AI Docs](https://docs.crawl4ai.com)
+- **Issues**: [GitHub Issues](https://github.com/unclecode/crawl4ai/issues)
+- **NPM Package**: [crawl4ai-scraper-frontend](https://www.npmjs.com/package/crawl4ai-scraper-frontend)
 
-### Version 1.0.0
-- Initial release
-- Complete scraper UI interface
-- Configuration management
-- Real-time progress tracking
-- Results browser with search/filter
-- API client with flexible configuration
-- Responsive design
-- Documentation and examples
+---
+
+Made with ❤️ by the Crawl4AI team

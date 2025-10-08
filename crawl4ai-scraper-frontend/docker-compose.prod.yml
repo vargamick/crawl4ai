@@ -1,0 +1,202 @@
+# Crawl4AI Frontend System - Production Docker Compose Configuration
+version: '3.8'
+
+services:
+  # Reverse Proxy and Load Balancer
+  traefik:
+    image: traefik:v3.0
+    command:
+      - "--api.dashboard=true"
+      - "--api.insecure=false"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge=true"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.letsencrypt.acme.email=${ACME_EMAIL}"
+      - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
+      - "--log.level=${TRAEFIK_LOG_LEVEL:-INFO}"
+      - "--accesslog=true"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"  # Traefik dashboard
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "letsencrypt:/letsencrypt"
+    networks:
+      - crawl4ai-network
+      - traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.${DOMAIN}`)"
+      - "traefik.http.routers.traefik.tls.certresolver=letsencrypt"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+
+  # Frontend service - Production optimized Nginx
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      target: production
+    expose:
+      - "80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+      - ./examples:/usr/share/nginx/html/examples:ro
+      - ./docker/nginx.prod.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/security-headers.conf:/etc/nginx/conf.d/security-headers.conf:ro
+    environment:
+      - API_BASE_URL=https://api.${DOMAIN}
+      - ENVIRONMENT=production
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx:size=100M
+      - /var/run:size=10M
+      - /tmp:size=100M
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.frontend.tls.certresolver=letsencrypt"
+      - "traefik.http.services.frontend.loadbalancer.server.port=80"
+      - "traefik.http.middlewares.security-headers.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.middlewares.security-headers.headers.sslredirect=true"
+      - "traefik.http.routers.frontend.middlewares=security-headers"
+
+  # API service - Production FastAPI with Crawl4AI
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+      target: production
+      args:
+        - CRAWL4AI_VERSION=${CRAWL4AI_VERSION:-latest}
+    expose:
+      - "8000"
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - CORS_ORIGINS=https://${DOMAIN}
+      - LOG_LEVEL=${LOG_LEVEL:-warning}
+      - MAX_WORKERS=${MAX_WORKERS:-2}
+      - CRAWLER_VERBOSE=false
+      - CACHE_DIR=/app/cache
+      - TEMP_DIR=/app/temp
+      - RATE_LIMIT=${RATE_LIMIT:-60}
+      - MAX_CONCURRENT_JOBS=${MAX_CONCURRENT_JOBS:-3}
+      - REQUEST_TIMEOUT=${REQUEST_TIMEOUT:-300}
+      - ENVIRONMENT=production
+    volumes:
+      - crawl4ai-cache:/app/cache
+      - crawl4ai-temp:/app/temp
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:size=100M
+    deploy:
+      resources:
+        limits:
+          cpus: '${API_CPU_LIMIT:-2.0}'
+          memory: ${API_MEMORY_LIMIT:-2G}
+        reservations:
+          cpus: '${API_CPU_RESERVATION:-0.5}'
+          memory: ${API_MEMORY_RESERVATION:-512M}
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`api.${DOMAIN}`)"
+      - "traefik.http.routers.api.tls.certresolver=letsencrypt"
+      - "traefik.http.services.api.loadbalancer.server.port=8000"
+      - "traefik.http.middlewares.api-auth.basicauth.users=${API_BASIC_AUTH_USERS}"
+      - "traefik.http.middlewares.api-ratelimit.ratelimit.average=30"
+      - "traefik.http.middlewares.api-ratelimit.ratelimit.burst=50"
+      - "traefik.http.routers.api.middlewares=api-ratelimit"
+
+  # Monitoring service (optional)
+  prometheus:
+    image: prom/prometheus:latest
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    ports:
+      - "${PROMETHEUS_PORT:-9090}:9090"
+    volumes:
+      - ./docker/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.prometheus.rule=Host(`prometheus.${DOMAIN}`)"
+      - "traefik.http.routers.prometheus.tls.certresolver=letsencrypt"
+
+  # Log aggregation service (optional)
+  loki:
+    image: grafana/loki:2.9.0
+    ports:
+      - "${LOKI_PORT:-3100}:3100"
+    volumes:
+      - ./docker/loki.yml:/etc/loki/local-config.yaml:ro
+      - loki_data:/loki
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+networks:
+  crawl4ai-network:
+    driver: bridge
+    name: crawl4ai-network-prod
+  traefik:
+    external: true
+
+volumes:
+  crawl4ai-cache:
+    name: crawl4ai-cache-prod
+    driver: local
+  crawl4ai-temp:
+    name: crawl4ai-temp-prod
+    driver: local
+  letsencrypt:
+    name: letsencrypt-prod
+  prometheus_data:
+    name: prometheus-data-prod
+  loki_data:
+    name: loki-data-prod

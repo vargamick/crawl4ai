@@ -2,12 +2,21 @@
   "name": "crawl4ai-scraper-frontend",
   "version": "1.0.0",
   "description": "Frontend UI components for web scraping with crawl4ai integration",
-  "main": "src/js/index.js",
+  "main": "dist/crawl4ai-scraper.js",
+  "module": "src/js/embed.js",
+  "unpkg": "dist/crawl4ai-scraper.min.js",
   "scripts": {
-    "build": "npm run build:css && npm run build:js",
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "NODE_ENV=development webpack --mode development",
+    "build:prod": "NODE_ENV=production webpack --mode production",
+    "build:legacy": "npm run build:css && npm run build:js:legacy",
     "build:css": "cat src/css/*.css > dist/crawl4ai-scraper.css",
-    "build:js": "cat src/js/core/*.js src/js/modules/*.js > dist/crawl4ai-scraper.js",
+    "build:js:legacy": "cat src/js/core/*.js src/js/modules/*.js > dist/crawl4ai-scraper-legacy.js",
+    "watch": "webpack --mode development --watch",
     "serve": "python -m http.server 8000",
+    "serve:examples": "cd examples && python -m http.server 8080",
+    "clean": "rm -rf dist/*",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,7 +24,8 @@
     "web-scraping",
     "frontend",
     "ui-components",
-    "agar",
+    "embeddable",
+    "widget",
     "scraper"
   ],
   "author": "Ask Agar Team",
@@ -29,11 +39,20 @@
   },
   "homepage": "https://github.com/unclecode/crawl4ai#readme",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "html-loader": "^4.2.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0"
+  },
   "files": [
     "src/",
     "dist/",
     "docs/",
+    "examples/",
     "README.md",
     "LICENSE"
   ],

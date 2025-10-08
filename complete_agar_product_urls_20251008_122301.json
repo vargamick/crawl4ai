@@ -1,0 +1,772 @@
+{
+  "metadata": {
+    "timestamp": "20251008_122301",
+    "discovery_date": "2025-10-08T12:23:01.501929",
+    "total_categories_processed": 57,
+    "total_unique_product_urls": 189,
+    "total_failed_urls": 27,
+    "success_rate": "87.5%"
+  },
+  "all_product_urls": [
+    "https://agar.com.au/product/3d-gloss/",
+    "https://agar.com.au/product/acid-wash/",
+    "https://agar.com.au/product/active-break/",
+    "https://agar.com.au/product/all-fresh/",
+    "https://agar.com.au/product/amazon-g5/",
+    "https://agar.com.au/product/ambergold/",
+    "https://agar.com.au/product/ammodet/",
+    "https://agar.com.au/product/amsolve/",
+    "https://agar.com.au/product/anti-static-carpet-spray/",
+    "https://agar.com.au/product/antifoam/",
+    "https://agar.com.au/product/as-60/",
+    "https://agar.com.au/product/autobrite/",
+    "https://agar.com.au/product/autodish-sp/",
+    "https://agar.com.au/product/autodish/",
+    "https://agar.com.au/product/autoscrub/",
+    "https://agar.com.au/product/bac2work/",
+    "https://agar.com.au/product/bellevue/",
+    "https://agar.com.au/product/bleach/",
+    "https://agar.com.au/product/blue-active/",
+    "https://agar.com.au/product/bonnet-cleaner/",
+    "https://agar.com.au/product/bowl-clean/",
+    "https://agar.com.au/product/breeze/",
+    "https://agar.com.au/product/browning-treatment/",
+    "https://agar.com.au/product/cap-it-off/",
+    "https://agar.com.au/product/carpet-shampoo/",
+    "https://agar.com.au/product/carpet-spotter-b/",
+    "https://agar.com.au/product/cd-13/",
+    "https://agar.com.au/product/chloradet/",
+    "https://agar.com.au/product/citra-mist/",
+    "https://agar.com.au/product/citrastar/",
+    "https://agar.com.au/product/citrus-extra/",
+    "https://agar.com.au/product/cleansave-1/",
+    "https://agar.com.au/product/cleansave-2/",
+    "https://agar.com.au/product/cleansave-3l/",
+    "https://agar.com.au/product/cleansave-4s/",
+    "https://agar.com.au/product/cleansave-4t/",
+    "https://agar.com.au/product/cleansave-5/",
+    "https://agar.com.au/product/cleansave-7/",
+    "https://agar.com.au/product/cm-x/",
+    "https://agar.com.au/product/coffee-machine-cleaner/",
+    "https://agar.com.au/product/coffee-stain-remover-a-b/",
+    "https://agar.com.au/product/cold-king/",
+    "https://agar.com.au/product/combi-oven-cleaner/",
+    "https://agar.com.au/product/concrete-cleaner-cr-60/",
+    "https://agar.com.au/product/cool-tide/",
+    "https://agar.com.au/product/counterflu-rtu/",
+    "https://agar.com.au/product/counterflu/",
+    "https://agar.com.au/product/country-garden/",
+    "https://agar.com.au/product/cure/",
+    "https://agar.com.au/product/demolish/",
+    "https://agar.com.au/product/dirt-off/",
+    "https://agar.com.au/product/dish-kleena/",
+    "https://agar.com.au/product/dish-power/",
+    "https://agar.com.au/product/dishwash-gold/",
+    "https://agar.com.au/product/dlx/",
+    "https://agar.com.au/product/double-bubble/",
+    "https://agar.com.au/product/drain-solution/",
+    "https://agar.com.au/product/drive-away/",
+    "https://agar.com.au/product/duro/",
+    "https://agar.com.au/product/enyclean/",
+    "https://agar.com.au/product/escalator-cleaner/",
+    "https://agar.com.au/product/everfresh/",
+    "https://agar.com.au/product/exit/",
+    "https://agar.com.au/product/fabric-softener/",
+    "https://agar.com.au/product/fast-glass/",
+    "https://agar.com.au/product/first-base/",
+    "https://agar.com.au/product/flair/",
+    "https://agar.com.au/product/flash-dry/",
+    "https://agar.com.au/product/floral/",
+    "https://agar.com.au/product/florprep/",
+    "https://agar.com.au/product/foam-up/",
+    "https://agar.com.au/product/foaming-hand-wash/",
+    "https://agar.com.au/product/fresco/",
+    "https://agar.com.au/product/fresh-mop/",
+    "https://agar.com.au/product/freshaire/",
+    "https://agar.com.au/product/fruitnveg-sanitiser/",
+    "https://agar.com.au/product/g-solve/",
+    "https://agar.com.au/product/galley-2/",
+    "https://agar.com.au/product/garland/",
+    "https://agar.com.au/product/glass-wash/",
+    "https://agar.com.au/product/grab/",
+    "https://agar.com.au/product/graffiti-remover/",
+    "https://agar.com.au/product/graffiti-wipe-off/",
+    "https://agar.com.au/product/green-n-gold/",
+    "https://agar.com.au/product/grill-clean/",
+    "https://agar.com.au/product/handpass/",
+    "https://agar.com.au/product/hc-90/",
+    "https://agar.com.au/product/hf-detergent/",
+    "https://agar.com.au/product/hf-low-foam/",
+    "https://agar.com.au/product/hook-clean/",
+    "https://agar.com.au/product/hygieniclean/",
+    "https://agar.com.au/product/hyperax-5/",
+    "https://agar.com.au/product/isopropyl-alcohol/",
+    "https://agar.com.au/product/jackpot/",
+    "https://agar.com.au/product/jetsol/",
+    "https://agar.com.au/product/kooka-kleena/",
+    "https://agar.com.au/product/kuranda",
+    "https://agar.com.au/product/kuranda/",
+    "https://agar.com.au/product/laundry-break/",
+    "https://agar.com.au/product/laundry-brightener/",
+    "https://agar.com.au/product/laundry-detergent/",
+    "https://agar.com.au/product/laundry-emulsifier/",
+    "https://agar.com.au/product/laundry-sour/",
+    "https://agar.com.au/product/lavender/",
+    "https://agar.com.au/product/lcd-60/",
+    "https://agar.com.au/product/leather-care/",
+    "https://agar.com.au/product/lemon/",
+    "https://agar.com.au/product/lift/",
+    "https://agar.com.au/product/lollyshop/",
+    "https://agar.com.au/product/magic/",
+    "https://agar.com.au/product/matte-finish-sealer/",
+    "https://agar.com.au/product/mechanix/",
+    "https://agar.com.au/product/methylated-spirit/",
+    "https://agar.com.au/product/microsan/",
+    "https://agar.com.au/product/mop-n-dry/",
+    "https://agar.com.au/product/mould-x/",
+    "https://agar.com.au/product/neutraliser/",
+    "https://agar.com.au/product/novadet/",
+    "https://agar.com.au/product/nu-glo/",
+    "https://agar.com.au/product/ocean-air/",
+    "https://agar.com.au/product/oil-stain-remover/",
+    "https://agar.com.au/product/once-off/",
+    "https://agar.com.au/product/orchids/",
+    "https://agar.com.au/product/oven-clean/",
+    "https://agar.com.au/product/ph-7/",
+    "https://agar.com.au/product/portacare-super/",
+    "https://agar.com.au/product/portacare/",
+    "https://agar.com.au/product/potwash/",
+    "https://agar.com.au/product/powerdet-eco/",
+    "https://agar.com.au/product/powerquat/",
+    "https://agar.com.au/product/presoak-powder/",
+    "https://agar.com.au/product/presto/",
+    "https://agar.com.au/product/protector/",
+    "https://agar.com.au/product/q-foam/",
+    "https://agar.com.au/product/react/",
+    "https://agar.com.au/product/ready-2-go/",
+    "https://agar.com.au/product/renegade/",
+    "https://agar.com.au/product/rf-12/",
+    "https://agar.com.au/product/rinse-aid/",
+    "https://agar.com.au/product/ritzy/",
+    "https://agar.com.au/product/royal-wave/",
+    "https://agar.com.au/product/rustex/",
+    "https://agar.com.au/product/safety-bleach/",
+    "https://agar.com.au/product/scrub-n-shine/",
+    "https://agar.com.au/product/sd-37/",
+    "https://agar.com.au/product/sequal/",
+    "https://agar.com.au/product/shifter/",
+    "https://agar.com.au/product/shinywash/",
+    "https://agar.com.au/product/shower-star/",
+    "https://agar.com.au/product/silvan/",
+    "https://agar.com.au/product/single-step/",
+    "https://agar.com.au/product/sizzle/",
+    "https://agar.com.au/product/sodium-hypochlorite/",
+    "https://agar.com.au/product/softie/",
+    "https://agar.com.au/product/solspray/",
+    "https://agar.com.au/product/sour-softener/",
+    "https://agar.com.au/product/spa-clean/",
+    "https://agar.com.au/product/speed/",
+    "https://agar.com.au/product/splendour/",
+    "https://agar.com.au/product/spot-wiz/",
+    "https://agar.com.au/product/spraybuff-c/",
+    "https://agar.com.au/product/spruce/",
+    "https://agar.com.au/product/stainless-steel-oil/",
+    "https://agar.com.au/product/steel-shine/",
+    "https://agar.com.au/product/stone-block/",
+    "https://agar.com.au/product/str-36/",
+    "https://agar.com.au/product/summer-citrus/",
+    "https://agar.com.au/product/super-deo/",
+    "https://agar.com.au/product/super-nova/",
+    "https://agar.com.au/product/superforce/",
+    "https://agar.com.au/product/sweet-talc/",
+    "https://agar.com.au/product/sympol/",
+    "https://agar.com.au/product/tango/",
+    "https://agar.com.au/product/tannex/",
+    "https://agar.com.au/product/taurus/",
+    "https://agar.com.au/product/tools-down/",
+    "https://agar.com.au/product/truck-wash/",
+    "https://agar.com.au/product/tuff-gloss/",
+    "https://agar.com.au/product/u-remove/",
+    "https://agar.com.au/product/ultrastrip/",
+    "https://agar.com.au/product/vantage/",
+    "https://agar.com.au/product/venue/",
+    "https://agar.com.au/product/virattack/",
+    "https://agar.com.au/product/vischlor/",
+    "https://agar.com.au/product/wheelie-bin-cleaner/",
+    "https://agar.com.au/product/wildflower/",
+    "https://agar.com.au/product/wipe-away/",
+    "https://agar.com.au/product/wool-wash/",
+    "https://agar.com.au/product/your-pb/"
+  ],
+  "urls_by_category": {
+    "specialty-cleaning/concrete-cleaners-removers": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/cm-x/",
+        "https://agar.com.au/product/concrete-cleaner-cr-60/",
+        "https://agar.com.au/product/drive-away/",
+        "https://agar.com.au/product/oil-stain-remover/"
+      ]
+    },
+    "spray-wipe-cleaners": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/citra-mist/",
+        "https://agar.com.au/product/jetsol/",
+        "https://agar.com.au/product/solspray/",
+        "https://agar.com.au/product/wipe-away/"
+      ]
+    },
+    "furniture-polish": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/splendour/"
+      ]
+    },
+    "floor-care/cutting-back": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/florprep/"
+      ]
+    },
+    "specialty-cleaning/vehicle-cleaning": {
+      "url_count": 7,
+      "urls": [
+        "https://agar.com.au/product/dirt-off/",
+        "https://agar.com.au/product/jackpot/",
+        "https://agar.com.au/product/nu-glo/",
+        "https://agar.com.au/product/portacare/",
+        "https://agar.com.au/product/portacare-super/",
+        "https://agar.com.au/product/react/",
+        "https://agar.com.au/product/truck-wash/"
+      ]
+    },
+    "laundry-products/machine-washing": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/blue-active/",
+        "https://agar.com.au/product/flair/",
+        "https://agar.com.au/product/taurus/"
+      ]
+    },
+    "carpet-cleaners/carpet-spotters-and-stain-removers": {
+      "url_count": 9,
+      "urls": [
+        "https://agar.com.au/product/amsolve/",
+        "https://agar.com.au/product/carpet-spotter-b/",
+        "https://agar.com.au/product/coffee-stain-remover-a-b/",
+        "https://agar.com.au/product/cure/",
+        "https://agar.com.au/product/g-solve/",
+        "https://agar.com.au/product/rustex/",
+        "https://agar.com.au/product/spot-wiz/",
+        "https://agar.com.au/product/tannex/",
+        "https://agar.com.au/product/u-remove/"
+      ]
+    },
+    "carpet-cleaners/other-carpet-cleaning-methods": {
+      "url_count": 0,
+      "urls": []
+    },
+    "laundry-products/special-treatment": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/fabric-softener/",
+        "https://agar.com.au/product/wool-wash/"
+      ]
+    },
+    "heavy-duty-detergents": {
+      "url_count": 13,
+      "urls": [
+        "https://agar.com.au/product/ammodet/",
+        "https://agar.com.au/product/dirt-off/",
+        "https://agar.com.au/product/enyclean/",
+        "https://agar.com.au/product/hf-detergent/",
+        "https://agar.com.au/product/jackpot/",
+        "https://agar.com.au/product/hf-low-foam/",
+        "https://agar.com.au/product/presto/",
+        "https://agar.com.au/product/react/",
+        "https://agar.com.au/product/renegade/",
+        "https://agar.com.au/product/shifter/",
+        "https://agar.com.au/product/speed/",
+        "https://agar.com.au/product/vantage/",
+        "https://agar.com.au/product/wheelie-bin-cleaner/"
+      ]
+    },
+    "floor-care/floor-sealers-and-strippers/specialised-sealers": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/matte-finish-sealer/",
+        "https://agar.com.au/product/stone-block/"
+      ]
+    },
+    "personal-care/foam-hand-soap": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/double-bubble/",
+        "https://agar.com.au/product/foaming-hand-wash/",
+        "https://agar.com.au/product/handpass/"
+      ]
+    },
+    "hot-products": {
+      "url_count": 22,
+      "urls": [
+        "https://agar.com.au/product/bowl-clean/",
+        "https://agar.com.au/product/breeze/",
+        "https://agar.com.au/product/chloradet/",
+        "https://agar.com.au/product/dirt-off/",
+        "https://agar.com.au/product/exit/",
+        "https://agar.com.au/product/flash-dry/",
+        "https://agar.com.au/product/floral/",
+        "https://agar.com.au/product/fresco/",
+        "https://agar.com.au/product/fresh-mop/",
+        "https://agar.com.au/product/handpass/",
+        "https://agar.com.au/product/lavender/",
+        "https://agar.com.au/product/lemon/",
+        "https://agar.com.au/product/lollyshop/",
+        "https://agar.com.au/product/mould-x/",
+        "https://agar.com.au/product/ocean-air/",
+        "https://agar.com.au/product/once-off/",
+        "https://agar.com.au/product/ph-7/",
+        "https://agar.com.au/product/ready-2-go/",
+        "https://agar.com.au/product/sweet-talc/",
+        "https://agar.com.au/product/tango/",
+        "https://agar.com.au/product/wipe-away/",
+        "https://agar.com.au/product/your-pb/"
+      ]
+    },
+    "carpet-cleaners/carpet-cleaners-treatments": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/anti-static-carpet-spray/",
+        "https://agar.com.au/product/browning-treatment/",
+        "https://agar.com.au/product/everfresh/",
+        "https://agar.com.au/product/protector/"
+      ]
+    },
+    "specialty-cleaning/metal-products": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/acid-wash/"
+      ]
+    },
+    "floor-care/floor-strippers": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/demolish/",
+        "https://agar.com.au/product/str-36/",
+        "https://agar.com.au/product/ultrastrip/"
+      ]
+    },
+    "new-products": {
+      "url_count": 0,
+      "urls": []
+    },
+    "cleansave-concentrated-chemicals": {
+      "url_count": 8,
+      "urls": [
+        "https://agar.com.au/product/cleansave-1/",
+        "https://agar.com.au/product/cleansave-2/",
+        "https://agar.com.au/product/kuranda",
+        "https://agar.com.au/product/cleansave-3l/",
+        "https://agar.com.au/product/cleansave-4t/",
+        "https://agar.com.au/product/cleansave-4s/",
+        "https://agar.com.au/product/cleansave-5/",
+        "https://agar.com.au/product/cleansave-7/"
+      ]
+    },
+    "kitchen-care/ware-washing": {
+      "url_count": 13,
+      "urls": [
+        "https://agar.com.au/product/acid-wash/",
+        "https://agar.com.au/product/autodish/",
+        "https://agar.com.au/product/autodish-sp/",
+        "https://agar.com.au/product/coffee-machine-cleaner/",
+        "https://agar.com.au/product/dish-power/",
+        "https://agar.com.au/product/dish-kleena/",
+        "https://agar.com.au/product/dishwash-gold/",
+        "https://agar.com.au/product/galley-2/",
+        "https://agar.com.au/product/glass-wash/",
+        "https://agar.com.au/product/lift/",
+        "https://agar.com.au/product/potwash/",
+        "https://agar.com.au/product/presoak-powder/",
+        "https://agar.com.au/product/rinse-aid/"
+      ]
+    },
+    "kitchen-care/cleaning-and-sanitising": {
+      "url_count": 12,
+      "urls": [
+        "https://agar.com.au/product/as-60/",
+        "https://agar.com.au/product/citrastar/",
+        "https://agar.com.au/product/foam-up/",
+        "https://agar.com.au/product/fruitnveg-sanitiser/",
+        "https://agar.com.au/product/hygieniclean/",
+        "https://agar.com.au/product/hyperax-5/",
+        "https://agar.com.au/product/powerquat/",
+        "https://agar.com.au/product/q-foam/",
+        "https://agar.com.au/product/ready-2-go/",
+        "https://agar.com.au/product/rf-12/",
+        "https://agar.com.au/product/single-step/",
+        "https://agar.com.au/product/vischlor/"
+      ]
+    },
+    "personal-care/liquid-soap": {
+      "url_count": 6,
+      "urls": [
+        "https://agar.com.au/product/garland/",
+        "https://agar.com.au/product/mechanix/",
+        "https://agar.com.au/product/microsan/",
+        "https://agar.com.au/product/royal-wave/",
+        "https://agar.com.au/product/silvan/",
+        "https://agar.com.au/product/tools-down/"
+      ]
+    },
+    "floor-care/floor-maintainers": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/autobrite/",
+        "https://agar.com.au/product/scrub-n-shine/",
+        "https://agar.com.au/product/shinywash/",
+        "https://agar.com.au/product/sympol/"
+      ]
+    },
+    "green-cleaning-products": {
+      "url_count": 20,
+      "urls": [
+        "https://agar.com.au/product/bac2work/",
+        "https://agar.com.au/product/bellevue/",
+        "https://agar.com.au/product/citra-mist/",
+        "https://agar.com.au/product/cleansave-1/",
+        "https://agar.com.au/product/cleansave-2/",
+        "https://agar.com.au/product/cleansave-4s/",
+        "https://agar.com.au/product/cleansave-4t/",
+        "https://agar.com.au/product/cleansave-5/",
+        "https://agar.com.au/product/cleansave-7/",
+        "https://agar.com.au/product/dish-kleena/",
+        "https://agar.com.au/product/enyclean/",
+        "https://agar.com.au/product/foaming-hand-wash/",
+        "https://agar.com.au/product/fresco/",
+        "https://agar.com.au/product/green-n-gold/",
+        "https://agar.com.au/product/kuranda/",
+        "https://agar.com.au/product/ph-7/",
+        "https://agar.com.au/product/powerdet-eco/",
+        "https://agar.com.au/product/sequal/",
+        "https://agar.com.au/product/shower-star/",
+        "https://agar.com.au/product/spruce/"
+      ]
+    },
+    "specialty-cleaning/special-purpose-heavy-duty-detergents": {
+      "url_count": 8,
+      "urls": [
+        "https://agar.com.au/product/dirt-off/",
+        "https://agar.com.au/product/dlx/",
+        "https://agar.com.au/product/escalator-cleaner/",
+        "https://agar.com.au/product/methylated-spirit/",
+        "https://agar.com.au/product/neutraliser/",
+        "https://agar.com.au/product/once-off/",
+        "https://agar.com.au/product/sd-37/",
+        "https://agar.com.au/product/spa-clean/"
+      ]
+    },
+    "floor-care/spray-buff": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/spraybuff-c/"
+      ]
+    },
+    "specialty-cleaning": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/cold-king/",
+        "https://agar.com.au/product/isopropyl-alcohol/",
+        "https://agar.com.au/product/u-remove/"
+      ]
+    },
+    "air-fresheners/detergent-deodorisers": {
+      "url_count": 8,
+      "urls": [
+        "https://agar.com.au/product/breeze/",
+        "https://agar.com.au/product/everfresh/",
+        "https://agar.com.au/product/floral/",
+        "https://agar.com.au/product/freshaire/",
+        "https://agar.com.au/product/lavender/",
+        "https://agar.com.au/product/lollyshop/",
+        "https://agar.com.au/product/ocean-air/",
+        "https://agar.com.au/product/sweet-talc/"
+      ]
+    },
+    "kitchen-care": {
+      "url_count": 0,
+      "urls": []
+    },
+    "carpet-cleaners/pre-spraying-hot-water-extraction-formulations": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/amazon-g5/",
+        "https://agar.com.au/product/citrus-extra/",
+        "https://agar.com.au/product/exit/",
+        "https://agar.com.au/product/green-n-gold/"
+      ]
+    },
+    "personal-care/hand-sanitiser": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/cool-tide/"
+      ]
+    },
+    "personal-care/body-wash-hair-shampoo": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/ambergold/",
+        "https://agar.com.au/product/your-pb/"
+      ]
+    },
+    "specialty-cleaning/biological-cleaners": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/bac2work/",
+        "https://agar.com.au/product/drain-solution/",
+        "https://agar.com.au/product/u-remove/"
+      ]
+    },
+    "specialty-cleaning/graffiti-removers": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/grab/",
+        "https://agar.com.au/product/graffiti-remover/",
+        "https://agar.com.au/product/graffiti-wipe-off/"
+      ]
+    },
+    "floor-care": {
+      "url_count": 0,
+      "urls": []
+    },
+    "specialty-cleaning/leather-cleaner": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/leather-care/"
+      ]
+    },
+    "floor-care/daily-floor-cleaning-detergents": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/autoscrub/",
+        "https://agar.com.au/product/fresh-mop/",
+        "https://agar.com.au/product/ph-7/"
+      ]
+    },
+    "laundry-products/before-the-wash": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/presoak-powder/",
+        "https://agar.com.au/product/safety-bleach/"
+      ]
+    },
+    "kitchen-care/kitchen-floor-cleaning": {
+      "url_count": 5,
+      "urls": [
+        "https://agar.com.au/product/active-break/",
+        "https://agar.com.au/product/chloradet/",
+        "https://agar.com.au/product/jackpot/",
+        "https://agar.com.au/product/presto/",
+        "https://agar.com.au/product/react/"
+      ]
+    },
+    "specialty-cleaning/portable-toilet-care": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/portacare/",
+        "https://agar.com.au/product/portacare-super/"
+      ]
+    },
+    "all-purpose-floor-cleaners": {
+      "url_count": 9,
+      "urls": [
+        "https://agar.com.au/product/autoscrub/",
+        "https://agar.com.au/product/fresh-mop/",
+        "https://agar.com.au/product/hc-90/",
+        "https://agar.com.au/product/magic/",
+        "https://agar.com.au/product/mop-n-dry/",
+        "https://agar.com.au/product/novadet/",
+        "https://agar.com.au/product/ph-7/",
+        "https://agar.com.au/product/spruce/",
+        "https://agar.com.au/product/superforce/"
+      ]
+    },
+    "personal-care": {
+      "url_count": 0,
+      "urls": []
+    },
+    "air-fresheners": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/country-garden/",
+        "https://agar.com.au/product/summer-citrus/",
+        "https://agar.com.au/product/everfresh/"
+      ]
+    },
+    "uncategorized": {
+      "url_count": 0,
+      "urls": []
+    },
+    "laundry-products/commercial-laundry-machine-washing": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/laundry-break/",
+        "https://agar.com.au/product/laundry-brightener/",
+        "https://agar.com.au/product/laundry-detergent/",
+        "https://agar.com.au/product/laundry-sour/"
+      ]
+    },
+    "toilet-bathroom-cleaners": {
+      "url_count": 6,
+      "urls": [
+        "https://agar.com.au/product/all-fresh/",
+        "https://agar.com.au/product/bac2work/",
+        "https://agar.com.au/product/bowl-clean/",
+        "https://agar.com.au/product/fresco/",
+        "https://agar.com.au/product/sequal/",
+        "https://agar.com.au/product/shower-star/"
+      ]
+    },
+    "floor-care/floor-sealers-and-strippers/base-sealers": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/first-base/"
+      ]
+    },
+    "kitchen-care/oven-and-grill-cleaners": {
+      "url_count": 5,
+      "urls": [
+        "https://agar.com.au/product/combi-oven-cleaner/",
+        "https://agar.com.au/product/grill-clean/",
+        "https://agar.com.au/product/kooka-kleena/",
+        "https://agar.com.au/product/oven-clean/",
+        "https://agar.com.au/product/sizzle/"
+      ]
+    },
+    "food-processing": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/cd-13/",
+        "https://agar.com.au/product/coffee-machine-cleaner/",
+        "https://agar.com.au/product/hook-clean/",
+        "https://agar.com.au/product/lcd-60/"
+      ]
+    },
+    "glass-cleaners": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/bellevue/",
+        "https://agar.com.au/product/fast-glass/",
+        "https://agar.com.au/product/flash-dry/",
+        "https://agar.com.au/product/venue/"
+      ]
+    },
+    "carpet-cleaners": {
+      "url_count": 6,
+      "urls": [
+        "https://agar.com.au/product/antifoam/",
+        "https://agar.com.au/product/bonnet-cleaner/",
+        "https://agar.com.au/product/cap-it-off/",
+        "https://agar.com.au/product/carpet-shampoo/",
+        "https://agar.com.au/product/everfresh/",
+        "https://agar.com.au/product/u-remove/"
+      ]
+    },
+    "stainless-steel-care": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/stainless-steel-oil/",
+        "https://agar.com.au/product/steel-shine/"
+      ]
+    },
+    "carpet-cleaners/restoration": {
+      "url_count": 1,
+      "urls": [
+        "https://agar.com.au/product/super-deo/"
+      ]
+    },
+    "chlorinated-cleaners-sanitisers": {
+      "url_count": 5,
+      "urls": [
+        "https://agar.com.au/product/bleach/",
+        "https://agar.com.au/product/chloradet/",
+        "https://agar.com.au/product/mould-x/",
+        "https://agar.com.au/product/sodium-hypochlorite/",
+        "https://agar.com.au/product/vischlor/"
+      ]
+    },
+    "laundry-products": {
+      "url_count": 3,
+      "urls": [
+        "https://agar.com.au/product/laundry-emulsifier/",
+        "https://agar.com.au/product/sodium-hypochlorite/",
+        "https://agar.com.au/product/sour-softener/"
+      ]
+    },
+    "specialty-cleaning/cream-cleansers": {
+      "url_count": 2,
+      "urls": [
+        "https://agar.com.au/product/ritzy/",
+        "https://agar.com.au/product/softie/"
+      ]
+    },
+    "floor-care/floor-sealers-and-strippers": {
+      "url_count": 4,
+      "urls": [
+        "https://agar.com.au/product/3d-gloss/",
+        "https://agar.com.au/product/duro/",
+        "https://agar.com.au/product/super-nova/",
+        "https://agar.com.au/product/tuff-gloss/"
+      ]
+    },
+    "disinfectant-antibacterial-detergent": {
+      "url_count": 9,
+      "urls": [
+        "https://agar.com.au/product/counterflu/",
+        "https://agar.com.au/product/counterflu-rtu/",
+        "https://agar.com.au/product/hyperax-5/",
+        "https://agar.com.au/product/kuranda/",
+        "https://agar.com.au/product/lemon/",
+        "https://agar.com.au/product/orchids/",
+        "https://agar.com.au/product/tango/",
+        "https://agar.com.au/product/virattack/",
+        "https://agar.com.au/product/wildflower/"
+      ]
+    }
+  },
+  "failed_urls": [
+    "https://agar.com.au/product-category/odor-eliminators/",
+    "https://agar.com.au/product-category/maintenance-products/",
+    "https://agar.com.au/product-category/equipment-care/",
+    "https://agar.com.au/product-category/education-cleaners/",
+    "https://agar.com.au/product-category/healthcare-cleaners/",
+    "https://agar.com.au/product-category/eco-friendly/",
+    "https://agar.com.au/product-category/commercial-grade/",
+    "https://agar.com.au/product-category/antibacterial/",
+    "https://agar.com.au/product-category/ready-to-use/",
+    "https://agar.com.au/product-category/sanitizers/",
+    "https://agar.com.au/product-category/automotive-cleaners/",
+    "https://agar.com.au/product-category/fabric-care/",
+    "https://agar.com.au/product-category/bathroom-cleaners/",
+    "https://agar.com.au/product-category/hospitality-cleaners/",
+    "https://agar.com.au/product-category/bulk-cleaners/",
+    "https://agar.com.au/product-category/concentrated-cleaners/",
+    "https://agar.com.au/product-category/stain-removers/",
+    "https://agar.com.au/product-category/food-grade-cleaners/",
+    "https://agar.com.au/product-category/institutional/",
+    "https://agar.com.au/product-category/industrial-cleaners/",
+    "https://agar.com.au/product-category/polishers/",
+    "https://agar.com.au/product-category/window-cleaners/",
+    "https://agar.com.au/product-category/hard-surface-cleaners/",
+    "https://agar.com.au/product-category/degreasers/",
+    "https://agar.com.au/product-category/upholstery-cleaners/",
+    "https://agar.com.au/product-category/floor-polish/",
+    "https://agar.com.au/product-category/janitorial-supplies/"
+  ],
+  "summary": {
+    "categories_with_products": 51,
+    "categories_without_products": 6,
+    "average_products_per_category": 3.32
+  }
+}

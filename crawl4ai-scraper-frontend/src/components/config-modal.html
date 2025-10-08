@@ -1,173 +1,329 @@
-<!-- Crawl4AI Scraper Configuration Modal -->
-<div id="scraperConfigModal" class="modal" style="display: none;">
-    <div class="modal-content large">
+<!-- Configuration Modal Component -->
+<div class="modal" id="scraperConfigModal" style="display: none;">
+    <div class="modal-content">
         <div class="modal-header">
             <h3>⚙️ Scraper Configuration</h3>
             <span class="close" onclick="Crawl4AIScraper.closeConfigModal()">&times;</span>
         </div>
         <div class="modal-body">
-            <!-- Configuration Tabs -->
-            <div class="config-tabs">
-                <button class="tab-button active" onclick="Crawl4AIScraper.switchConfigTab('general')">General</button>
-                <button class="tab-button" onclick="Crawl4AIScraper.switchConfigTab('advanced')">Advanced</button>
-                <button class="tab-button" onclick="Crawl4AIScraper.switchConfigTab('schedule')">Schedule</button>
-                <button class="tab-button" onclick="Crawl4AIScraper.switchConfigTab('presets')">Presets</button>
-            </div>
-
-            <!-- General Tab -->
-            <div id="general-tab" class="config-tab-content">
-                <h4>General Settings</h4>
-                <div class="form-row">
+            <form id="scraperConfigForm" onsubmit="Crawl4AIScraper.saveConfiguration(event)">
+                <div class="config-section">
+                    <h4>📡 API Configuration</h4>
                     <div class="form-group">
-                        <label for="configBaseUrl">Base URL:</label>
-                        <input type="text" id="configBaseUrl" class="form-control" value="https://example.com/">
+                        <label for="configApiUrl">API Base URL:</label>
+                        <input type="url" id="configApiUrl" class="form-control" value="http://localhost:8000" 
+                               placeholder="http://localhost:8000" required>
                     </div>
                     <div class="form-group">
-                        <label for="configMaxItems">Max Items (empty = all):</label>
-                        <input type="number" id="configMaxItems" class="form-control" placeholder="Leave empty for all">
+                        <label for="configApiPrefix">API Prefix:</label>
+                        <input type="text" id="configApiPrefix" class="form-control" value="/api/scraper" 
+                               placeholder="/api/scraper">
                     </div>
                 </div>
-                <div class="form-row">
+
+                <div class="config-section">
+                    <h4>🔧 Scraping Settings</h4>
                     <div class="form-group">
-                        <label for="configScrapeDepth">Scrape Depth:</label>
-                        <select id="configScrapeDepth" class="form-control">
-                            <option value="1">Level 1 - Single page only</option>
-                            <option value="2" selected>Level 2 - Pages + linked content</option>
-                            <option value="3">Level 3 - Deep crawl</option>
+                        <label for="configMaxItems">Max Items (Quick Scrape):</label>
+                        <input type="number" id="configMaxItems" class="form-control" value="100" 
+                               min="1" max="10000" placeholder="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="configTimeout">Request Timeout (seconds):</label>
+                        <input type="number" id="configTimeout" class="form-control" value="30" 
+                               min="5" max="300" placeholder="30">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="configIncludeMedia" checked>
+                            Include Media Files
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="configIncludeDocuments" checked>
+                            Include Documents
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="configIncludeMetadata" checked>
+                            Include Metadata
+                        </label>
+                    </div>
+                </div>
+
+                <div class="config-section">
+                    <h4>🎨 UI Settings</h4>
+                    <div class="form-group">
+                        <label for="configAutoRefresh">Auto Refresh Interval (seconds):</label>
+                        <input type="number" id="configAutoRefresh" class="form-control" value="30" 
+                               min="5" max="300" placeholder="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="configResultsPerPage">Results Per Page:</label>
+                        <select id="configResultsPerPage" class="form-control">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="configEnableNotifications" checked>
+                            Enable Browser Notifications
+                        </label>
+                    </div>
                 </div>
-                <div class="checkbox-group">
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="includeMedia" checked>
-                        <span class="checkmark"></span>
-                        Include Media (images, videos)
-                    </label>
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="includeDocuments" checked>
-                        <span class="checkmark"></span>
-                        Include Documents (PDFs, files)
-                    </label>
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="includeMetadata" checked>
-                        <span class="checkmark"></span>
-                        Include Metadata
-                    </label>
-                </div>
-            </div>
 
-            <!-- Advanced Tab -->
-            <div id="advanced-tab" class="config-tab-content" style="display: none;">
-                <h4>Advanced Settings</h4>
-                <div class="form-row">
+                <div class="config-section">
+                    <h4>🔐 Authentication (Optional)</h4>
                     <div class="form-group">
-                        <label for="configRequestDelay">Request Delay (ms):</label>
-                        <input type="number" id="configRequestDelay" class="form-control" value="1000" min="100" max="10000">
-                        <small>Time between requests to avoid overwhelming the server</small>
+                        <label for="configApiKey">API Key:</label>
+                        <input type="password" id="configApiKey" class="form-control" 
+                               placeholder="Enter API key if required">
                     </div>
                     <div class="form-group">
-                        <label for="configTimeout">Timeout (seconds):</label>
-                        <input type="number" id="configTimeout" class="form-control" value="30" min="10" max="300">
+                        <label for="configAuthToken">Bearer Token:</label>
+                        <input type="password" id="configAuthToken" class="form-control" 
+                               placeholder="Enter bearer token if required">
                     </div>
                 </div>
-                <div class="form-row">
+
+                <div class="config-section">
+                    <h4>⚡ Performance Settings</h4>
+                    <div class="form-group">
+                        <label for="configConcurrency">Max Concurrent Requests:</label>
+                        <input type="number" id="configConcurrency" class="form-control" value="5" 
+                               min="1" max="20" placeholder="5">
+                    </div>
                     <div class="form-group">
                         <label for="configRetryAttempts">Retry Attempts:</label>
-                        <input type="number" id="configRetryAttempts" class="form-control" value="3" min="0" max="10">
+                        <input type="number" id="configRetryAttempts" class="form-control" value="3" 
+                               min="0" max="10" placeholder="3">
                     </div>
                     <div class="form-group">
-                        <label for="configUserAgent">Custom User Agent:</label>
-                        <input type="text" id="configUserAgent" class="form-control" placeholder="Leave empty for default">
+                        <label>
+                            <input type="checkbox" id="configEnableCache" checked>
+                            Enable Response Caching
+                        </label>
                     </div>
                 </div>
-                <div class="checkbox-group">
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="enableJS" checked>
-                        <span class="checkmark"></span>
-                        Enable JavaScript Rendering
-                    </label>
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="loadImages" checked>
-                        <span class="checkmark"></span>
-                        Load Images During Scraping
-                    </label>
-                </div>
-            </div>
-
-            <!-- Schedule Tab -->
-            <div id="schedule-tab" class="config-tab-content" style="display: none;">
-                <h4>Scheduling Options</h4>
-                <div class="schedule-options">
-                    <label class="radio-container">
-                        <input type="radio" name="scheduleType" value="manual" checked>
-                        <span class="radio-mark"></span>
-                        Manual (Run on demand)
-                    </label>
-                    <label class="radio-container">
-                        <input type="radio" name="scheduleType" value="daily">
-                        <span class="radio-mark"></span>
-                        Daily
-                    </label>
-                    <label class="radio-container">
-                        <input type="radio" name="scheduleType" value="weekly">
-                        <span class="radio-mark"></span>
-                        Weekly
-                    </label>
-                </div>
-                <div class="form-group" id="scheduleTimeGroup" style="display: none;">
-                    <label for="scheduleTime">Schedule Time:</label>
-                    <input type="time" id="scheduleTime" class="form-control" value="02:00">
-                </div>
-                <div class="form-group" id="scheduleDayGroup" style="display: none;">
-                    <label for="scheduleDay">Day of Week:</label>
-                    <select id="scheduleDay" class="form-control">
-                        <option value="1">Monday</option>
-                        <option value="2">Tuesday</option>
-                        <option value="3">Wednesday</option>
-                        <option value="4">Thursday</option>
-                        <option value="5">Friday</option>
-                        <option value="6">Saturday</option>
-                        <option value="0">Sunday</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Presets Tab -->
-            <div id="presets-tab" class="config-tab-content" style="display: none;">
-                <h4>Configuration Presets</h4>
-                <div class="preset-buttons">
-                    <button class="btn btn-info" onclick="Crawl4AIScraper.loadPreset('quick')">
-                        <i class="fas fa-bolt"></i> Quick Scrape
-                        <small>100 items, no media</small>
-                    </button>
-                    <button class="btn btn-primary" onclick="Crawl4AIScraper.loadPreset('standard')">
-                        <i class="fas fa-cog"></i> Standard
-                        <small>1000 items, all content</small>
-                    </button>
-                    <button class="btn btn-success" onclick="Crawl4AIScraper.loadPreset('full')">
-                        <i class="fas fa-download"></i> Full Scrape
-                        <small>All items, all content</small>
-                    </button>
-                </div>
-                
-                <h5>Import/Export Configuration</h5>
-                <div class="import-export">
-                    <div class="form-group">
-                        <input type="file" id="importConfigFile" accept=".json" style="display: none;">
-                        <button class="btn btn-secondary" onclick="document.getElementById('importConfigFile').click()">
-                            <i class="fas fa-upload"></i> Import Config
-                        </button>
-                        <button class="btn btn-secondary" onclick="Crawl4AIScraper.exportConfig()">
-                            <i class="fas fa-download"></i> Export Config
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
         <div class="modal-footer">
-            <button class="btn btn-primary" onclick="Crawl4AIScraper.saveConfiguration()">Save Configuration</button>
-            <button class="btn btn-success" onclick="Crawl4AIScraper.applyConfigAndScrape()">Apply & Start Scraping</button>
-            <button class="btn btn-secondary" onclick="Crawl4AIScraper.closeConfigModal()">Cancel</button>
+            <button type="button" class="btn btn-secondary" onclick="Crawl4AIScraper.closeConfigModal()">
+                Cancel
+            </button>
+            <button type="button" class="btn btn-warning" onclick="Crawl4AIScraper.resetConfiguration()">
+                Reset to Defaults
+            </button>
+            <button type="submit" form="scraperConfigForm" class="btn btn-primary">
+                Save Configuration
+            </button>
         </div>
     </div>
 </div>
+
+<style>
+/* Additional styles for config modal */
+.config-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.config-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.config-section h4 {
+    color: #495057;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.form-group label input[type="checkbox"] {
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #0066cc;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 2% auto;
+        max-height: 95vh;
+    }
+    
+    .config-section {
+        margin-bottom: 20px;
+    }
+}
+</style>
+
+<script>
+// Configuration modal functionality
+if (typeof window !== 'undefined') {
+    // Extend global Crawl4AIScraper object with configuration methods
+    window.Crawl4AIScraperConfig = {
+        // Save configuration
+        saveConfiguration: function(event) {
+            if (event) event.preventDefault();
+            
+            const config = this.getFormConfiguration();
+            
+            // Apply configuration to current instance
+            if (window.Crawl4AIScraperInstances) {
+                Object.values(window.Crawl4AIScraperInstances).forEach(instance => {
+                    if (instance && typeof instance.configure === 'function') {
+                        instance.configure(config);
+                    }
+                });
+            }
+            
+            // Store in localStorage for persistence
+            localStorage.setItem('crawl4ai-scraper-config', JSON.stringify(config));
+            
+            // Close modal
+            this.closeConfigModal();
+            
+            // Show success message
+            console.log('Configuration saved successfully');
+        },
+        
+        // Reset to defaults
+        resetConfiguration: function() {
+            if (confirm('Reset all settings to default values?')) {
+                this.loadDefaultConfiguration();
+            }
+        },
+        
+        // Get configuration from form
+        getFormConfiguration: function() {
+            return {
+                apiUrl: document.getElementById('configApiUrl').value,
+                apiPrefix: document.getElementById('configApiPrefix').value,
+                maxItems: parseInt(document.getElementById('configMaxItems').value),
+                timeout: parseInt(document.getElementById('configTimeout').value),
+                includeMedia: document.getElementById('configIncludeMedia').checked,
+                includeDocuments: document.getElementById('configIncludeDocuments').checked,
+                includeMetadata: document.getElementById('configIncludeMetadata').checked,
+                autoRefreshInterval: parseInt(document.getElementById('configAutoRefresh').value) * 1000,
+                resultsPerPage: parseInt(document.getElementById('configResultsPerPage').value),
+                enableNotifications: document.getElementById('configEnableNotifications').checked,
+                apiKey: document.getElementById('configApiKey').value,
+                authToken: document.getElementById('configAuthToken').value,
+                maxConcurrency: parseInt(document.getElementById('configConcurrency').value),
+                retryAttempts: parseInt(document.getElementById('configRetryAttempts').value),
+                enableCache: document.getElementById('configEnableCache').checked
+            };
+        },
+        
+        // Load configuration into form
+        loadConfiguration: function(config) {
+            document.getElementById('configApiUrl').value = config.apiUrl || 'http://localhost:8000';
+            document.getElementById('configApiPrefix').value = config.apiPrefix || '/api/scraper';
+            document.getElementById('configMaxItems').value = config.maxItems || 100;
+            document.getElementById('configTimeout').value = config.timeout || 30;
+            document.getElementById('configIncludeMedia').checked = config.includeMedia !== false;
+            document.getElementById('configIncludeDocuments').checked = config.includeDocuments !== false;
+            document.getElementById('configIncludeMetadata').checked = config.includeMetadata !== false;
+            document.getElementById('configAutoRefresh').value = Math.floor((config.autoRefreshInterval || 30000) / 1000);
+            document.getElementById('configResultsPerPage').value = config.resultsPerPage || 10;
+            document.getElementById('configEnableNotifications').checked = config.enableNotifications !== false;
+            document.getElementById('configApiKey').value = config.apiKey || '';
+            document.getElementById('configAuthToken').value = config.authToken || '';
+            document.getElementById('configConcurrency').value = config.maxConcurrency || 5;
+            document.getElementById('configRetryAttempts').value = config.retryAttempts || 3;
+            document.getElementById('configEnableCache').checked = config.enableCache !== false;
+        },
+        
+        // Load default configuration
+        loadDefaultConfiguration: function() {
+            const defaults = {
+                apiUrl: 'http://localhost:8000',
+                apiPrefix: '/api/scraper',
+                maxItems: 100,
+                timeout: 30,
+                includeMedia: true,
+                includeDocuments: true,
+                includeMetadata: true,
+                autoRefreshInterval: 30000,
+                resultsPerPage: 10,
+                enableNotifications: true,
+                apiKey: '',
+                authToken: '',
+                maxConcurrency: 5,
+                retryAttempts: 3,
+                enableCache: true
+            };
+            
+            this.loadConfiguration(defaults);
+        },
+        
+        // Close modal
+        closeConfigModal: function() {
+            const modal = document.getElementById('scraperConfigModal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+    };
+    
+    // Initialize configuration on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load saved configuration from localStorage
+        const savedConfig = localStorage.getItem('crawl4ai-scraper-config');
+        if (savedConfig) {
+            try {
+                const config = JSON.parse(savedConfig);
+                window.Crawl4AIScraperConfig.loadConfiguration(config);
+            } catch (error) {
+                console.warn('Failed to load saved configuration:', error);
+                window.Crawl4AIScraperConfig.loadDefaultConfiguration();
+            }
+        } else {
+            window.Crawl4AIScraperConfig.loadDefaultConfiguration();
+        }
+    });
+    
+    // Add methods to global Crawl4AIScraper object
+    if (window.Crawl4AIScraper) {
+        window.Crawl4AIScraper.saveConfiguration = window.Crawl4AIScraperConfig.saveConfiguration.bind(window.Crawl4AIScraperConfig);
+        window.Crawl4AIScraper.resetConfiguration = window.Crawl4AIScraperConfig.resetConfiguration.bind(window.Crawl4AIScraperConfig);
+    }
+}
+</script>

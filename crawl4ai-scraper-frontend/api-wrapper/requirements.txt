@@ -1,0 +1,13 @@
+# Crawl4AI API Wrapper Dependencies
+
+# Core dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Crawl4AI (install from main project)
+# This should be installed from the parent Crawl4AI project
+# pip install -e ../
+
+# Optional: for production deployment
+gunicorn>=21.2.0

@@ -1,0 +1,90 @@
+# Crawl4AI Frontend System - Docker Compose Configuration
+version: '3.8'
+
+services:
+  # Frontend service - Static file hosting with Nginx
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "${FRONTEND_PORT:-3000}:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:8000}
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`${FRONTEND_HOST:-localhost}`)"
+      - "traefik.http.services.frontend.loadbalancer.server.port=80"
+
+  # API service - FastAPI with Crawl4AI
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+      args:
+        - CRAWL4AI_VERSION=${CRAWL4AI_VERSION:-latest}
+    ports:
+      - "${API_PORT:-8000}:8000"
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - CORS_ORIGINS=${CORS_ORIGINS:-*}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - MAX_WORKERS=${MAX_WORKERS:-1}
+      - CRAWLER_VERBOSE=${CRAWLER_VERBOSE:-true}
+      - CACHE_DIR=/app/cache
+      - TEMP_DIR=/app/temp
+    volumes:
+      - crawl4ai-cache:/app/cache
+      - crawl4ai-temp:/app/temp
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`${API_HOST:-localhost}`) && PathPrefix(`/api`)"
+      - "traefik.http.services.api.loadbalancer.server.port=8000"
+
+networks:
+  crawl4ai-network:
+    driver: bridge
+    name: crawl4ai-network
+
+volumes:
+  crawl4ai-cache:
+    name: crawl4ai-cache
+  crawl4ai-temp:
+    name: crawl4ai-temp
+
+# Health check configuration
+x-health-check: &health-check
+  interval: 30s
+  timeout: 10s
+  retries: 3
+  start_period: 30s

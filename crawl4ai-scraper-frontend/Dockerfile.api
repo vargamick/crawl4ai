@@ -1,0 +1,49 @@
+# API Wrapper Dockerfile - FastAPI with Crawl4AI
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for Crawl4AI and Playwright
+RUN apt-get update && apt-get install -y \
+    wget \
+    gnupg \
+    curl \
+    unzip \
+    libnss3-dev \
+    libatk-bridge2.0-dev \
+    libdrm-dev \
+    libxkbcommon-dev \
+    libgtk-3-dev \
+    libgbm-dev \
+    libasound2-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for better caching
+COPY api-wrapper/requirements.txt ./requirements.txt
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Install Crawl4AI from PyPI
+RUN pip install --no-cache-dir crawl4ai
+
+# Copy API wrapper code
+COPY api-wrapper/ ./
+
+# Create non-root user for security and set permissions
+RUN useradd -m -u 1001 appuser && chown -R appuser:appuser /app
+USER appuser
+
+# Install Playwright browsers as the appuser (without system deps - already installed as root)
+RUN playwright install chromium
+
+# Expose port
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+  CMD curl -f http://localhost:8000/health || exit 1
+
+# Run with gunicorn for production
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8000", "--worker-class", "uvicorn.workers.UvicornWorker", "--workers", "1"]
