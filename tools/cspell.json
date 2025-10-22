@@ -1,0 +1,132 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "domcontentloaded",
+    "contentloaded",
+    "webcrawler",
+    "crawl4ai",
+    "scrapy",
+    "beautifulsoup",
+    "selenium",
+    "playwright",
+    "puppeteer",
+    "asyncio",
+    "aiohttp",
+    "urllib",
+    "requests",
+    "xpath",
+    "jsdom",
+    "htmlparser",
+    "lxml",
+    "pyquery",
+    "scraperapi",
+    "chromedriver",
+    "webdriver",
+    "headless",
+    "viewport",
+    "useragent",
+    "referer",
+    "charset",
+    "utf8",
+    "json",
+    "yaml",
+    "toml",
+    "dockerfile",
+    "kubernetes",
+    "kubectl",
+    "nginx",
+    "apache",
+    "redis",
+    "postgresql",
+    "mongodb",
+    "elasticsearch",
+    "kibana",
+    "logstash",
+    "prometheus",
+    "grafana",
+    "django",
+    "fastapi",
+    "flask",
+    "sqlalchemy",
+    "alembic",
+    "pydantic",
+    "pytest",
+    "mypy",
+    "flake8",
+    "black",
+    "isort",
+    "precommit",
+    "github",
+    "gitlab",
+    "bitbucket",
+    "cicd",
+    "devops",
+    "mlops",
+    "dataops"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**",
+    "**/*.pyc",
+    "**/__pycache__/**",
+    ".venv/**",
+    "venv/**",
+    ".env/**",
+    "*.min.js",
+    "*.min.css",
+    "coverage/**",
+    ".coverage",
+    "*.log",
+    "*.tmp",
+    "*.temp"
+  ],
+  "ignoreRegExpList": [
+    "/\\b[A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12}\\b/gi",
+    "/\\b[a-f0-9]{40}\\b/gi",
+    "/\\b[a-f0-9]{64}\\b/gi",
+    "/https?:\\/\\/[^\\s\"']+/g",
+    "/\\b\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{3,6})?Z?\\b/g"
+  ],
+  "dictionaries": [
+    "web-dev",
+    "python",
+    "bash",
+    "docker",
+    "html",
+    "css",
+    "javascript",
+    "json",
+    "yaml"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "web-dev",
+      "path": "./dictionaries/web-dev.txt",
+      "addWords": true
+    }
+  ],
+  "overrides": [
+    {
+      "filename": "**/*.json",
+      "caseSensitive": false
+    },
+    {
+      "filename": "**/*.py",
+      "caseSensitive": true
+    },
+    {
+      "filename": "**/docker_results/**",
+      "words": [
+        "domcontentloaded",
+        "contentloaded",
+        "everfresh",
+        "ultrastrip",
+        "grease",
+        "gobbler",
+        "mouldicidal",
+        "terrazzo"
+      ]
+    }
+  ]
+}
