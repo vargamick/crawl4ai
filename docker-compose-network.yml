@@ -1,0 +1,110 @@
+# Unified Crawl4AI Docker Network Setup
+# Combines the main Crawl4AI server with the frontend interface
+version: '3.8'
+
+# Shared network configuration
+networks:
+  crawl4ai-network:
+    driver: bridge
+    name: crawl4ai-network
+
+# Shared volumes
+volumes:
+  crawl4ai-cache:
+    name: crawl4ai-cache
+  crawl4ai-temp:
+    name: crawl4ai-temp
+
+services:
+  # Main Crawl4AI Server (Backend API)
+  crawl4ai-server:
+    image: ${IMAGE:-unclecode/crawl4ai:${TAG:-latest}}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        INSTALL_TYPE: ${INSTALL_TYPE:-default}
+        ENABLE_GPU: ${ENABLE_GPU:-false}
+    ports:
+      - "11235:11235"  # Main API port
+    env_file:
+      - .llm.env       # API keys (create from .llm.env.example)
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GROQ_API_KEY=${GROQ_API_KEY:-}
+      - TOGETHER_API_KEY=${TOGETHER_API_KEY:-}
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY:-}
+      - GEMINI_API_TOKEN=${GEMINI_API_TOKEN:-}
+      - LLM_PROVIDER=${LLM_PROVIDER:-}
+    volumes:
+      - /dev/shm:/dev/shm  # Chromium performance
+      - crawl4ai-cache:/app/cache
+      - crawl4ai-temp:/app/temp
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 1G
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11235/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    user: "appuser"
+    networks:
+      - crawl4ai-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.crawl4ai-api.rule=Host(`localhost`) && PathPrefix(`/`)"
+      - "traefik.http.services.crawl4ai-api.loadbalancer.server.port=11235"
+
+  # Frontend Web Interface
+  crawl4ai-frontend:
+    build:
+      context: ./crawl4ai-scraper-frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "${FRONTEND_PORT:-3000}:80"
+    environment:
+      # Point frontend to main Crawl4AI server instead of separate API
+      - API_BASE_URL=http://crawl4ai-server:11235
+      - CORS_ORIGINS=*
+    volumes:
+      - ./crawl4ai-scraper-frontend/dist:/usr/share/nginx/html:ro
+      - ./crawl4ai-scraper-frontend/docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      crawl4ai-server:
+        condition: service_healthy
+    networks:
+      - crawl4ai-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.crawl4ai-frontend.rule=Host(`localhost`)"
+      - "traefik.http.services.crawl4ai-frontend.loadbalancer.server.port=80"
+
+# Development override (optional)
+# Use with: docker-compose -f docker-compose-network.yml -f docker-compose-network.dev.yml up
+---
+version: '3.8'
+services:
+  crawl4ai-server:
+    # Mount source code for development
+    volumes:
+      - .:/app:ro
+    environment:
+      - DEBUG=true
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+
+  crawl4ai-frontend:
+    # Development mode with hot reload
+    volumes:
+      - ./crawl4ai-scraper-frontend/src:/app/src:ro
+    environment:
+      - NODE_ENV=development

@@ -1,0 +1,80 @@
+{
+  "agar_sample_products": [
+    {
+      "name": "Autobrite",
+      "url": "https://agar.com.au/product/autobrite/",
+      "category": "Floor Maintainers"
+    },
+    {
+      "name": "Carpet Genie",
+      "url": "https://agar.com.au/product/carpet-genie/",
+      "category": "Carpet Care"
+    },
+    {
+      "name": "Shine It",
+      "url": "https://agar.com.au/product/shine-it/",
+      "category": "Kitchen Cleaning"
+    },
+    {
+      "name": "Wipeout",
+      "url": "https://agar.com.au/product/wipeout/",
+      "category": "All Purpose Cleaning"
+    },
+    {
+      "name": "Big Red",
+      "url": "https://agar.com.au/product/big-red/",
+      "category": "Carpet Care"
+    }
+  ],
+  "floor_care_products": [
+    {
+      "name": "Autobrite",
+      "url": "https://agar.com.au/product/autobrite/",
+      "category": "Floor Maintainers"
+    },
+    {
+      "name": "Floor Sealer",
+      "url": "https://agar.com.au/product/floor-sealer/",
+      "category": "Floor Sealers"
+    },
+    {
+      "name": "Strip-It",
+      "url": "https://agar.com.au/product/strip-it/",
+      "category": "Floor Strippers"
+    }
+  ],
+  "carpet_care_products": [
+    {
+      "name": "Carpet Genie",
+      "url": "https://agar.com.au/product/carpet-genie/",
+      "category": "Carpet Care"
+    },
+    {
+      "name": "Big Red",
+      "url": "https://agar.com.au/product/big-red/",
+      "category": "Carpet Care"
+    },
+    {
+      "name": "Carpet Fresh",
+      "url": "https://agar.com.au/product/carpet-fresh/",
+      "category": "Carpet Care"
+    }
+  ],
+  "kitchen_cleaning_products": [
+    {
+      "name": "Shine It",
+      "url": "https://agar.com.au/product/shine-it/",
+      "category": "Kitchen Cleaning"
+    },
+    {
+      "name": "Grease Gone",
+      "url": "https://agar.com.au/product/grease-gone/",
+      "category": "Kitchen Cleaning"
+    },
+    {
+      "name": "Oven Clean",
+      "url": "https://agar.com.au/product/oven-clean/",
+      "category": "Kitchen Cleaning"
+    }
+  ]
+}
