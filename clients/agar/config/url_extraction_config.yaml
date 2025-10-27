@@ -1,0 +1,33 @@
+# Agar URL Extractor Configuration
+# Focused configuration for building comprehensive Agar product URL extraction files
+
+# Base Settings
+base_url: "https://agar.com.au"
+output_dir: "clients/agar/agar_url_data"
+
+# Category Discovery Settings
+max_categories: 50
+common_category_paths:
+  - "/products"
+  - "/categories" 
+  - "/cleaning-products"
+  - "/professional-cleaning"
+  - "/commercial-cleaning"
+
+# Fallback categories if automatic discovery fails
+fallback_categories:
+  "Floor Care": "https://agar.com.au/products?category=floor-care"
+  "Kitchen Cleaning": "https://agar.com.au/products?category=kitchen"
+  "Carpet Care": "https://agar.com.au/products?category=carpet"
+  "Bathroom Cleaning": "https://agar.com.au/products?category=bathroom"
+  "Glass & Surface": "https://agar.com.au/products?category=glass"
+  "Sanitizers": "https://agar.com.au/products?category=sanitizer"
+
+# URL Generation Settings
+batch_size: 50
+max_products_per_category: 1000
+max_pages_per_category: 20
+delay: 1.0
+
+# Output Settings
+verbose: false

@@ -1,0 +1,23 @@
+'# Agar URL Extractor Configuration': null
+'# Category Discovery Settings': null
+'# Output Settings': null
+'# URL Generation Settings': null
+base_url: https://agar.com.au
+batch_size: 50
+common_category_paths:
+- /products
+- /categories
+- /cleaning-products
+- /professional-cleaning
+- /commercial-cleaning
+delay: 1.0
+fallback_categories:
+  Bathroom Cleaning: https://agar.com.au/products?category=bathroom
+  Carpet Care: https://agar.com.au/products?category=carpet
+  Floor Care: https://agar.com.au/products?category=floor-care
+  Kitchen Cleaning: https://agar.com.au/products?category=kitchen
+max_categories: 50
+max_pages_per_category: 20
+max_products_per_category: 1000
+output_dir: agar_url_data
+verbose: false

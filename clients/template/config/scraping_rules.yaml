@@ -1,0 +1,59 @@
+# Scraping Rules Configuration Template
+# Define client-specific extraction patterns and rules
+
+# URL patterns for discovery
+url_patterns:
+  product_page: []      # Regex patterns for product pages
+  category_page: []     # Regex patterns for category pages
+  exclude: []           # Patterns to exclude
+  
+# CSS/XPath selectors for data extraction
+selectors:
+  product_name: null
+  product_price: null
+  product_description: null
+  product_image: null
+  product_category: null
+  product_sku: null
+  availability: null
+  specifications: null
+  
+# Data cleaning rules
+cleaning:
+  price:
+    remove_currency: true
+    decimal_places: 2
+  text:
+    remove_html: true
+    strip_whitespace: true
+    normalize_spaces: true
+  images:
+    convert_relative_urls: true
+    download_images: false
+    
+# Extraction strategies
+extraction_strategy:
+  primary: "css"        # css, xpath, llm
+  fallback: "xpath"     # Fallback if primary fails
+  use_llm_for: []       # Fields that need LLM extraction
+  
+# Pagination handling
+pagination:
+  enabled: true
+  next_button_selector: null
+  page_url_pattern: null
+  max_pages: 100
+  
+# JavaScript handling
+javascript:
+  wait_for_load: true
+  wait_time: 3000
+  scroll_behavior: "smooth"
+  click_actions: []     # Selectors to click before extraction
+  
+# Anti-bot measures
+anti_bot:
+  randomize_delays: true
+  rotate_user_agents: false
+  use_proxies: false
+  captcha_handling: "manual"

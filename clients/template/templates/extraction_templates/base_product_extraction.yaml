@@ -1,0 +1,100 @@
+# Base Product Extraction Template
+# Standard product data extraction patterns
+
+extraction_patterns:
+  product_name:
+    selectors:
+      - "h1.product-title"
+      - "h1.product-name" 
+      - ".product-title h1"
+      - "[data-testid='product-title']"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      
+  product_price:
+    selectors:
+      - ".price-current"
+      - ".product-price"
+      - "[data-testid='price']"
+      - ".price .amount"
+    cleaning:
+      - "extract_price"
+      - "remove_currency"
+      - "convert_to_float"
+      
+  product_description:
+    selectors:
+      - ".product-description"
+      - ".description-content"
+      - "[data-testid='description']"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      - "truncate_length: 1000"
+      
+  product_image:
+    selectors:
+      - ".product-image img"
+      - ".main-image img"
+      - "[data-testid='product-image'] img"
+    attributes:
+      - "src"
+      - "data-src"
+    cleaning:
+      - "absolute_url"
+      - "largest_image"
+      
+  product_category:
+    selectors:
+      - ".breadcrumb a:last-child"
+      - ".category-name"
+      - "[data-testid='category']"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      
+  product_sku:
+    selectors:
+      - "[data-sku]"
+      - ".product-sku"
+      - ".item-number"
+    attributes:
+      - "data-sku"
+    cleaning:
+      - "strip_whitespace"
+      - "uppercase"
+      
+  availability:
+    selectors:
+      - ".stock-status"
+      - ".availability"
+      - "[data-testid='stock']"
+    cleaning:
+      - "normalize_availability"
+      - "boolean_conversion"
+      
+  specifications:
+    selectors:
+      - ".product-specs table"
+      - ".specifications dl"
+      - ".tech-specs"
+    extraction_type: "key_value_pairs"
+    cleaning:
+      - "normalize_specs"
+
+# Fallback patterns for common variations
+fallback_patterns:
+  title_alternatives:
+    - "title"
+    - ".page-title"
+    - "h2.product-name"
+    
+  price_alternatives:
+    - ".sale-price"
+    - ".regular-price"
+    - ".cost"
+    
+  image_alternatives:
+    - ".gallery img:first"
+    - ".hero-image img"

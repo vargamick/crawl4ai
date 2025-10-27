@@ -1,0 +1,452 @@
+# Agar Product Extraction Template
+# Specialized extraction patterns for Agar cleaning products based on scraping overview
+
+extraction_patterns:
+  # Core product identification
+  product_name:
+    selectors:
+      - "h1.product-title"
+      - "h1"
+      - ".product-name"
+      - ".page-title h1"
+      - "[data-testid='product-title']"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      - "title_case"
+      
+  # Product image (main hero image)
+  product_image_url:
+    selectors:
+      - ".product-image img"
+      - ".main-product-image img"
+      - ".hero-image img"
+      - ".product-gallery img:first-child"
+      - "img[alt*='product']"
+    attributes:
+      - "src"
+      - "data-src"
+      - "data-original"
+    cleaning:
+      - "absolute_url"
+      - "largest_image"
+      - "remove_query_params"
+      
+  # Product overview (What is [Product]? section)
+  product_overview:
+    selectors:
+      - ".product-overview"
+      - ".product-summary"
+      - ".what-is-section"
+      - ".product-intro"
+      - ".overview-content"
+      - ".product-highlights"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      - "normalize_paragraphs"
+      - "truncate_length: 2000"
+      
+  # SKU information (single or multiple)
+  product_skus:
+    selectors:
+      - ".product-sku"
+      - ".sku-info"
+      - "[data-sku]"
+      - ".item-code"
+      - "span:contains('SKU')"
+      - ".product-code"
+    attributes:
+      - "data-sku"
+    cleaning:
+      - "strip_whitespace"
+      - "uppercase"
+      - "remove_prefix: SKU:"
+    collection: true
+    extraction_type: "text_list"
+      
+  # Product categories (collection - plural)
+  product_categories:
+    selectors:
+      - ".product-category"
+      - ".breadcrumb a"
+      - ".category-info"
+      - ".product-tags a"
+      - ".taxonomy-category"
+      - ".category-links a"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      - "remove_duplicates"
+    collection: true
+    extraction_type: "link_text_list"
+    exclude_text: ["Home", "Products"]
+      
+  # Detailed product description
+  product_description:
+    selectors:
+      - ".product-description"
+      - ".description-content"
+      - ".product-details"
+      - ".full-description"
+      - "#description"
+      - ".detailed-info"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      - "preserve_line_breaks"
+      - "remove_empty_paragraphs"
+      
+  # Available sizes (collection - plural)
+  product_sizes:
+    selectors:
+      - ".size-options"
+      - ".available-sizes"
+      - ".size-variants"
+      - ".product-sizes li"
+      - ".size-list"
+      - ".sizes-table td"
+    cleaning:
+      - "strip_whitespace"
+      - "remove_html"
+      - "normalize_units"
+      - "sort_sizes"
+    collection: true
+    extraction_type: "text_list"
+      
+  # pH Level specifications
+  product_phlevel:
+    selectors:
+      - ".ph-level"
+      - ".specifications .ph"
+      - ".tech-specs .ph-value"
+      - ".product-specs td:contains('pH')"
+      - ".chemical-properties .ph"
+      - ".specs-table .ph-row"
+    cleaning:
+      - "strip_whitespace"
+      - "extract_numeric_range"
+      - "normalize_ph_format"
+      
+  # SDS URLs (collection - plural)
+  sds_urls:
+    selectors:
+      - "a[href*='sds']"
+      - "a[href*='safety-data-sheet']"
+      - ".download-sds"
+      - ".sds-download"
+      - "a:contains('SDS')"
+      - ".safety-sheets a"
+    attributes:
+      - "href"
+    cleaning:
+      - "absolute_url"
+      - "validate_pdf_url"
+      - "remove_duplicates"
+    collection: true
+    extraction_type: "link_list"
+      
+  # PDS URLs (collection - plural)  
+  pds_urls:
+    selectors:
+      - "a[href*='pds']"
+      - "a[href*='product-data-sheet']"
+      - ".download-pds"
+      - ".pds-download"
+      - "a:contains('PDS')"
+      - ".data-sheets a"
+    attributes:
+      - "href"
+    cleaning:
+      - "absolute_url"
+      - "validate_pdf_url"
+      - "remove_duplicates"
+    collection: true
+    extraction_type: "link_list"
+
+  # Additional specifications (for completeness)
+  specifications:
+    selectors:
+      - ".product-specs table"
+      - ".specifications dl"
+      - ".tech-specs"
+      - ".chemical-properties"
+      - ".product-attributes"
+    extraction_type: "key_value_pairs"
+    cleaning:
+      - "normalize_specs"
+      - "remove_empty_values"
+
+# Fallback patterns for Agar-specific variations
+fallback_patterns:
+  title_alternatives:
+    - "title"
+    - ".page-title"
+    - "h2.product-name"
+    - ".main-heading"
+    
+  image_alternatives:
+    - ".gallery img:first"
+    - ".hero-image img"
+    - ".product-photo img"
+    
+  description_alternatives:
+    - ".product-info"
+    - ".about-product"
+    - ".product-content"
+
+# CRITICAL: Enhanced Validation Rules for Quality Assurance
+validation_rules:
+  # Core Required Fields - Must be present and valid
+  product_name:
+    required: true
+    min_length: 3
+    max_length: 200
+    not_empty: true
+    not_placeholder: true
+    not_generic_values: ["Product", "Item", "Unnamed", "N/A", "TBD"]
+    quality_checks:
+      - "no_html_tags"
+      - "proper_capitalization"
+      - "meaningful_content"
+    
+  product_image_url:
+    required: true
+    format: "url"
+    file_extensions: [".jpg", ".jpeg", ".png", ".webp", ".gif"]
+    not_empty: true
+    quality_checks:
+      - "valid_url_format"
+      - "accessible_domain"  # Check if domain is reachable
+      - "image_extension_valid"
+    validation_on_extract: true
+    
+  product_skus:
+    required: true
+    pattern: "^[A-Z0-9][A-Z0-9\\-_]*[A-Z0-9]$"  # More flexible SKU pattern
+    not_empty: true
+    min_length: 2
+    max_length: 50
+    quality_checks:
+      - "alphanumeric_with_dashes"
+      - "no_special_chars"
+      - "meaningful_sku"
+    collection_validation:
+      min_items: 1
+      remove_duplicates: true
+    
+  product_categories:
+    required: true
+    min_items: 1
+    not_empty: true
+    not_generic_values: ["Category", "Products", "Items", "Uncategorized"]
+    quality_checks:
+      - "meaningful_categories"
+      - "proper_category_format"
+    collection_validation:
+      remove_duplicates: true
+      exclude_navigation: ["Home", "Products", "All Products"]
+  
+  # Optional Fields with Quality Validation
+  product_overview:
+    required: false
+    min_length: 10
+    max_length: 2000
+    quality_checks:
+      - "meaningful_content"
+      - "no_placeholder_text"
+      
+  product_description:
+    required: false
+    min_length: 20
+    max_length: 5000
+    quality_checks:
+      - "meaningful_content"
+      - "no_duplicate_overview"
+      
+  sds_urls:
+    required: false
+    format: "url"
+    file_extensions: [".pdf"]
+    collection_validation:
+      remove_duplicates: true
+      validate_each_url: true
+    quality_checks:
+      - "pdf_accessible"  # Check if PDF exists
+      - "valid_sds_content"  # Basic content validation
+    
+  pds_urls:
+    required: false
+    format: "url" 
+    file_extensions: [".pdf"]
+    collection_validation:
+      remove_duplicates: true
+      validate_each_url: true
+    quality_checks:
+      - "pdf_accessible"
+      - "valid_pds_content"
+    
+  product_sizes:
+    required: false
+    min_items: 0
+    collection_validation:
+      remove_duplicates: true
+      sort_logically: true
+    quality_checks:
+      - "valid_size_format"
+      - "logical_size_values"
+    
+  product_phlevel:
+    required: false
+    pattern: "^\\d+\\.?\\d*\\s*[±+-]?\\s*\\d*\\.?\\d*$"  # pH format like "10.6 +/- 0.5"
+    quality_checks:
+      - "valid_ph_range"  # pH should be 0-14
+      - "reasonable_precision"
+
+# CRITICAL: Page Error Detection - Identify failed pages
+page_error_detection:
+  enabled: true
+  check_before_extraction: true
+  
+  # 404 and Error Page Indicators
+  error_indicators:
+    title_contains:
+      - "404"
+      - "Page Not Found"
+      - "Not Found"
+      - "Error"
+      - "Oops"
+      - "Something went wrong"
+    
+    body_contains:
+      - "The page you requested could not be found"
+      - "This page doesn't exist"
+      - "Sorry, the page you are looking for"
+      - "Page not found"
+      - "404 Error"
+      - "File not found"
+      - "The requested URL was not found"
+      - "We can't find what you're looking for"
+    
+    css_selectors_present:
+      - ".error-404"
+      - ".not-found"
+      - ".page-not-found"
+      - ".error-page"
+      - "#error-404"
+      - ".error-container"
+    
+    missing_required_elements:
+      - "h1"  # Product pages should have headings
+      - ".product-"  # Should have product-related classes
+      
+  # Content Validation
+  content_requirements:
+    min_content_length: 500
+    min_text_content: 200
+    required_keywords: ["product", "agar"]  # Agar-specific
+    
+  # HTTP Status Validation
+  http_status_validation:
+    fail_on_status_codes:
+      - 404  # Not Found
+      - 410  # Gone
+      - 500  # Internal Server Error  
+      - 502  # Bad Gateway
+      - 503  # Service Unavailable
+      - 504  # Gateway Timeout
+      
+  # Mark as Failed
+  failure_actions:
+    log_as_failed: true
+    skip_extraction: true
+    record_failure_reason: true
+    create_failure_report: true
+
+# CRITICAL: Extraction Quality Validation - Real-time validation during extraction
+extraction_quality_validation:
+  enabled: true
+  validate_during_extraction: true
+  
+  # Real-time Field Validation
+  field_validation:
+    validate_as_extracted: true
+    fail_fast_on_missing_required: false  # Continue extracting other fields
+    log_validation_issues: true
+    
+  # Completeness Check
+  completeness_validation:
+    required_field_threshold: 100  # All required fields must be present (%)
+    optional_field_threshold: 50   # At least 50% of optional fields should be present
+    overall_quality_threshold: 70  # Overall quality score threshold
+    
+  # Data Quality Scoring
+  quality_scoring:
+    scoring_enabled: true
+    scoring_weights:
+      required_fields_present: 40
+      optional_fields_present: 20
+      data_format_validity: 20
+      content_meaningfulness: 20
+    
+    quality_thresholds:
+      excellent: 90
+      good: 75
+      acceptable: 60
+      poor: 40
+      failed: 30
+      
+  # Failure Conditions
+  failure_conditions:
+    missing_required_fields: true
+    invalid_data_formats: true
+    placeholder_content: true
+    empty_critical_fields: true
+    low_quality_score: 30  # Fail if quality score below 30%
+
+# Post-Extraction Validation
+post_extraction_validation:
+  enabled: true
+  comprehensive_check: true
+  
+  # Final Validation Rules
+  final_validation:
+    verify_all_required_fields: true
+    check_data_consistency: true
+    validate_url_accessibility: false  # Skip for performance, validate in reports
+    generate_quality_report: true
+    
+  # Output Validation
+  output_validation:
+    check_json_structure: true
+    validate_field_types: true
+    check_collection_formats: true
+    verify_url_formats: true
+    
+  # Success/Failure Determination
+  success_criteria:
+    all_required_fields_present: true
+    minimum_quality_score: 60
+    no_critical_validation_errors: true
+    meaningful_content_extracted: true
+
+# Custom cleaning functions for Agar data
+custom_cleaning:
+  normalize_ph_format:
+    description: "Convert pH values to standard format"
+    pattern: "\\d+\\.?\\d*\\s*[±+-]\\s*\\d*\\.?\\d*"
+    
+  normalize_units:
+    description: "Standardize size units (L, ML, etc.)"
+    replacements:
+      "ml": "mL"
+      "ltr": "L"
+      "litre": "L"
+      
+  extract_numeric_range:
+    description: "Extract numeric ranges from text"
+    pattern: "\\d+\\.?\\d*\\s*[±+-]?\\s*\\d*\\.?\\d*"
+    
+  sort_sizes:
+    description: "Sort product sizes logically"
+    order: ["ascending_numeric"]

@@ -1,0 +1,56 @@
+# Agar Processing Pipeline Configuration
+# Comprehensive parameterized pipeline for Crawl4AI scraping
+
+# Base configuration
+base_url: "https://agar.com.au"
+output_dir: "clients/agar/pipeline_data"
+steps: ["all"]  # or specify individual steps: ["category-discovery", "url-generation", "scraping", "validation"]
+
+# Category Discovery Settings
+category_discovery:
+  max_categories: 50
+  common_paths:
+    - "/products"
+    - "/categories" 
+    - "/cleaning-products"
+    - "/professional-cleaning"
+    - "/commercial-cleaning"
+
+# URL Generation Settings  
+url_generation:
+  batch_size: 50
+  max_products_per_category: 1000
+  max_pages_per_category: 20
+
+# Scraping Settings (builds upon universal_scraper.py)
+scraping:
+  scraping_mode: "enhanced"  # enhanced, simple, llm, api
+  batch_size: 10
+  delay: 2.0
+  limit: null  # overall limit across all categories, null = no limit
+  content_exclusion: true
+  selected_categories: []  # empty = all categories, or specify: ["Floor Care", "Kitchen Cleaning"]
+
+# Validation Settings (integrates with validation_system.py)
+validation:
+  enabled: true
+  generate_reports: true
+  quality_thresholds:
+    excellent: 90
+    good: 75
+    acceptable: 60
+    poor: 40
+
+# Advanced Configuration
+advanced:
+  # Error handling
+  continue_on_failure: true
+  max_retries: 3
+  
+  # Performance tuning
+  concurrent_categories: false  # process categories sequentially for better control
+  memory_optimization: true
+  
+  # Logging
+  log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  detailed_logging: true

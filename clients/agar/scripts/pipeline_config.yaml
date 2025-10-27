@@ -1,0 +1,25 @@
+'# Agar Processing Pipeline Configuration': null
+'# Category Discovery Settings': null
+'# Scraping Settings': null
+'# URL Generation Settings': null
+'# Validation Settings': null
+base_url: https://agar.com.au
+category_discovery:
+  max_categories: 50
+output_dir: pipeline_data
+scraping:
+  batch_size: 10
+  content_exclusion: true
+  delay: 2.0
+  limit: null
+  scraping_mode: enhanced
+  selected_categories: []
+steps:
+- all
+url_generation:
+  batch_size: 50
+  max_pages_per_category: 20
+  max_products_per_category: 1000
+validation:
+  enabled: true
+  generate_reports: true

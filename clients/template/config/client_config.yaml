@@ -1,0 +1,55 @@
+# Client-Specific Configuration Template
+# Copy and customize for each client
+
+client:
+  name: "CLIENT_NAME_HERE"
+  domain: "client-domain.com"
+  contact: "client-contact@domain.com"
+  created_date: "YYYY-MM-DD"
+  
+# Overrides for base configuration
+browser:
+  timeout: 45000  # Increase if client has slow pages
+  user_agent: null  # Set client-specific user agent if needed
+  
+crawling:
+  max_pages: 50  # Adjust based on client site size
+  max_depth: 3   # Adjust based on site structure
+  respect_robots_txt: true
+  
+rate_limit:
+  delay: 2  # Increase for sensitive clients
+  max_requests_per_second: 1
+  
+# Client-specific extraction settings
+extraction:
+  enable_javascript: true
+  wait_for_network: true
+  scroll_to_bottom: true
+  custom_wait_selectors: []  # Add selectors to wait for
+  
+# Client-specific output preferences
+output:
+  path: "./runs"
+  generate_sql: true
+  generate_json: true
+  generate_csv: true
+  include_metadata: true
+  
+# Client-specific data fields
+data_fields:
+  required: []  # List required fields for this client
+  optional: []  # List optional fields for this client
+  custom: {}    # Define custom field mappings
+  
+# Validation rules
+validation:
+  min_products: 10      # Minimum products expected
+  max_empty_fields: 5   # Max allowed empty required fields
+  price_range: null     # [min, max] expected price range
+  
+# Notification settings
+notifications:
+  email: null
+  webhook: null
+  slack: null

@@ -1,0 +1,123 @@
+# Agar Client Configuration
+# Customized for Agar cleaning products scraping
+
+client:
+  name: "Agar"
+  domain: "agar.com.au"
+  contact: "info@agar.com.au"
+  created_date: "2024-10-26"
+  
+# Overrides for base configuration
+browser:
+  timeout: 60000  # Increase timeout for Agar pages with lots of content
+  user_agent: null  # Use default user agent
+  
+crawling:
+  max_pages: 200  # Agar has many products
+  max_depth: 4    # Deep category structure
+  respect_robots_txt: true
+  
+rate_limit:
+  delay: 2  # Be respectful to Agar servers
+  max_requests_per_second: 1
+  
+# Client-specific extraction settings
+extraction:
+  enable_javascript: true
+  wait_for_network: true
+  scroll_to_bottom: true
+  custom_wait_selectors: 
+    - ".product-description"
+    - ".product-specs"
+    - ".download-links"
+  
+# Client-specific output preferences
+output:
+  path: "./clients/agar/runs"
+  generate_sql: true
+  generate_json: true
+  generate_csv: true
+  include_metadata: true
+  
+# Agar-specific data fields based on scraping overview
+data_fields:
+  required: 
+    - "product_name"
+    - "product_image_url"
+    - "product_skus"
+    - "product_categories"
+  optional: 
+    - "product_overview"
+    - "product_description"
+    - "product_sizes"
+    - "product_phlevel"
+    - "sds_urls"
+    - "pds_urls"
+  custom: 
+    downloadable_files:
+      sds_urls: "Safety Data Sheet URLs"
+      pds_urls: "Product Data Sheet URLs"
+    specifications:
+      product_sizes: "Available product sizes (collection)"
+      product_phlevel: "pH level specifications"
+    content_sections:
+      product_overview: "Product overview/what is section"
+      product_description: "Detailed product description"
+  
+# Validation rules for Agar products
+validation:
+  min_products: 50      # Agar has many cleaning products
+  max_empty_fields: 3   # Max allowed empty required fields
+  price_range: null     # Agar doesn't display prices on product pages
+  
+  # CRITICAL: 404 Error Handling - Failed pages must be logged as failures
+  error_handling:
+    detect_404_errors: true
+    404_indicators:
+      - "404"
+      - "Page Not Found"
+      - "Not Found"
+      - "The page you requested could not be found"
+      - "Error 404"
+      - "File not found"
+    status_codes:
+      - 404
+      - 410  # Gone
+      - 500  # Server Error
+      - 503  # Service Unavailable
+    log_failed_pages: true
+    fail_on_404: true  # Mark as failed extraction, not success
+    
+  # CRITICAL: Output Validation - Verify required properties are captured
+  output_validation:
+    enabled: true
+    check_required_fields: true
+    required_properties:
+      - "product_name"
+      - "product_image_url"
+      - "product_skus"
+      - "product_categories"
+    validation_rules:
+      product_name:
+        min_length: 3
+        max_length: 200
+        not_empty: true
+      product_image_url:
+        format: "url"
+        file_extensions: [".jpg", ".jpeg", ".png", ".webp"]
+        not_empty: true
+      product_skus:
+        not_empty: true
+        min_items: 1
+      product_categories:
+        not_empty: true
+        min_items: 1
+    validation_on_each_run: true  # Check output during each processing run
+    fail_incomplete_extractions: true  # Mark extractions with missing required fields as failed
+    validation_report: true  # Generate validation reports
+  
+# Notification settings
+notifications:
+  email: null
+  webhook: null
+  slack: null

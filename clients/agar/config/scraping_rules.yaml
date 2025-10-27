@@ -1,0 +1,309 @@
+# Agar Scraping Rules Configuration
+# Define Agar-specific extraction patterns and rules based on product scraping overview
+
+# URL patterns for discovery
+url_patterns:
+  product_page: 
+    - "https://agar\\.com\\.au/product/.*"
+    - "/product/[^/]+/?$"
+  category_page: 
+    - "https://agar\\.com\\.au/category/.*"
+    - "/category/[^/]+/?$"
+  exclude: 
+    - "/cart"
+    - "/checkout"
+    - "/account"
+    - "/admin"
+    
+# CSS/XPath selectors for Agar data extraction based on scraping overview
+selectors:
+  # Core product information
+  product_name: 
+    - "h1.product-title"
+    - "h1"
+    - ".product-name"
+    - "title"
+  
+  product_image_url:
+    - ".product-image img"
+    - ".main-product-image img"
+    - ".hero-image img"
+    - "img[alt*='product']"
+    - ".product-gallery img:first-child"
+  
+  # Product overview section (What is [Product]? section)
+  product_overview:
+    - ".product-overview"
+    - ".product-summary"
+    - ".what-is-section"
+    - ".product-intro"
+    - ".overview-content"
+  
+  # SKU information
+  product_skus:
+    - ".product-sku"
+    - ".sku-info"
+    - "[data-sku]"
+    - ".item-code"
+    - "span:contains('SKU')"
+  
+  # Product categories
+  product_categories:
+    - ".product-category"
+    - ".breadcrumb a"
+    - ".category-info"
+    - ".product-tags a"
+    - ".taxonomy-category"
+  
+  # Detailed product description
+  product_description:
+    - ".product-description"
+    - ".description-content"
+    - ".product-details"
+    - ".full-description"
+    - "#description"
+  
+  # Available sizes (collection - plural)
+  product_sizes:
+    - ".size-options"
+    - ".available-sizes"
+    - ".size-variants"
+    - ".product-sizes li"
+    - ".size-list"
+  
+  # pH Level specifications
+  product_phlevel:
+    - ".ph-level"
+    - ".specifications .ph"
+    - ".tech-specs .ph-value"
+    - ".product-specs td:contains('pH')"
+    - ".chemical-properties .ph"
+  
+  # SDS/PDS Download URLs (from Download SDS/PDS button)
+  sds_urls:
+    - "a[href*='sds']"
+    - "a[href*='safety-data-sheet']"
+    - ".download-sds"
+    - ".sds-download"
+    - "a:contains('SDS')"
+  
+  pds_urls:
+    - "a[href*='pds']"
+    - "a[href*='product-data-sheet']"
+    - ".download-pds"
+    - ".pds-download"
+    - "a:contains('PDS')"
+  
+  # Additional specifications
+  specifications:
+    - ".product-specs table"
+    - ".specifications dl"
+    - ".tech-specs"
+    - ".chemical-properties"
+    - ".product-attributes"
+    
+# Data cleaning rules
+cleaning:
+  price:
+    remove_currency: true
+    decimal_places: 2
+  text:
+    remove_html: true
+    strip_whitespace: true
+    normalize_spaces: true
+  images:
+    convert_relative_urls: true
+    download_images: false
+    
+# Extraction strategies
+extraction_strategy:
+  primary: "css"        # css, xpath, llm
+  fallback: "xpath"     # Fallback if primary fails
+  use_llm_for: 
+    - "product_overview"    # May need LLM for complex overview extraction
+    - "product_description" # May need LLM for detailed descriptions
+  
+# Collection handling for plural items
+collections:
+  product_sizes:
+    type: "list"
+    extract_text: true
+    separator: ","
+  product_categories:
+    type: "list"
+    extract_text: true
+    separator: "|"
+  sds_urls:
+    type: "list"
+    extract_attribute: "href"
+  pds_urls:
+    type: "list"
+    extract_attribute: "href"
+    
+# Pagination handling
+pagination:
+  enabled: true
+  next_button_selector: 
+    - ".pagination .next"
+    - "a:contains('Next')"
+    - ".next-page"
+  page_url_pattern: "?page={page}"
+  max_pages: 50
+  
+# JavaScript handling
+javascript:
+  wait_for_load: true
+  wait_time: 5000  # Wait longer for Agar pages to load content
+  scroll_behavior: "smooth"
+  click_actions: 
+    - ".show-more-description"  # Click to expand descriptions
+    - ".show-specs"            # Click to show specifications
+  
+# Anti-bot measures
+anti_bot:
+  randomize_delays: true
+  rotate_user_agents: false
+  use_proxies: false
+  captcha_handling: "manual"
+
+# CRITICAL: Error Detection - Identify 404 and failed pages
+error_detection:
+  enabled: true
+  check_on_load: true
+  
+  # 404 Error Detection Patterns
+  page_not_found_indicators:
+    title_patterns:
+      - "404"
+      - "Page Not Found"
+      - "Not Found"
+      - "Error"
+      - "Oops"
+    content_patterns:
+      - "The page you requested could not be found"
+      - "This page doesn't exist"
+      - "Sorry, the page you are looking for"
+      - "Page not found"
+      - "404 Error"
+      - "File not found"
+      - "The requested URL was not found"
+    css_selectors:
+      - ".error-404"
+      - ".not-found"
+      - ".page-not-found"
+      - ".error-page"
+      - "#error-404"
+    
+  # HTTP Status Code Checking
+  status_codes:
+    fail_on:
+      - 404  # Not Found
+      - 410  # Gone
+      - 500  # Internal Server Error
+      - 502  # Bad Gateway
+      - 503  # Service Unavailable
+      - 504  # Gateway Timeout
+    
+  # Empty/Invalid Content Detection
+  content_validation:
+    min_content_length: 500  # Pages with less content likely errors
+    required_elements:
+      - "h1"  # Should have at least a heading
+      - "body"  # Should have body content
+    
+  # Logging Configuration
+  error_logging:
+    log_failed_urls: true
+    log_error_details: true
+    create_failed_urls_report: true
+    
+# CRITICAL: Real-time Validation - Check extraction quality during scraping
+extraction_validation:
+  enabled: true
+  validate_on_extract: true
+  
+  # Required Field Validation
+  required_fields_check:
+    enabled: true
+    fields:
+      - "product_name"
+      - "product_image_url" 
+      - "product_skus"
+      - "product_categories"
+    fail_on_missing_required: true
+    
+  # Field Quality Validation
+  field_quality_checks:
+    product_name:
+      min_length: 3
+      max_length: 200
+      not_placeholder: true
+      not_generic: ["Product", "Item", "Unnamed"]
+      
+    product_image_url:
+      valid_url: true
+      valid_image_extension: [".jpg", ".jpeg", ".png", ".webp", ".gif"]
+      accessible_url: false  # Don't check accessibility during scraping for performance
+      
+    product_skus:
+      not_empty: true
+      valid_sku_format: true  # Basic alphanumeric check
+      min_length: 2
+      
+    product_categories:
+      not_empty: true
+      min_items: 1
+      not_generic: ["Category", "Products", "Items"]
+      
+  # Collection Validation for Plural Fields
+  collection_validation:
+    product_sizes:
+      valid_size_format: true
+      remove_duplicates: true
+    sds_urls:
+      valid_url: true
+      pdf_extension: true
+    pds_urls:
+      valid_url: true
+      pdf_extension: true
+      
+  # Validation Reporting
+  validation_reporting:
+    enabled: true
+    log_validation_results: true
+    create_quality_report: true
+    track_success_rate: true
+    
+# Success Criteria - Define what constitutes a successful extraction
+success_criteria:
+  minimum_required_fields: 4  # All 4 required fields must be present
+  minimum_content_quality: 70  # Quality score threshold (%)
+  acceptable_empty_optionals: 6  # Allow up to 6 optional fields to be empty
+  
+# Quality Scoring System
+quality_scoring:
+  enabled: true
+  weights:
+    required_field_completion: 40  # 40% weight for required fields
+    optional_field_completion: 20  # 20% weight for optional fields  
+    content_quality: 25  # 25% weight for content quality
+    data_validity: 15   # 15% weight for data format validity
+  thresholds:
+    excellent: 90
+    good: 75
+    acceptable: 60
+    poor: 40
+
+# Agar-specific field mappings
+field_mappings:
+  # Map internal field names to output field names
+  product_name: "name"
+  product_image_url: "image"
+  product_overview: "overview"
+  product_skus: "sku"
+  product_categories: "categories"
+  product_description: "description"
+  product_sizes: "sizes"
+  product_phlevel: "ph_level"
+  sds_urls: "safety_data_sheet_urls"
+  pds_urls: "product_data_sheet_urls"

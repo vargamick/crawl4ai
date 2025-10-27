@@ -275,6 +275,18 @@ docs/**/data
 docs/apps/linkdin/debug*/
 docs/apps/linkdin/samples/insights/*
 
-# Agar client specific exclusions
+# Prevent root directory clutter - client-specific files should go in clients/
+*_product_urls.json
+*_crawl_results.json
+crawl_results*.json
+batch_crawl_*.py
+create_test_*.py
+
+# Agar client specific exclusions  
 clients/agar/test-scripts/
 clients/agar/output/
+
+# Prevent single-use scripts in root - use scripts/examples/ instead
+single_use_*.py
+temp_*.py
+test_*.py
