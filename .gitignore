@@ -53,6 +53,9 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+examples/
+agar_products_final/
+
 
 # Translations
 *.mo
@@ -271,3 +274,7 @@ docs/**/data
 
 docs/apps/linkdin/debug*/
 docs/apps/linkdin/samples/insights/*
+
+# Agar client specific exclusions
+clients/agar/test-scripts/
+clients/agar/output/
