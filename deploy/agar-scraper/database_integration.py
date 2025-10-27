@@ -12,8 +12,8 @@ import logging
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
-from crawl4ai.agar.schemas import (
-    AgarCatalogData, ProductSchema, MediaSchema, 
+from clients.agar.schemas import (
+    AgarCatalogData, ProductSchema, MediaSchema,
     DocumentSchema, CategorySchema, ProductCategoryRelation
 )
 

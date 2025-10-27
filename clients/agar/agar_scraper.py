@@ -16,7 +16,6 @@ from .schemas import (
 from .product_extractor import ProductExtractor
 from .media_processor import MediaProcessor
 from .document_handler import DocumentHandler
-from .category_mapper import CategoryMapper
 from .json_normalizer import JSONNormalizer
 
 
@@ -38,7 +37,6 @@ class AgarScraper:
         self.product_extractor = ProductExtractor(config)
         self.media_processor = MediaProcessor(config)
         self.document_handler = DocumentHandler(config)
-        self.category_mapper = CategoryMapper(config)
         self.json_normalizer = JSONNormalizer(config.output_dir)
         
         # Storage for extracted data
@@ -164,9 +162,11 @@ class AgarScraper:
                 documents = self.document_handler.extract_documents_from_product(product, raw_data)
                 self.all_documents.extend(documents)
             
-            # Process categories
+            # Process categories - NOTE: Category processing moved to URL extractor
+            # The new agar_url_extractor.py handles category discovery more effectively
             if self.config.include_categories:
-                categories, relationships = self.category_mapper.extract_categories_from_product(product, raw_data)
+                # Basic category extraction from raw data (simplified approach)
+                categories, relationships = self._extract_basic_categories(product, raw_data)
                 self.all_categories.extend(categories)
                 self.all_product_categories.extend(relationships)
             
@@ -193,8 +193,8 @@ class AgarScraper:
         # Remove duplicate categories
         if self.all_categories:
             original_count = len(self.all_categories)
-            self.all_categories = self.category_mapper.deduplicate_categories(self.all_categories)
-            self.all_categories = self.category_mapper.sort_categories_by_hierarchy(self.all_categories)
+            self.all_categories = self._deduplicate_categories(self.all_categories)
+            self.all_categories = self._sort_categories_by_hierarchy(self.all_categories)
             
             if self.config.verbose and original_count != len(self.all_categories):
                 print(f"  Removed {original_count - len(self.all_categories)} duplicate categories")
@@ -308,6 +308,98 @@ class AgarScraper:
             "products_with_categories": len(set(r.product_id for r in self.all_product_categories)),
         }
     
+    def _extract_basic_categories(self, product: ProductSchema, raw_data: Dict[str, Any]) -> tuple[List[CategorySchema], List[ProductCategoryRelation]]:
+        """
+        Extract basic categories from raw product data (simplified approach).
+        
+        Args:
+            product: Product schema object
+            raw_data: Raw extracted data
+            
+        Returns:
+            Tuple of (categories list, product-category relationships list)
+        """
+        from .utils import generate_category_id, clean_text, create_slug
+        
+        categories = []
+        relationships = []
+        
+        # Extract category names from raw data
+        category_names = raw_data.get("categories", [])
+        if isinstance(category_names, str):
+            category_names = [category_names]
+        
+        for i, cat_name in enumerate(category_names):
+            if not cat_name:
+                continue
+                
+            cleaned_name = clean_text(cat_name)
+            if not cleaned_name:
+                continue
+            
+            try:
+                category_id = generate_category_id(cleaned_name)
+                slug = create_slug(cleaned_name)
+                
+                category = CategorySchema(
+                    category_id=category_id,
+                    category_name=cleaned_name,
+                    parent_category_id=None,  # Simplified - no hierarchy
+                    slug=slug,
+                    level=0,
+                    metadata={"extraction_source": "basic_extraction"}
+                )
+                
+                categories.append(category)
+                
+                # Create relationship
+                relationship = ProductCategoryRelation(
+                    product_id=product.product_id,
+                    category_id=category_id,
+                    primary=(i == 0)  # First category is primary
+                )
+                relationships.append(relationship)
+                
+            except Exception as e:
+                if self.config.verbose:
+                    print(f"  Error creating category for {cleaned_name}: {e}")
+                continue
+        
+        return categories, relationships
+    
+    def _deduplicate_categories(self, categories: List[CategorySchema]) -> List[CategorySchema]:
+        """
+        Remove duplicate categories based on name.
+        
+        Args:
+            categories: List of categories
+            
+        Returns:
+            Deduplicated list of categories
+        """
+        seen_names = set()
+        unique_categories = []
+        
+        for category in categories:
+            name_key = category.category_name.lower()
+            if name_key not in seen_names:
+                seen_names.add(name_key)
+                unique_categories.append(category)
+        
+        return unique_categories
+    
+    def _sort_categories_by_hierarchy(self, categories: List[CategorySchema]) -> List[CategorySchema]:
+        """
+        Sort categories by hierarchy level and name.
+        
+        Args:
+            categories: List of categories
+            
+        Returns:
+            Sorted list of categories
+        """
+        return sorted(categories, key=lambda x: (x.level, x.category_name))
+    
     async def scrape_single_product(self, product_url: str) -> Optional[Dict[str, Any]]:
         """
         Scrape a single product for testing purposes.
@@ -330,7 +422,7 @@ class AgarScraper:
             # Extract media, documents, categories
             media_items = await self.media_processor.extract_media_from_product(product, raw_data)
             documents = self.document_handler.extract_documents_from_product(product, raw_data)
-            categories, relationships = self.category_mapper.extract_categories_from_product(product, raw_data)
+            categories, relationships = self._extract_basic_categories(product, raw_data)
             
             return {
                 "product": product.dict(),

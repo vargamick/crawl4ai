@@ -25,8 +25,8 @@ import schedule
 import threading
 import time
 
-from crawl4ai.agar.agar_scraper import AgarScraper
-from crawl4ai.agar.schemas import ScrapingConfig
+from clients.agar.agar_scraper import AgarScraper
+from clients.agar.schemas import ScrapingConfig
 from database_integration import AgarDatabaseIntegrator
 
 # Configure logging

@@ -17,7 +17,6 @@ from .agar_scraper import AgarScraper
 from .product_extractor import ProductExtractor
 from .media_processor import MediaProcessor
 from .document_handler import DocumentHandler
-from .category_mapper import CategoryMapper
 from .json_normalizer import JSONNormalizer
 from .schemas import ProductSchema, MediaSchema, DocumentSchema, CategorySchema
 
@@ -29,7 +28,6 @@ __all__ = [
     "ProductExtractor", 
     "MediaProcessor",
     "DocumentHandler",
-    "CategoryMapper",
     "JSONNormalizer",
     "ProductSchema",
     "MediaSchema", 

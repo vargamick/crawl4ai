@@ -38,8 +38,8 @@ from crawl4ai.async_configs import LLMConfig
 
 # Enhanced Agar Scraper imports (if available)
 try:
-    from crawl4ai.agar.schemas import ScrapingConfig
-    from crawl4ai.agar.enhanced_agar_scraper import EnhancedAgarScraper
+    from clients.agar.schemas import ScrapingConfig
+    from clients.agar.enhanced_agar_scraper import EnhancedAgarScraper
     ENHANCED_AVAILABLE = True
 except ImportError:
     ENHANCED_AVAILABLE = False
