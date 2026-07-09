@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agar-catalog"
+version = "0.1.0"
+description = "API-first product-catalogue harvester (Agar). Reads the WooCommerce Store API, not a browser crawl."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2",
+    "pyyaml>=6",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+# Generic-crawler fallback ONLY. Core installs pull no browser/LLM stack.
+crawl = ["crawl4ai>=0.9.1"]
+# Optional Postgres sink for the ingestion pipeline.
+postgres = ["asyncpg>=0.29"]
+# HTML/JSON-LD fallback sources.
+html = ["beautifulsoup4>=4.12", "lxml>=5"]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5", "mypy>=1.10"]
+
+[project.scripts]
+harvest = "agar_catalog.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agar_catalog"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

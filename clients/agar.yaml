@@ -1,0 +1,17 @@
+client: agar
+base_url: https://agar.com.au
+source: store_api                 # store_api (primary) | http_css | jsonld | crawl4ai
+store_api:
+  path: /wp-json/wc/store/v1/products
+  per_page: 100
+documents:
+  enabled: true
+  link_patterns:                  # matched on each product page; classified by DocumentHandler
+    - '\.pdf(\?|$)'
+    - '/sds/?'
+    - '-pds-sds'
+    - 'datasheet'
+    - 'safety'
+output:
+  dir: output/agar
+  formats: [json, markdown]
