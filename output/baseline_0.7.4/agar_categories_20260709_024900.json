@@ -1,0 +1,602 @@
+[
+  {
+    "category_id": "cat_air_fresheners_deodorisers_281065",
+    "category_name": "Air Fresheners & Deodorisers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "air-fresheners-deodorisers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:48.538394",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "category_name": "All Purpose & Floor Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "all-purpose-floor-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:49.387348",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_base_sealers_0d3b18",
+    "category_name": "Base Sealers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "base-sealers",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:30.459739",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_before_the_wash_25224d",
+    "category_name": "Before the Wash",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "before-the-wash",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:14.534025",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_biological_cleaning_products_d68bc2",
+    "category_name": "Biological Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "biological-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:50.643020",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_body_wash_hair_shampoo_40eef6",
+    "category_name": "Body Wash & Hair Shampoo",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "body-wash-hair-shampoo",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:41.371246",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "category_name": "Carpet Cleaner with Spotters and Stain Removers for Tough Marks",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "carpet-cleaner-with-spotters-and-stain-removers-for-tough-marks",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:02.391281",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_carpet_cleaners_d6f5cf",
+    "category_name": "Carpet Cleaners",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "carpet-cleaners",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:41.789098",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_carpet_treatments_06bb7c",
+    "category_name": "Carpet Treatments",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "carpet-treatments",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:25.850798",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_chlorinated_cleaners_sanitisers_7029fa",
+    "category_name": "Chlorinated Cleaners & Sanitisers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "chlorinated-cleaners-sanitisers",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:01.972730",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_cleansave_products_a9d89c",
+    "category_name": "CleanSave Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "cleansave-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:59.041969",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "category_name": "Cleaning & Sanitising",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "cleaning-sanitising",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:18.719576",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_commercial_laundry_machine_washing_48cb80",
+    "category_name": "Commercial Laundry Machine Washing",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "commercial-laundry-machine-washing",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:04.901977",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_concrete_cleaners_removers_efbd7a",
+    "category_name": "Concrete Cleaners & Removers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "concrete-cleaners-removers",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:36.744126",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_cream_cleansers_20d8e4",
+    "category_name": "Cream Cleansers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "cream-cleansers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:45.137817",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_cutting_back_c9179a",
+    "category_name": "Cutting Back",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "cutting-back",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:58.203137",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "category_name": "Detergent Deodorisers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "detergent-deodorisers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:54.426718",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "category_name": "Disinfectant & Antibacterial Detergent",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "disinfectant-antibacterial-detergent",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:42.628100",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_floor_maintainers_38ebf9",
+    "category_name": "Floor Maintainers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "floor-maintainers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:43.464018",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_floor_sealers_f91739",
+    "category_name": "Floor Sealers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "floor-sealers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:40.533147",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_floor_strippers_320050",
+    "category_name": "Floor Strippers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "floor-strippers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:48.107057",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_foaming_hand_soap_253c38",
+    "category_name": "Foaming Hand Soap",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "foaming-hand-soap",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:58.622509",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_food_processing_e9e73e",
+    "category_name": "Food Processing",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "food-processing",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:55.684156",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_furniture_polish_6338d6",
+    "category_name": "Furniture Polish",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "furniture-polish",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:57.273772",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_glass_cleaners_631ec0",
+    "category_name": "Glass Cleaners",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "glass-cleaners",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:53.588182",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_graffiti_removers_f55aba",
+    "category_name": "Graffiti Removers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "graffiti-removers",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:11.603460",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "category_name": "Green Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "green-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:09.085669",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_hand_sanitiser_4e2991",
+    "category_name": "Hand Sanitiser",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "hand-sanitiser",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:17.880873",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "category_name": "Heavy Duty Detergents",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "heavy-duty-detergents",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:44.301990",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_hot_products_da9255",
+    "category_name": "Hot Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "hot-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:51.899403",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_kitchen_floor_cleaning_57b3d9",
+    "category_name": "Kitchen Floor Cleaning",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "kitchen-floor-cleaning",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:49.723624",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_laundry_products_6c282e",
+    "category_name": "Laundry Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "laundry-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:45.555569",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_leather_cleaner_9c8d70",
+    "category_name": "Leather Cleaner",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "leather-cleaner",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:59.784369",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_liquid_soap_5add38",
+    "category_name": "Liquid Soap",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "liquid-soap",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:06.158929",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_machine_washing_4d3cb9",
+    "category_name": "Machine Washing",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "machine-washing",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:14.116323",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_metal_products_01ed0c",
+    "category_name": "Metal Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "metal-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:40.953327",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_oven_grill_cleaning_products_20b1bd",
+    "category_name": "Oven & Grill Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "oven-grill-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:21.244580",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_portable_toilet_care_5a7040",
+    "category_name": "Portable Toilet Care",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "portable-toilet-care",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:43.045938",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_prespraying_hot_water_extraction_formulations_2a9d91",
+    "category_name": "Pre-Spraying & Hot Water Extraction Formulations",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "pre-spraying-hot-water-extraction-formulations",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:55.265742",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_restoration_fa842a",
+    "category_name": "Restoration",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "restoration",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:52.236834",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "category_name": "Special Purpose & Heavy Duty Detergents",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "special-purpose-heavy-duty-detergents",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:42.207791",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_special_treatment_05369c",
+    "category_name": "Special Treatment",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "special-treatment",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:52.318287",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_specialised_sealers_fd1964",
+    "category_name": "Specialised Sealers",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "specialised-sealers",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:47.676429",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_specialty_cleaning_products_1acb54",
+    "category_name": "Specialty Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "specialty-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:56.103837",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_spray_wipe_cleaning_products_57aad8",
+    "category_name": "Spray & Wipe Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "spray-wipe-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:23.335697",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_spray_buff_7d419c",
+    "category_name": "Spray Buff",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "spray-buff",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:46.391744",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_stainless_steel_care_59f4a3",
+    "category_name": "Stainless Steel Care",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "stainless-steel-care",
+    "level": 0,
+    "created_at": "2026-07-09T02:47:46.810151",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_toilet_bathroom_cleaning_products_7deadd",
+    "category_name": "Toilet & Bathroom Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "toilet-bathroom-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:22.080398",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_vehicle_cleaning_products_46605d",
+    "category_name": "Vehicle Cleaning Products",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "vehicle-cleaning-products",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:10.344936",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  },
+  {
+    "category_id": "cat_ware_washing_07cb70",
+    "category_name": "Ware Washing",
+    "parent_category_id": null,
+    "description": null,
+    "slug": "ware-washing",
+    "level": 0,
+    "created_at": "2026-07-09T02:48:12.860464",
+    "metadata": {
+      "extraction_source": "basic_extraction"
+    }
+  }
+]

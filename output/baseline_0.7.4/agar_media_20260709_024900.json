@@ -1,0 +1,3074 @@
+[
+  {
+    "media_id": "med_prod_3d-gloss_19e350b8_001_c631632f",
+    "product_id": "prod_3d-gloss_19e350b8",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/3D-Gloss-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "3D-Gloss",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:40.413985",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/3D-Gloss-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_acid-wash_bcea72a8_001_14dc1429",
+    "product_id": "prod_acid-wash_bcea72a8",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Acid-Wash-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Acid Wash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:40.834235",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Acid-Wash-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_active-break_fe1678c8_001_39eefa8b",
+    "product_id": "prod_active-break_fe1678c8",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Active-Break-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Active Break",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:49.605968",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Active-Break-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_all-fresh_72fb7988_001_e22775f5",
+    "product_id": "prod_all-fresh_72fb7988",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/All-Fresh-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "All Fresh",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:21.963546",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/All-Fresh-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_amazon-g5_39b24779_001_ec8ae57e",
+    "product_id": "prod_amazon-g5_39b24779",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Amazon-G5-1kg-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Amazon G5",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:59.249658",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Amazon-G5-1kg-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ambergold_7788a092_001_3628629c",
+    "product_id": "prod_ambergold_7788a092",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Ambergold-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Ambergold",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:41.254130",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Ambergold-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ammodet_81d78098_001_9f1450dc",
+    "product_id": "prod_ammodet_81d78098",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Ammodet-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Ammodet",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:54.633427",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Ammodet-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_amsolve_33cbe60f_001_a2ee7a9c",
+    "product_id": "prod_amsolve_33cbe60f",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/Amsolve-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Amsolve",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:25.312277",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/Amsolve-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_anti-static-carpet-spray_0e99284d_001_7cc66a0a",
+    "product_id": "prod_anti-static-carpet-spray_0e99284d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Anti-Static-Carpet-Spray-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Anti-Static Carpet Spray",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:25.730660",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Anti-Static-Carpet-Spray-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_antifoam_491aa1b2_001_ad026e97",
+    "product_id": "prod_antifoam_491aa1b2",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Antifoam-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Antifoam",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:41.672038",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Antifoam-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_as-60_8c6fae45_001_56823a1e",
+    "product_id": "prod_as-60_8c6fae45",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Alcohol-Sanitiser-AS-60-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Alcohol Sanitiser AS-60",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:24.893711",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Alcohol-Sanitiser-AS-60-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_autobrite_79c0f861_001_081badd6",
+    "product_id": "prod_autobrite_79c0f861",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Autobrite-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Autobrite",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:49:00.504141",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Autobrite-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_autodish-sp_2fd87b40_001_0c62ee9b",
+    "product_id": "prod_autodish-sp_2fd87b40",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Autodish-SP-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Autodish SP",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:41.652207",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Autodish-SP-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_autodish_d40538a0_001_5903744f",
+    "product_id": "prod_autodish_d40538a0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Autodish-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Autodish",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:42.070267",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Autodish-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_autoscrub_d418da2b_001_b2a5d8cb",
+    "product_id": "prod_autoscrub_d418da2b",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Autoscrub-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Autoscrub",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:34.945126",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Autoscrub-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_bac2work_7d48f1b1_001_b829e2ea",
+    "product_id": "prod_bac2work_7d48f1b1",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2022/02/Bac2Work-5L.png",
+    "sequence_order": 1,
+    "alt_text": "Bac2Work",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:53.038678",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2022/02/Bac2Work-5L.png"
+    }
+  },
+  {
+    "media_id": "med_prod_bellevue_b7e6806d_001_9d45fe00",
+    "product_id": "prod_bellevue_b7e6806d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Bellevue-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Bellevue",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:53.469753",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Bellevue-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_bleach_6cb0942c_001_7d46781f",
+    "product_id": "prod_bleach_6cb0942c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Bleach-5L-4-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Bleach",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:42.488841",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Bleach-5L-4-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_blue-active_cafa1212_001_6aaca529",
+    "product_id": "prod_blue-active_cafa1212",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/06/Blue-Active-5KG-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Blue Active",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:36.206667",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/06/Blue-Active-5KG-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_bonnet-cleaner_777adcde_001_045077ae",
+    "product_id": "prod_bonnet-cleaner_777adcde",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Bonnet-Cleaner-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Bonnet Cleaner",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:52.619126",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Bonnet-Cleaner-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_bowl-clean_0a90d5bd_001_8f71f53a",
+    "product_id": "prod_bowl-clean_0a90d5bd",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Bowl-Clean-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Bowl Clean",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:17.343304",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Bowl-Clean-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_breeze_1ea888fa_001_d4cba5d6",
+    "product_id": "prod_breeze_1ea888fa",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Breeze-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Breeze",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:54.308174",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Breeze-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_browning-treatment_c8939c0e_001_78f452ef",
+    "product_id": "prod_browning-treatment_c8939c0e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Browing-Treatment-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Browning Treatment",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:26.151627",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Browing-Treatment-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cap-it-off_cd4ff7e4_001_3739e189",
+    "product_id": "prod_cap-it-off_cd4ff7e4",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Cap-It-Off-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Cap-It-Off",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:26.570603",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Cap-It-Off-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_carpet-shampoo_a1baa088_001_ce6bd561",
+    "product_id": "prod_carpet-shampoo_a1baa088",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Carpet-Shampoo-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Carpet Shampoo",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:54.727530",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Carpet-Shampoo-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_carpet-spotter-b_6c7a53cf_001_b708443d",
+    "product_id": "prod_carpet-spotter-b_6c7a53cf",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Carpet-Spotter-B-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Carpet Spotter B",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:26.989061",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Carpet-Spotter-B-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cd-13_d07ce291_001_0715483d",
+    "product_id": "prod_cd-13_d07ce291",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/CD-13-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CD-13",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:42.907624",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/CD-13-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_chloradet_adfd01ce_001_7ac44b2e",
+    "product_id": "prod_chloradet_adfd01ce",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/08/Chloradet-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Chloradet",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:01.855424",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/08/Chloradet-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_citra-mist_9aee70af_001_9d8b008b",
+    "product_id": "prod_citra-mist_9aee70af",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Citra-Mist-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Citra-Mist",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:48.769033",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Citra-Mist-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_citrastar_891e5cf9_001_c2d52c9d",
+    "product_id": "prod_citrastar_891e5cf9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Citrastar-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Citrastar",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:18.602025",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Citrastar-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_citrus-extra_e848bf4b_001_a27e9414",
+    "product_id": "prod_citrus-extra_e848bf4b",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Citrus-Extra-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Citrus Extra",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:55.148288",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Citrus-Extra-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-1_7f39d3c6_001_56d14da6",
+    "product_id": "prod_cleansave-1_7f39d3c6",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-1-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 1",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:58.923303",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-1-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-2_8fa7362a_001_106f062f",
+    "product_id": "prod_cleansave-2_8fa7362a",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-2-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 2",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:59.342754",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-2-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-3l_bdc1afad_001_2200c777",
+    "product_id": "prod_cleansave-3l_bdc1afad",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/CleanSave-3L-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 3L",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:59.761767",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/CleanSave-3L-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-4s_9326c6c9_001_178f8a52",
+    "product_id": "prod_cleansave-4s_9326c6c9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-4S-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 4S",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:00.180591",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-4S-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-4t_029e3795_001_46da884d",
+    "product_id": "prod_cleansave-4t_029e3795",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-4T-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 4T",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:00.598719",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-4T-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-5_c4203217_001_d15d799e",
+    "product_id": "prod_cleansave-5_c4203217",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-5-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 5",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:01.017206",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-5-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cleansave-7_5a175636_001_ad2bde6a",
+    "product_id": "prod_cleansave-7_5a175636",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-7-2.4L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CleanSave 7",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:01.436612",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/08/CleanSave-7-2.4L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cm-x_d16cb9f0_001_de39543a",
+    "product_id": "prod_cm-x_d16cb9f0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/03/CM-X-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CM-X",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:36.625085",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/03/CM-X-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_coffee-machine-cleaner_c4460a20_001_17badb7f",
+    "product_id": "prod_coffee-machine-cleaner_c4460a20",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2017/12/Coffee-Machine-Cleaner-500g-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Coffee Machine Cleaner",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:55.566556",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2017/12/Coffee-Machine-Cleaner-500g-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_coffee-stain-remover-a-b_94cac477_001_cb7383fe",
+    "product_id": "prod_coffee-stain-remover-a-b_94cac477",
+    "media_type": "image",
+    "media_format": "jpg",
+    "media_url": "https://agar.com.au/wp-content/uploads/2018/02/Coffee-Stain-Remover-Part-B-1000x999.jpg",
+    "sequence_order": 1,
+    "alt_text": "Coffee Stain Remover",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:41.234043",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2018/02/Coffee-Stain-Remover-Part-B-1000x999.jpg"
+    }
+  },
+  {
+    "media_id": "med_prod_cold-king_66fd3e9b_001_23c6bf3c",
+    "product_id": "prod_cold-king_66fd3e9b",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/11/Cold-King-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Cold King",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:55.984998",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/11/Cold-King-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_combi-oven-cleaner_fffd15e2_001_cf72c216",
+    "product_id": "prod_combi-oven-cleaner_fffd15e2",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Combi-Oven-Cleaner-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Combi-Oven Cleaner",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:21.126411",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Combi-Oven-Cleaner-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_concrete-remover-cr-60_52830952_001_dee2c571",
+    "product_id": "prod_concrete-remover-cr-60_52830952",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Concrete-Remover-CR-60-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Concrete Remover CR-60",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:37.044959",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Concrete-Remover-CR-60-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cool-tide_8455216c_001_9945b2e7",
+    "product_id": "prod_cool-tide_8455216c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Cool-Tide-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Cool Tide",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:17.763172",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Cool-Tide-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_counterflu-rtu_875eab83_001_6d22e6d8",
+    "product_id": "prod_counterflu-rtu_875eab83",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/CounterFlu-RTU-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CounterFlu RTU",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:50.024418",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/CounterFlu-RTU-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_counterflu_e6964af6_001_cf60d45c",
+    "product_id": "prod_counterflu_e6964af6",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/12/Counterflu-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "CounterFlu",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:49:00.085200",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/12/Counterflu-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_country-garden_2a79b086_001_2fabe742",
+    "product_id": "prod_country-garden_2a79b086",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Country Garden",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:47.096585",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Country-Garden-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_cure_7d0be016_001_448957cb",
+    "product_id": "prod_cure_7d0be016",
+    "media_type": "image",
+    "media_format": "jpg",
+    "media_url": "https://agar.com.au/wp-content/uploads/2018/02/Cure-1L-1000x1000.jpg",
+    "sequence_order": 1,
+    "alt_text": "Cure - Stain Remover",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:28.243810",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2018/02/Cure-1L-1000x1000.jpg"
+    }
+  },
+  {
+    "media_id": "med_prod_demolish_4166c1de_001_3a57ec21",
+    "product_id": "prod_demolish_4166c1de",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Demolish-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Demolish",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:08.131820",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Demolish-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_dirt-off_89a0d187_001_be16ce8f",
+    "product_id": "prod_dirt-off_89a0d187",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/05/Dirt-Off-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Agar's Dirt Off Degreaser Detergent",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:50.443232",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/05/Dirt-Off-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_dish-kleena_f1e28f68_001_187e3dcb",
+    "product_id": "prod_dish-kleena_f1e28f68",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2022/01/Dish-Kleena-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Dish-Kleena",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:43.327258",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2022/01/Dish-Kleena-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_dish-power-sl_f15c9d18_001_6de73618",
+    "product_id": "prod_dish-power-sl_f15c9d18",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/11/Dish-Power-SL-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Dish Power SL",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:43.747376",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/11/Dish-Power-SL-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_dishwash-gold_ec7e6d5d_001_d712d420",
+    "product_id": "prod_dishwash-gold_ec7e6d5d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Dishwash-Gold-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Dishwash Gold",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:44.166587",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Dishwash-Gold-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_dlx_d86cea19_001_da942449",
+    "product_id": "prod_dlx_d86cea19",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/DLX-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "DLX Citrus Degreaser",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:28.664265",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/DLX-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_double-bubble_b9ddbaf1_001_ed48e516",
+    "product_id": "prod_double-bubble_b9ddbaf1",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Double-Bubble-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Double Bubble 5L",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:03.110546",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Double-Bubble-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_drain-solution_bf4d50eb_001_460aa012",
+    "product_id": "prod_drain-solution_bf4d50eb",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/08/Drain-Solution-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Drain Solution",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:57.244251",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/08/Drain-Solution-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_drive-away_e8e589a3_001_12d3fa8c",
+    "product_id": "prod_drive-away_e8e589a3",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Drive-Away-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Drive Away",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:48.351079",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Drive-Away-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_duro_ecbe1852_001_2af64635",
+    "product_id": "prod_duro_ecbe1852",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Duro-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Duro",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:29.083488",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Duro-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_enyclean_900462d7_001_84ddae29",
+    "product_id": "prod_enyclean_900462d7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Enyclean-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Enyclean",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:22.381249",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Enyclean-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_escalator-cleaner_0e769c2d_001_82bcb92c",
+    "product_id": "prod_escalator-cleaner_0e769c2d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Escalator-Cleaner-5L-new-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Escalator Cleaner",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:29.502079",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Escalator-Cleaner-5L-new-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_everfresh_ed5fe689_001_3b07c845",
+    "product_id": "prod_everfresh_ed5fe689",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/09/Everfresh-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Everfresh",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:57.574521",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/09/Everfresh-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_exit_df92b99c_001_c0f0631b",
+    "product_id": "prod_exit_df92b99c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Exit-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Exit",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:56.823204",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Exit-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_fabric-softener_33ef5c12_001_d999a304",
+    "product_id": "prod_fabric-softener_33ef5c12",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Fabric-Softener-Rinse-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Fabric Softener",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:29.922219",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Fabric-Softener-Rinse-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_fast-glass_19eb561d_001_cd715606",
+    "product_id": "prod_fast-glass_19eb561d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Fast-Glass-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Fast Glass",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:56.404664",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Fast-Glass-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_first-base_a7b1ec8a_001_d4a1cfc3",
+    "product_id": "prod_first-base_a7b1ec8a",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/First-Base-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "First Base",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:30.340663",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/First-Base-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_flair_f169e460_001_9481c2dd",
+    "product_id": "prod_flair_f169e460",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Flair-5KG.png",
+    "sequence_order": 1,
+    "alt_text": "Agar's FLAIR Laundry Powder available in a 5KG container.",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:13.997928",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Flair-5KG.png"
+    }
+  },
+  {
+    "media_id": "med_prod_flash-dry_c0d72ec0_001_47e27d0a",
+    "product_id": "prod_flash-dry_c0d72ec0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Flash-Dry-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Flash Dry",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:56.314249",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Flash-Dry-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_floral_ab9b403c_001_255f968c",
+    "product_id": "prod_floral_ab9b403c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Floral-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Floral",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:57.665290",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Floral-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_florprep_7bb338b7_001_10a3545c",
+    "product_id": "prod_florprep_7bb338b7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Floorprep-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Florprep",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:58.085421",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Floorprep-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_foam-up_e8ca575e_001_9ad5d1bd",
+    "product_id": "prod_foam-up_e8ca575e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Foam-Up-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Foam Up",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:37.463964",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Foam-Up-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_foaming-hand-wash_e77ded0b_001_8291ccdd",
+    "product_id": "prod_foaming-hand-wash_e77ded0b",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Foaming-Hand-Wash-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Foaming Hand Wash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:58.504082",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Foaming-Hand-Wash-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_fresco_3c2dec09_001_30280a6e",
+    "product_id": "prod_fresco_3c2dec09",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Fresco-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Fresco",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:30.760572",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Fresco-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_fresh-mop_8f5ee6a0_001_5a59885f",
+    "product_id": "prod_fresh-mop_8f5ee6a0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Fresh-Mop-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Fresh Mop",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:40.815785",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Fresh-Mop-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_freshaire_3040d7b0_001_39cf9fd4",
+    "product_id": "prod_freshaire_3040d7b0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Freshaire-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Freshaire 5L",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:08.551141",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Freshaire-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_fruitnveg-sanitiser_a3f86373_001_0048a9aa",
+    "product_id": "prod_fruitnveg-sanitiser_a3f86373",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Fruit-N-Verg-Sanitiser-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Fruit'N'Veg Sanitiser",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:19.020368",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Fruit-N-Verg-Sanitiser-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_g-solve_33c017f5_001_8d87206f",
+    "product_id": "prod_g-solve_33c017f5",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/G-Solve-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "G-Solve",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:02.273587",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/G-Solve-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_galley-2_b568a15b_001_fdefde8f",
+    "product_id": "prod_galley-2_b568a15b",
+    "media_type": "image",
+    "media_format": "jpg",
+    "media_url": "https://agar.com.au/wp-content/uploads/2018/02/Galley-2-5KG--1000x999.jpg",
+    "sequence_order": 1,
+    "alt_text": "Galley 2 - Dishwashing Powder",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:44.584643",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2018/02/Galley-2-5KG--1000x999.jpg"
+    }
+  },
+  {
+    "media_id": "med_prod_garland_2aae5d3b_001_d9842529",
+    "product_id": "prod_garland_2aae5d3b",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Garland-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Garland",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:27.825753",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Garland-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_glass-wash_a9da583f_001_4ce8ab61",
+    "product_id": "prod_glass-wash_a9da583f",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Glass-Wash-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Glass Wash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:45.002615",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Glass-Wash-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_grab_052e9705_001_0bc7d86e",
+    "product_id": "prod_grab_052e9705",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Grab-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Grab",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:31.179028",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Grab-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_graffiti-remover_00d9869f_001_fb936d4e",
+    "product_id": "prod_graffiti-remover_00d9869f",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Graffiti-Remover-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Graffiti Remover",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:55.473186",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Graffiti-Remover-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_graffiti-wipe-off_77d76ed1_001_704b816d",
+    "product_id": "prod_graffiti-wipe-off_77d76ed1",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Graffiti-Wipe-Off-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Graffiti Wipe-Off",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:11.485106",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Graffiti-Wipe-Off-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_green-n-gold_7723c62d_001_bcb77992",
+    "product_id": "prod_green-n-gold_7723c62d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/07/GreenNGold-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Green'N'Gold",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:50.862166",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/07/GreenNGold-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_grill-clean_f022ea36_001_a1d0186e",
+    "product_id": "prod_grill-clean_f022ea36",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/Grill-Clean-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Grill Clean",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:21.545381",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/Grill-Clean-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_handpass_972767ab_001_24b15e19",
+    "product_id": "prod_handpass_972767ab",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/09/Handpass-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Handpass",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:02.692090",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/09/Handpass-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hc-90_29f493f7_001_f348b2e4",
+    "product_id": "prod_hc-90_29f493f7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/HC-90-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "HC-90",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:39.978787",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/HC-90-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hf-detergent_ab8f046e_001_fa3d9a48",
+    "product_id": "prod_hf-detergent_ab8f046e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/05/HF-Detergent-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "HF Detergent",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:03.948102",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/05/HF-Detergent-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hf-low-foam_d32e0d43_001_4d38a33c",
+    "product_id": "prod_hf-low-foam_d32e0d43",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Low-Foam-HF-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Low Foam HF",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:38.302525",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Low-Foam-HF-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hook-acid_703e9fc5_001_59f6bf42",
+    "product_id": "prod_hook-acid_703e9fc5",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Hook-Acid-200L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Hook Acid",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:35.363331",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Hook-Acid-200L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hook-clean_11ae16f9_001_1999dab9",
+    "product_id": "prod_hook-clean_11ae16f9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2022/07/Hook-Clean-20L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Hook Clean",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:45.420520",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2022/07/Hook-Clean-20L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hook-oil-concentrate_2b7491fc_001_222f4430",
+    "product_id": "prod_hook-oil-concentrate_2b7491fc",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Hook-Oil-200L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Hook Oil Concentrate",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:35.781407",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Hook-Oil-200L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hygieniclean_2fd67933_001_23d4e70c",
+    "product_id": "prod_hygieniclean_2fd67933",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/HygieniClean-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "HygieniCLEAN",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:19.439305",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/HygieniClean-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_hyperax-5_3f08d529_001_aa7570a8",
+    "product_id": "prod_hyperax-5_3f08d529",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Hyperax-5-25KG-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Hyperax 5",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:24.475383",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Hyperax-5-25KG-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_isopropyl-alcohol_4886a2df_001_f6c5ff2e",
+    "product_id": "prod_isopropyl-alcohol_4886a2df",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Isopropyl-Alcohol-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Isopropyl Alcohol",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:03.528690",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Isopropyl-Alcohol-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_jackpot_d9631f67_001_46ccf3fb",
+    "product_id": "prod_jackpot_d9631f67",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/11/Jackpot-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Jackpot",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:45.839585",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/11/Jackpot-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_jetsol_b791aa87_001_5c43aba1",
+    "product_id": "prod_jetsol_b791aa87",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Jetsol-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Jetsol",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:55.051305",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Jetsol-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_kooka-kleena_6f94012b_001_23f69588",
+    "product_id": "prod_kooka-kleena_6f94012b",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Kooka-Kleena-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Kooka-Kleena",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:52.537666",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Kooka-Kleena-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_kuranda_f207822e_001_82680803",
+    "product_id": "prod_kuranda_f207822e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/Kuranda-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Kuranda",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:04.365748",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/Kuranda-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_laundry-break_f0fdf531_001_781fec8d",
+    "product_id": "prod_laundry-break_f0fdf531",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Laundry-Break-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Laundry Break 5L",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:37.883992",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Laundry-Break-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_laundry-brightener_56301887_001_1b9381f3",
+    "product_id": "prod_laundry-brightener_56301887",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Laundry-Brighterner-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Laundry Brightener",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:04.783891",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Laundry-Brighterner-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_laundry-detergent_badbf15c_001_10c20af9",
+    "product_id": "prod_laundry-detergent_badbf15c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Laundry-Detergent-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Laundry Detergent",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:05.623395",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Laundry-Detergent-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_laundry-emulsifier_966616a8_001_e009bf26",
+    "product_id": "prod_laundry-emulsifier_966616a8",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/04/Laundry-Emulsifier-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Laundry Emulsifier",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:16.089490",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/04/Laundry-Emulsifier-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_laundry-sour_8e79cd87_001_226a9c9d",
+    "product_id": "prod_laundry-sour_8e79cd87",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Laundry-Sour-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Laundry Sour",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:05.202832",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Laundry-Sour-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_lavender_5c9142db_001_b73b1c7e",
+    "product_id": "prod_lavender_5c9142db",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Lavender-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Lavender",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:22.799887",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Lavender-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_lcd-11_ac1203c2_001_11a1ea98",
+    "product_id": "prod_lcd-11_ac1203c2",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/04/LCD-11-15L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "LCD-11",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:39.558238",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/04/LCD-11-15L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_lcd-60_989b5d87_001_6f24968c",
+    "product_id": "prod_lcd-60_989b5d87",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2022/07/LCD-60-5L.png",
+    "sequence_order": 1,
+    "alt_text": "LCD-60",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:31.600398",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2022/07/LCD-60-5L.png"
+    }
+  },
+  {
+    "media_id": "med_prod_leather-care_f4e34729_001_6ad8515c",
+    "product_id": "prod_leather-care_f4e34729",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Leather-Care-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Leather Care",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:59.667475",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Leather-Care-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_lemon_a80a1c2c_001_8721207d",
+    "product_id": "prod_lemon_a80a1c2c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Lemon-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Lemon",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:06.459865",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Lemon-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_lift_e85ed2d7_001_4ea276b5",
+    "product_id": "prod_lift_e85ed2d7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Lift-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Lift",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:46.258359",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Lift-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_lollyshop_86ab1ba9_001_51c578d4",
+    "product_id": "prod_lollyshop_86ab1ba9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Lollyshop-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Lollyshop",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:54.214841",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Lollyshop-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_magic_03ae5db0_001_eaad55ac",
+    "product_id": "prod_magic_03ae5db0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Magic-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Magic",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:07.713658",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Magic-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_matte-finish-sealer_ca3c33b9_001_20ebe25c",
+    "product_id": "prod_matte-finish-sealer_ca3c33b9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Matte-Finish-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Matte Finish Sealer",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:07.295290",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Matte-Finish-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_mechanix_d26344c5_001_cf5eece1",
+    "product_id": "prod_mechanix_d26344c5",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Mechanix-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Mechanix",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:06.877822",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Mechanix-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_methylated-spirit_be900b56_001_51743c42",
+    "product_id": "prod_methylated-spirit_be900b56",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Methylated-Spirits-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Methylated Spirit",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:09.389110",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Methylated-Spirits-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_microsan_8260f1b1_001_1456fe48",
+    "product_id": "prod_microsan_8260f1b1",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Microsan-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Microsan",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:47.515003",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Microsan-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_mop-n-dry_3b30d02d_001_db056348",
+    "product_id": "prod_mop-n-dry_3b30d02d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/MopNDry-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Mop'N'Dry",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:15.670815",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/MopNDry-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_mould-x_3cdb9743_001_c01444e4",
+    "product_id": "prod_mould-x_3cdb9743",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Mould-X-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Mould-X",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:51.280411",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Mould-X-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_neutraliser_8ebce8de_001_ed12e652",
+    "product_id": "prod_neutraliser_8ebce8de",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Neutraliser-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Neutraliser",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:42.090012",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Neutraliser-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_novadet_f8a3d54a_001_65f767e8",
+    "product_id": "prod_novadet_f8a3d54a",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Novadet-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Novadet",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:09.807143",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Novadet-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_nu-glo_76d25162_001_5c2edf99",
+    "product_id": "prod_nu-glo_76d25162",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Nu-Glo-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Nu-Glo",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:10.226272",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Nu-Glo-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ocean-air_d6215ecd_001_d2f4d63e",
+    "product_id": "prod_ocean-air_d6215ecd",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Ocean-Air-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Ocean Air",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:53.794290",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Ocean-Air-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_oil-stain-remover_515cc0db_001_b03159e9",
+    "product_id": "prod_oil-stain-remover_515cc0db",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Oil-Stain-Remover-1KG-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Oil Stain Remover",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:57.993845",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Oil-Stain-Remover-1KG-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_once-off_811787d2_001_18205d9c",
+    "product_id": "prod_once-off_811787d2",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Once-Off-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Agar's Once Off Ulitimate Tile Cleaner",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:10.645780",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Once-Off-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_orchids_bb454c0c_001_65c3c84d",
+    "product_id": "prod_orchids_bb454c0c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/Orchids-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Orchids",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:42.508590",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/Orchids-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_oven-clean_a4c04764_001_18003f85",
+    "product_id": "prod_oven-clean_a4c04764",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/08/Oven-Clean-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Oven Clean",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:49.187776",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/08/Oven-Clean-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ph-7_54e01195_001_968cd228",
+    "product_id": "prod_ph-7_54e01195",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/08/pH-7-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "pH-7",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:52.955381",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/08/pH-7-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_portacare-super_4db9f904_001_47fcf93e",
+    "product_id": "prod_portacare-super_4db9f904",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Portacare-Super-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Portacare Super",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:42.928890",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Portacare-Super-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_portacare_893d9664_001_e1418f2a",
+    "product_id": "prod_portacare_893d9664",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Portacare-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Portacare",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:12.324054",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Portacare-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_potwash_6f0531f9_001_b8047096",
+    "product_id": "prod_potwash_6f0531f9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Potwash-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Potwash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:12.743498",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Potwash-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_powerdet-eco_f5a6f06e_001_e86b0b9a",
+    "product_id": "prod_powerdet-eco_f5a6f06e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/09/Powerdet-Eco-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Powerdet Eco",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:11.066053",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/09/Powerdet-Eco-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_powerquat_4cfbdcf9_001_42aad726",
+    "product_id": "prod_powerquat_4cfbdcf9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Powerquat-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Powerquat",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:19.858236",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Powerquat-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_presoak-powder_5b47b766_001_b3a8e85d",
+    "product_id": "prod_presoak-powder_5b47b766",
+    "media_type": "image",
+    "media_format": "jpg",
+    "media_url": "https://agar.com.au/wp-content/uploads/2018/02/Pre-Soak-Powder-10KG-1000x999.jpg",
+    "sequence_order": 1,
+    "alt_text": "Presoak Powder - Laundry Powder",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:14.417053",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2018/02/Pre-Soak-Powder-10KG-1000x999.jpg"
+    }
+  },
+  {
+    "media_id": "med_prod_presto_c25385b7_001_d164f51a",
+    "product_id": "prod_presto_c25385b7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/05/Presto-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Presto",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:47.933008",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/05/Presto-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_protector_04c01bcc_001_e7379119",
+    "product_id": "prod_protector_04c01bcc",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Protector-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Protector",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:32.019168",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Protector-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_q-foam_a03f8d73_001_83dca142",
+    "product_id": "prod_q-foam_a03f8d73",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Q-Foam-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Q-Foam",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:38.721270",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Q-Foam-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_react_8d406298_001_ff19552e",
+    "product_id": "prod_react_8d406298",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/07/React-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "React",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:13.161277",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/07/React-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ready-2-go_c20e8b1c_001_a855d327",
+    "product_id": "prod_ready-2-go_c20e8b1c",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/09/Ready-2-Go-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Ready-2-Go",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:20.276998",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/09/Ready-2-Go-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_renegade_a1500d05_001_7deb5571",
+    "product_id": "prod_renegade_a1500d05",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/03/Renegade-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Renegade",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:13.579506",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/03/Renegade-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_rf-12_1d15bf8f_001_d7e40fab",
+    "product_id": "prod_rf-12_1d15bf8f",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/RF-12-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "RF-12",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:58.413788",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/RF-12-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_rinse-aid_e4d555e0_001_e01c3bb2",
+    "product_id": "prod_rinse-aid_e4d555e0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Rinse-Aid-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Rinse Aid",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:46.677305",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Rinse-Aid-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ritzy_43057b84_001_0b894e04",
+    "product_id": "prod_ritzy_43057b84",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/Ritzy-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Ritzy",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:14.834842",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/Ritzy-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_royal-wave_7308e21e_001_c74dee62",
+    "product_id": "prod_royal-wave_7308e21e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Royal-Wave-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Royal Wave",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:32.436698",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Royal-Wave-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_rustex_b9a1cbbd_001_9ab8f5eb",
+    "product_id": "prod_rustex_b9a1cbbd",
+    "media_type": "image",
+    "media_format": "jpg",
+    "media_url": "https://agar.com.au/wp-content/uploads/2018/02/Rustex-500ml--1000x1000.jpg",
+    "sequence_order": 1,
+    "alt_text": "Rustex - Rust Remover",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:40.397241",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2018/02/Rustex-500ml--1000x1000.jpg"
+    }
+  },
+  {
+    "media_id": "med_prod_safety-bleach_8205152d_001_81a92f79",
+    "product_id": "prod_safety-bleach_8205152d",
+    "media_type": "image",
+    "media_format": "jpg",
+    "media_url": "https://agar.com.au/wp-content/uploads/2018/02/Safety-Bleach-10KG-e1525413638206.jpg",
+    "sequence_order": 1,
+    "alt_text": "Safety Bleach",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:15.253062",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2018/02/Safety-Bleach-10KG-e1525413638206.jpg"
+    }
+  },
+  {
+    "media_id": "med_prod_scale-force_59dc099a_001_bc8596a9",
+    "product_id": "prod_scale-force_59dc099a",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/05/Scale-Force-1L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Scale Force",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:53.375081",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/05/Scale-Force-1L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_scrub-n-shine_d6709939_001_25bd8fd3",
+    "product_id": "prod_scrub-n-shine_d6709939",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/ScrubNShine-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Scrub'N'Shine",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:43.346761",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/ScrubNShine-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sd-37_bc727ef7_001_bb778de3",
+    "product_id": "prod_sd-37_bc727ef7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/SD-37-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "SD-37",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:43.764831",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/SD-37-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sequal_023d19c8_001_788c663b",
+    "product_id": "prod_sequal_023d19c8",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Sequal-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Sequal",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:08.968907",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Sequal-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_shifter_1513334d_001_b4f9be88",
+    "product_id": "prod_shifter_1513334d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Shifter-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Shifter",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:44.182695",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Shifter-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_shinywash_c323683e_001_ccb8c481",
+    "product_id": "prod_shinywash_c323683e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Shinywash-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Shinywash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:44.602766",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Shinywash-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_shower-star_fa04daaf_001_fca7b351",
+    "product_id": "prod_shower-star_fa04daaf",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Shower-Star-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Shower Star",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:34.527102",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Shower-Star-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_silvan_aae391a1_001_559c5841",
+    "product_id": "prod_silvan_aae391a1",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Silvan-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Silvan",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:27.406889",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Silvan-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_single-step_30690684_001_90da5245",
+    "product_id": "prod_single-step_30690684",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/06/Single-Step-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Single Step",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:55.893129",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/06/Single-Step-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sizzle_3e03d1b6_001_476885bc",
+    "product_id": "prod_sizzle_3e03d1b6",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Sizzle-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Sizzle",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:32.855432",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Sizzle-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sodium-hypochlorite_9efa47e2_001_ed42a35e",
+    "product_id": "prod_sodium-hypochlorite_9efa47e2",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Sodium-Hypochlorite-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Sodium Hypochlorite",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:33.273180",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Sodium-Hypochlorite-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_softie_05a21445_001_f1b99727",
+    "product_id": "prod_softie_05a21445",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Softie-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Softie",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:45.020795",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Softie-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_solspray_022c19da_001_ab191f44",
+    "product_id": "prod_solspray_022c19da",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Solspray-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Solspray",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:23.218608",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Solspray-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sour-softener_f35c10ba_001_f7d0cd26",
+    "product_id": "prod_sour-softener_f35c10ba",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Sour-Softener-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Sour Softener",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:45.438637",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Sour-Softener-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_spa-clean_f62cc3d7_001_4ebed8e8",
+    "product_id": "prod_spa-clean_f62cc3d7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/10/Spa-Clean-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Spa Clean",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:45.856379",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/10/Spa-Clean-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_speed_5c680e98_001_b0d8ffe6",
+    "product_id": "prod_speed_5c680e98",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/05/Speed-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Speed",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:33.690724",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/05/Speed-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_splendour_1730d5d9_001_a36e6156",
+    "product_id": "prod_splendour_1730d5d9",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/04/Splendour-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Splendour",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:57.152205",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/04/Splendour-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_spot-wiz_8eeb09d8_001_eda11619",
+    "product_id": "prod_spot-wiz_8eeb09d8",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2014/10/Spot-Wiz-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Spot Wiz",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:58.831309",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2014/10/Spot-Wiz-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_spraybuff-c_8b8d1138_001_88e195d7",
+    "product_id": "prod_spraybuff-c_8b8d1138",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Spraybuff-C-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Spraybuff C",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:46.274449",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Spraybuff-C-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_spruce_0937fb4f_001_d8cb4811",
+    "product_id": "prod_spruce_0937fb4f",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Spruce-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Spruce",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:53.889021",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Spruce-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_stainless-steel-oil_78715dde_001_b1602d85",
+    "product_id": "prod_stainless-steel-oil_78715dde",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Stainless-Steel-Oil-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Stainless Steel Oil",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:46.692480",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Stainless-Steel-Oil-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_steel-shine_db5a1f95_001_2c61b33c",
+    "product_id": "prod_steel-shine_db5a1f95",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Steel-Shine-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Steel Shine",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:47.111230",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Steel-Shine-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_stone-block_40994e0e_001_5e71d198",
+    "product_id": "prod_stone-block_40994e0e",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Stone-Block-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Stone Block",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:47.543422",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Stone-Block-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_str-36_7e651770_001_63d944b1",
+    "product_id": "prod_str-36_7e651770",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/STR-36-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "STR-36",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:47.977378",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/STR-36-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_summer-citrus_de291232_001_5486b922",
+    "product_id": "prod_summer-citrus_de291232",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/09/Summer-Citrus-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Summer Citrus",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:48.408007",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/09/Summer-Citrus-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_super-deo_b50df84f_001_7cb06e73",
+    "product_id": "prod_super-deo_b50df84f",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Super-Deo-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Super Deo",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:52.118162",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Super-Deo-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_super-nova_3b8cf7aa_001_49484ed6",
+    "product_id": "prod_super-nova_3b8cf7aa",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Super-Nova-5L-1-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Super Nova",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:48.839412",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Super-Nova-5L-1-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_superforce_b68d2cbf_001_52e27a4a",
+    "product_id": "prod_superforce_b68d2cbf",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Superforce-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Superforce",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:49.269586",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Superforce-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sweet-talc_8d0627f4_001_ed41275a",
+    "product_id": "prod_sweet-talc_8d0627f4",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Sweet-Talc-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Sweet Talc",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:23.636516",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Sweet-Talc-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_sympol_0996e4ce_001_ac807dae",
+    "product_id": "prod_sympol_0996e4ce",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Sympol-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Sympol",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:49.688149",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Sympol-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_tango_57a25c85_001_59ef0537",
+    "product_id": "prod_tango_57a25c85",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/08/Tango-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Tango",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:11.904319",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/08/Tango-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_tannex_ab79f283_001_52a5947b",
+    "product_id": "prod_tannex_ab79f283",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Tannex-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Tannex",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:18.181724",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Tannex-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_taurus_89d316fb_001_768495ce",
+    "product_id": "prod_taurus_89d316fb",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Taurus-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Taurus",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:16.925691",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Taurus-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_tools-down_139efebc_001_8298f1ca",
+    "product_id": "prod_tools-down_139efebc",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Tools-Down-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Tools Down",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:06.041865",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Tools-Down-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_truck-wash_ea33b685_001_1b8c74a6",
+    "product_id": "prod_truck-wash_ea33b685",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/11/Truck-Wash-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Truck Wash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:56.733051",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/11/Truck-Wash-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_tuff-gloss_2f0799a1_001_a0a45842",
+    "product_id": "prod_tuff-gloss_2f0799a1",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2024/08/Tuff-Gloss-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Tuff Gloss",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:50.106922",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2024/08/Tuff-Gloss-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_u-remove_7fee285a_001_6e07ec10",
+    "product_id": "prod_u-remove_7fee285a",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2021/11/U-Remove-5L-1.png",
+    "sequence_order": 1,
+    "alt_text": "U-Remove",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:50.524970",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2021/11/U-Remove-5L-1.png"
+    }
+  },
+  {
+    "media_id": "med_prod_ultrastrip_ef2349d0_001_21f3fcb4",
+    "product_id": "prod_ultrastrip_ef2349d0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Ultrastrip-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Ultrastrip",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:50.943831",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Ultrastrip-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_vantage_7d012a4d_001_7c613fb9",
+    "product_id": "prod_vantage_7d012a4d",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Vantage-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Vantage",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:39.140304",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Vantage-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_venue_d6a1aab7_001_6cc50e97",
+    "product_id": "prod_venue_d6a1aab7",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Venue-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Venue",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:24.057350",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Venue-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_virattack_601cfa32_001_ec415e12",
+    "product_id": "prod_virattack_601cfa32",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Virattack-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Virattack",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:51.698482",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Virattack-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_vischlor_cd58af37_001_a2e51f07",
+    "product_id": "prod_vischlor_cd58af37",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2025/03/Vischlor-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "VisChlor",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:20.695077",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2025/03/Vischlor-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_wheelie-bin-cleaner_9560bf80_001_dbe7ff29",
+    "product_id": "prod_wheelie-bin-cleaner_9560bf80",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2026/02/Wheelie-Bin-Cleaner-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Wheelie Bin Cleaner",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:34.108856",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2026/02/Wheelie-Bin-Cleaner-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_wildflower_7dd8ea78_001_a6e12333",
+    "product_id": "prod_wildflower_7dd8ea78",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Wildflower-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Wildflower",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:51.363167",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Wildflower-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_wipe-away_a55c7850_001_a69a2f0e",
+    "product_id": "prod_wipe-away_a55c7850",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Wipe-Away-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Wipe Away",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:51.781986",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Wipe-Away-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_wool-wash_317840d0_001_881800d2",
+    "product_id": "prod_wool-wash_317840d0",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Wool-Wash-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Wool Wash",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:47:52.200173",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Wool-Wash-5L-1000x1000.png"
+    }
+  },
+  {
+    "media_id": "med_prod_your-pb_2aab5d04_001_a91f0258",
+    "product_id": "prod_your-pb_2aab5d04",
+    "media_type": "image",
+    "media_format": "png",
+    "media_url": "https://agar.com.au/wp-content/uploads/2023/08/Your-PB-5L-1000x1000.png",
+    "sequence_order": 1,
+    "alt_text": "Your PB",
+    "dimensions": null,
+    "file_size_kb": null,
+    "created_at": "2026-07-09T02:48:16.507650",
+    "metadata": {
+      "extracted_from": "product_images",
+      "original_url": "https://agar.com.au/wp-content/uploads/2023/08/Your-PB-5L-1000x1000.png"
+    }
+  }
+]

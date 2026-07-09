@@ -1,0 +1,1154 @@
+[
+  {
+    "product_id": "prod_3d-gloss_19e350b8",
+    "category_id": "cat_floor_sealers_f91739",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:40.533178"
+  },
+  {
+    "product_id": "prod_acid-wash_bcea72a8",
+    "category_id": "cat_metal_products_01ed0c",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:40.953351"
+  },
+  {
+    "product_id": "prod_ambergold_7788a092",
+    "category_id": "cat_body_wash_hair_shampoo_40eef6",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:41.371269"
+  },
+  {
+    "product_id": "prod_antifoam_491aa1b2",
+    "category_id": "cat_carpet_cleaners_d6f5cf",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:41.789136"
+  },
+  {
+    "product_id": "prod_neutraliser_8ebce8de",
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:42.207828"
+  },
+  {
+    "product_id": "prod_orchids_bb454c0c",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:42.628127"
+  },
+  {
+    "product_id": "prod_portacare-super_4db9f904",
+    "category_id": "cat_portable_toilet_care_5a7040",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:43.045962"
+  },
+  {
+    "product_id": "prod_scrub-n-shine_d6709939",
+    "category_id": "cat_floor_maintainers_38ebf9",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:43.464044"
+  },
+  {
+    "product_id": "prod_sd-37_bc727ef7",
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:43.881900"
+  },
+  {
+    "product_id": "prod_shifter_1513334d",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:44.302016"
+  },
+  {
+    "product_id": "prod_shinywash_c323683e",
+    "category_id": "cat_floor_maintainers_38ebf9",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:44.720036"
+  },
+  {
+    "product_id": "prod_softie_05a21445",
+    "category_id": "cat_cream_cleansers_20d8e4",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:45.137841"
+  },
+  {
+    "product_id": "prod_sour-softener_f35c10ba",
+    "category_id": "cat_laundry_products_6c282e",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:45.555592"
+  },
+  {
+    "product_id": "prod_spa-clean_f62cc3d7",
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:45.973618"
+  },
+  {
+    "product_id": "prod_spraybuff-c_8b8d1138",
+    "category_id": "cat_spray_buff_7d419c",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:46.391768"
+  },
+  {
+    "product_id": "prod_stainless-steel-oil_78715dde",
+    "category_id": "cat_stainless_steel_care_59f4a3",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:46.810183"
+  },
+  {
+    "product_id": "prod_steel-shine_db5a1f95",
+    "category_id": "cat_stainless_steel_care_59f4a3",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:47.242453"
+  },
+  {
+    "product_id": "prod_stone-block_40994e0e",
+    "category_id": "cat_specialised_sealers_fd1964",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:47.676457"
+  },
+  {
+    "product_id": "prod_str-36_7e651770",
+    "category_id": "cat_floor_strippers_320050",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:48.107122"
+  },
+  {
+    "product_id": "prod_summer-citrus_de291232",
+    "category_id": "cat_air_fresheners_deodorisers_281065",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:48.538422"
+  },
+  {
+    "product_id": "prod_super-nova_3b8cf7aa",
+    "category_id": "cat_floor_sealers_f91739",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:48.968841"
+  },
+  {
+    "product_id": "prod_superforce_b68d2cbf",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:49.387376"
+  },
+  {
+    "product_id": "prod_sympol_0996e4ce",
+    "category_id": "cat_floor_maintainers_38ebf9",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:49.806162"
+  },
+  {
+    "product_id": "prod_tuff-gloss_2f0799a1",
+    "category_id": "cat_floor_sealers_f91739",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:50.224168"
+  },
+  {
+    "product_id": "prod_u-remove_7fee285a",
+    "category_id": "cat_biological_cleaning_products_d68bc2",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:50.643083"
+  },
+  {
+    "product_id": "prod_ultrastrip_ef2349d0",
+    "category_id": "cat_floor_strippers_320050",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:51.062327"
+  },
+  {
+    "product_id": "prod_wildflower_7dd8ea78",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:51.481244"
+  },
+  {
+    "product_id": "prod_wipe-away_a55c7850",
+    "category_id": "cat_hot_products_da9255",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:51.899428"
+  },
+  {
+    "product_id": "prod_wool-wash_317840d0",
+    "category_id": "cat_special_treatment_05369c",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:52.318317"
+  },
+  {
+    "product_id": "prod_bonnet-cleaner_777adcde",
+    "category_id": "cat_carpet_cleaners_d6f5cf",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:52.737756"
+  },
+  {
+    "product_id": "prod_bac2work_7d48f1b1",
+    "category_id": "cat_biological_cleaning_products_d68bc2",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:53.169024"
+  },
+  {
+    "product_id": "prod_bellevue_b7e6806d",
+    "category_id": "cat_glass_cleaners_631ec0",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:53.588205"
+  },
+  {
+    "product_id": "prod_spruce_0937fb4f",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:54.007387"
+  },
+  {
+    "product_id": "prod_breeze_1ea888fa",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:54.426741"
+  },
+  {
+    "product_id": "prod_carpet-shampoo_a1baa088",
+    "category_id": "cat_carpet_cleaners_d6f5cf",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:54.847477"
+  },
+  {
+    "product_id": "prod_citrus-extra_e848bf4b",
+    "category_id": "cat_prespraying_hot_water_extraction_formulations_2a9d91",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:55.265767"
+  },
+  {
+    "product_id": "prod_coffee-machine-cleaner_c4460a20",
+    "category_id": "cat_food_processing_e9e73e",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:55.684183"
+  },
+  {
+    "product_id": "prod_cold-king_66fd3e9b",
+    "category_id": "cat_specialty_cleaning_products_1acb54",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:56.103871"
+  },
+  {
+    "product_id": "prod_fast-glass_19eb561d",
+    "category_id": "cat_glass_cleaners_631ec0",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:56.522361"
+  },
+  {
+    "product_id": "prod_exit_df92b99c",
+    "category_id": "cat_hot_products_da9255",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:56.943256"
+  },
+  {
+    "product_id": "prod_drain-solution_bf4d50eb",
+    "category_id": "cat_biological_cleaning_products_d68bc2",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:57.364532"
+  },
+  {
+    "product_id": "prod_floral_ab9b403c",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:57.784613"
+  },
+  {
+    "product_id": "prod_florprep_7bb338b7",
+    "category_id": "cat_cutting_back_c9179a",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:58.203166"
+  },
+  {
+    "product_id": "prod_foaming-hand-wash_e77ded0b",
+    "category_id": "cat_foaming_hand_soap_253c38",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:58.622533"
+  },
+  {
+    "product_id": "prod_cleansave-1_7f39d3c6",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:59.041995"
+  },
+  {
+    "product_id": "prod_cleansave-2_8fa7362a",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:59.461015"
+  },
+  {
+    "product_id": "prod_cleansave-3l_bdc1afad",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:47:59.879800"
+  },
+  {
+    "product_id": "prod_cleansave-4s_9326c6c9",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:00.297904"
+  },
+  {
+    "product_id": "prod_cleansave-4t_029e3795",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:00.716366"
+  },
+  {
+    "product_id": "prod_cleansave-5_c4203217",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:01.135815"
+  },
+  {
+    "product_id": "prod_cleansave-7_5a175636",
+    "category_id": "cat_cleansave_products_a9d89c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:01.554643"
+  },
+  {
+    "product_id": "prod_chloradet_adfd01ce",
+    "category_id": "cat_chlorinated_cleaners_sanitisers_7029fa",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:01.972753"
+  },
+  {
+    "product_id": "prod_g-solve_33c017f5",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:02.391305"
+  },
+  {
+    "product_id": "prod_handpass_972767ab",
+    "category_id": "cat_foaming_hand_soap_253c38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:02.809734"
+  },
+  {
+    "product_id": "prod_double-bubble_b9ddbaf1",
+    "category_id": "cat_foaming_hand_soap_253c38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:03.227898"
+  },
+  {
+    "product_id": "prod_isopropyl-alcohol_4886a2df",
+    "category_id": "cat_specialty_cleaning_products_1acb54",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:03.647301"
+  },
+  {
+    "product_id": "prod_hf-detergent_ab8f046e",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:04.064936"
+  },
+  {
+    "product_id": "prod_kuranda_f207822e",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:04.483156"
+  },
+  {
+    "product_id": "prod_laundry-brightener_56301887",
+    "category_id": "cat_commercial_laundry_machine_washing_48cb80",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:04.902000"
+  },
+  {
+    "product_id": "prod_laundry-sour_8e79cd87",
+    "category_id": "cat_commercial_laundry_machine_washing_48cb80",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:05.322657"
+  },
+  {
+    "product_id": "prod_laundry-detergent_badbf15c",
+    "category_id": "cat_commercial_laundry_machine_washing_48cb80",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:05.741048"
+  },
+  {
+    "product_id": "prod_tools-down_139efebc",
+    "category_id": "cat_liquid_soap_5add38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:06.159020"
+  },
+  {
+    "product_id": "prod_lemon_a80a1c2c",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:06.576973"
+  },
+  {
+    "product_id": "prod_mechanix_d26344c5",
+    "category_id": "cat_liquid_soap_5add38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:06.994510"
+  },
+  {
+    "product_id": "prod_matte-finish-sealer_ca3c33b9",
+    "category_id": "cat_specialised_sealers_fd1964",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:07.412916"
+  },
+  {
+    "product_id": "prod_magic_03ae5db0",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:07.831010"
+  },
+  {
+    "product_id": "prod_demolish_4166c1de",
+    "category_id": "cat_floor_strippers_320050",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:08.250321"
+  },
+  {
+    "product_id": "prod_freshaire_3040d7b0",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:08.668103"
+  },
+  {
+    "product_id": "prod_sequal_023d19c8",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:09.085693"
+  },
+  {
+    "product_id": "prod_methylated-spirit_be900b56",
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:09.506327"
+  },
+  {
+    "product_id": "prod_novadet_f8a3d54a",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:09.925509"
+  },
+  {
+    "product_id": "prod_nu-glo_76d25162",
+    "category_id": "cat_vehicle_cleaning_products_46605d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:10.344960"
+  },
+  {
+    "product_id": "prod_once-off_811787d2",
+    "category_id": "cat_hot_products_da9255",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:10.765276"
+  },
+  {
+    "product_id": "prod_powerdet-eco_f5a6f06e",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:11.184300"
+  },
+  {
+    "product_id": "prod_graffiti-wipe-off_77d76ed1",
+    "category_id": "cat_graffiti_removers_f55aba",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:11.603488"
+  },
+  {
+    "product_id": "prod_tango_57a25c85",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:12.023219"
+  },
+  {
+    "product_id": "prod_portacare_893d9664",
+    "category_id": "cat_portable_toilet_care_5a7040",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:12.442347"
+  },
+  {
+    "product_id": "prod_potwash_6f0531f9",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:12.860489"
+  },
+  {
+    "product_id": "prod_react_8d406298",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:13.278830"
+  },
+  {
+    "product_id": "prod_renegade_a1500d05",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:13.697150"
+  },
+  {
+    "product_id": "prod_flair_f169e460",
+    "category_id": "cat_machine_washing_4d3cb9",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:14.116348"
+  },
+  {
+    "product_id": "prod_presoak-powder_5b47b766",
+    "category_id": "cat_before_the_wash_25224d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:14.534049"
+  },
+  {
+    "product_id": "prod_ritzy_43057b84",
+    "category_id": "cat_cream_cleansers_20d8e4",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:14.952295"
+  },
+  {
+    "product_id": "prod_safety-bleach_8205152d",
+    "category_id": "cat_before_the_wash_25224d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:15.370066"
+  },
+  {
+    "product_id": "prod_mop-n-dry_3b30d02d",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:15.788734"
+  },
+  {
+    "product_id": "prod_laundry-emulsifier_966616a8",
+    "category_id": "cat_laundry_products_6c282e",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:16.206793"
+  },
+  {
+    "product_id": "prod_your-pb_2aab5d04",
+    "category_id": "cat_body_wash_hair_shampoo_40eef6",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:16.624917"
+  },
+  {
+    "product_id": "prod_taurus_89d316fb",
+    "category_id": "cat_machine_washing_4d3cb9",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:17.042478"
+  },
+  {
+    "product_id": "prod_bowl-clean_0a90d5bd",
+    "category_id": "cat_hot_products_da9255",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:17.462326"
+  },
+  {
+    "product_id": "prod_cool-tide_8455216c",
+    "category_id": "cat_hand_sanitiser_4e2991",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:17.880895"
+  },
+  {
+    "product_id": "prod_tannex_ab79f283",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:18.301162"
+  },
+  {
+    "product_id": "prod_citrastar_891e5cf9",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:18.719604"
+  },
+  {
+    "product_id": "prod_fruitnveg-sanitiser_a3f86373",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:19.138444"
+  },
+  {
+    "product_id": "prod_hygieniclean_2fd67933",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:19.557440"
+  },
+  {
+    "product_id": "prod_powerquat_4cfbdcf9",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:19.976266"
+  },
+  {
+    "product_id": "prod_ready-2-go_c20e8b1c",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:20.394310"
+  },
+  {
+    "product_id": "prod_vischlor_cd58af37",
+    "category_id": "cat_chlorinated_cleaners_sanitisers_7029fa",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:20.825629"
+  },
+  {
+    "product_id": "prod_combi-oven-cleaner_fffd15e2",
+    "category_id": "cat_oven_grill_cleaning_products_20b1bd",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:21.244605"
+  },
+  {
+    "product_id": "prod_grill-clean_f022ea36",
+    "category_id": "cat_oven_grill_cleaning_products_20b1bd",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:21.662757"
+  },
+  {
+    "product_id": "prod_all-fresh_72fb7988",
+    "category_id": "cat_toilet_bathroom_cleaning_products_7deadd",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:22.080423"
+  },
+  {
+    "product_id": "prod_enyclean_900462d7",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:22.499137"
+  },
+  {
+    "product_id": "prod_lavender_5c9142db",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:22.917885"
+  },
+  {
+    "product_id": "prod_solspray_022c19da",
+    "category_id": "cat_spray_wipe_cleaning_products_57aad8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:23.335724"
+  },
+  {
+    "product_id": "prod_sweet-talc_8d0627f4",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:23.756552"
+  },
+  {
+    "product_id": "prod_venue_d6a1aab7",
+    "category_id": "cat_glass_cleaners_631ec0",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:24.174617"
+  },
+  {
+    "product_id": "prod_hyperax-5_3f08d529",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:24.592877"
+  },
+  {
+    "product_id": "prod_as-60_8c6fae45",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:25.011537"
+  },
+  {
+    "product_id": "prod_amsolve_33cbe60f",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:25.429854"
+  },
+  {
+    "product_id": "prod_anti-static-carpet-spray_0e99284d",
+    "category_id": "cat_carpet_treatments_06bb7c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:25.850820"
+  },
+  {
+    "product_id": "prod_browning-treatment_c8939c0e",
+    "category_id": "cat_carpet_treatments_06bb7c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:26.269781"
+  },
+  {
+    "product_id": "prod_cap-it-off_cd4ff7e4",
+    "category_id": "cat_carpet_cleaners_d6f5cf",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:26.688268"
+  },
+  {
+    "product_id": "prod_carpet-spotter-b_6c7a53cf",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:27.106112"
+  },
+  {
+    "product_id": "prod_silvan_aae391a1",
+    "category_id": "cat_liquid_soap_5add38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:27.524842"
+  },
+  {
+    "product_id": "prod_garland_2aae5d3b",
+    "category_id": "cat_liquid_soap_5add38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:27.943074"
+  },
+  {
+    "product_id": "prod_cure_7d0be016",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:28.363429"
+  },
+  {
+    "product_id": "prod_dlx_d86cea19",
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:28.782631"
+  },
+  {
+    "product_id": "prod_duro_ecbe1852",
+    "category_id": "cat_floor_sealers_f91739",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:29.201274"
+  },
+  {
+    "product_id": "prod_escalator-cleaner_0e769c2d",
+    "category_id": "cat_special_purpose_heavy_duty_detergents_e458d2",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:29.619286"
+  },
+  {
+    "product_id": "prod_fabric-softener_33ef5c12",
+    "category_id": "cat_special_treatment_05369c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:30.039846"
+  },
+  {
+    "product_id": "prod_first-base_a7b1ec8a",
+    "category_id": "cat_base_sealers_0d3b18",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:30.459768"
+  },
+  {
+    "product_id": "prod_fresco_3c2dec09",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:30.878158"
+  },
+  {
+    "product_id": "prod_grab_052e9705",
+    "category_id": "cat_graffiti_removers_f55aba",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:31.299603"
+  },
+  {
+    "product_id": "prod_lcd-60_989b5d87",
+    "category_id": "cat_food_processing_e9e73e",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:31.718400"
+  },
+  {
+    "product_id": "prod_protector_04c01bcc",
+    "category_id": "cat_carpet_treatments_06bb7c",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:32.135931"
+  },
+  {
+    "product_id": "prod_royal-wave_7308e21e",
+    "category_id": "cat_liquid_soap_5add38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:32.554621"
+  },
+  {
+    "product_id": "prod_sizzle_3e03d1b6",
+    "category_id": "cat_oven_grill_cleaning_products_20b1bd",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:32.972395"
+  },
+  {
+    "product_id": "prod_sodium-hypochlorite_9efa47e2",
+    "category_id": "cat_chlorinated_cleaners_sanitisers_7029fa",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:33.390014"
+  },
+  {
+    "product_id": "prod_speed_5c680e98",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:33.808075"
+  },
+  {
+    "product_id": "prod_wheelie-bin-cleaner_9560bf80",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:34.226251"
+  },
+  {
+    "product_id": "prod_shower-star_fa04daaf",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:34.644405"
+  },
+  {
+    "product_id": "prod_autoscrub_d418da2b",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:35.062430"
+  },
+  {
+    "product_id": "prod_hook-acid_703e9fc5",
+    "category_id": "cat_air_fresheners_deodorisers_281065",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:35.480660"
+  },
+  {
+    "product_id": "prod_hook-oil-concentrate_2b7491fc",
+    "category_id": "cat_air_fresheners_deodorisers_281065",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:35.905885"
+  },
+  {
+    "product_id": "prod_blue-active_cafa1212",
+    "category_id": "cat_machine_washing_4d3cb9",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:36.324237"
+  },
+  {
+    "product_id": "prod_cm-x_d16cb9f0",
+    "category_id": "cat_concrete_cleaners_removers_efbd7a",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:36.744154"
+  },
+  {
+    "product_id": "prod_concrete-remover-cr-60_52830952",
+    "category_id": "cat_concrete_cleaners_removers_efbd7a",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:37.163193"
+  },
+  {
+    "product_id": "prod_foam-up_e8ca575e",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:37.583101"
+  },
+  {
+    "product_id": "prod_laundry-break_f0fdf531",
+    "category_id": "cat_commercial_laundry_machine_washing_48cb80",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:38.001715"
+  },
+  {
+    "product_id": "prod_hf-low-foam_d32e0d43",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:38.420520"
+  },
+  {
+    "product_id": "prod_q-foam_a03f8d73",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:38.839536"
+  },
+  {
+    "product_id": "prod_vantage_7d012a4d",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:39.257299"
+  },
+  {
+    "product_id": "prod_lcd-11_ac1203c2",
+    "category_id": "cat_food_processing_e9e73e",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:39.678015"
+  },
+  {
+    "product_id": "prod_hc-90_29f493f7",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:40.096423"
+  },
+  {
+    "product_id": "prod_rustex_b9a1cbbd",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:40.514986"
+  },
+  {
+    "product_id": "prod_fresh-mop_8f5ee6a0",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:40.933291"
+  },
+  {
+    "product_id": "prod_coffee-stain-remover-a-b_94cac477",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:41.351420"
+  },
+  {
+    "product_id": "prod_autodish-sp_2fd87b40",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:41.769425"
+  },
+  {
+    "product_id": "prod_autodish_d40538a0",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:42.188011"
+  },
+  {
+    "product_id": "prod_bleach_6cb0942c",
+    "category_id": "cat_chlorinated_cleaners_sanitisers_7029fa",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:42.606680"
+  },
+  {
+    "product_id": "prod_cd-13_d07ce291",
+    "category_id": "cat_food_processing_e9e73e",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:43.026363"
+  },
+  {
+    "product_id": "prod_dish-kleena_f1e28f68",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:43.446869"
+  },
+  {
+    "product_id": "prod_dish-power-sl_f15c9d18",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:43.865802"
+  },
+  {
+    "product_id": "prod_dishwash-gold_ec7e6d5d",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:44.283856"
+  },
+  {
+    "product_id": "prod_galley-2_b568a15b",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:44.701822"
+  },
+  {
+    "product_id": "prod_glass-wash_a9da583f",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:45.119677"
+  },
+  {
+    "product_id": "prod_hook-clean_11ae16f9",
+    "category_id": "cat_food_processing_e9e73e",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:45.538806"
+  },
+  {
+    "product_id": "prod_jackpot_d9631f67",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:45.957458"
+  },
+  {
+    "product_id": "prod_lift_e85ed2d7",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:46.376463"
+  },
+  {
+    "product_id": "prod_rinse-aid_e4d555e0",
+    "category_id": "cat_ware_washing_07cb70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:46.795801"
+  },
+  {
+    "product_id": "prod_country-garden_2a79b086",
+    "category_id": "cat_air_fresheners_deodorisers_281065",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:47.214195"
+  },
+  {
+    "product_id": "prod_microsan_8260f1b1",
+    "category_id": "cat_liquid_soap_5add38",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:47.632164"
+  },
+  {
+    "product_id": "prod_presto_c25385b7",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:48.050222"
+  },
+  {
+    "product_id": "prod_drive-away_e8e589a3",
+    "category_id": "cat_concrete_cleaners_removers_efbd7a",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:48.468291"
+  },
+  {
+    "product_id": "prod_citra-mist_9aee70af",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:48.887014"
+  },
+  {
+    "product_id": "prod_oven-clean_a4c04764",
+    "category_id": "cat_oven_grill_cleaning_products_20b1bd",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:49.305117"
+  },
+  {
+    "product_id": "prod_active-break_fe1678c8",
+    "category_id": "cat_kitchen_floor_cleaning_57b3d9",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:49.723648"
+  },
+  {
+    "product_id": "prod_counterflu-rtu_875eab83",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:50.142301"
+  },
+  {
+    "product_id": "prod_dirt-off_89a0d187",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:50.561398"
+  },
+  {
+    "product_id": "prod_green-n-gold_7723c62d",
+    "category_id": "cat_green_cleaning_products_1e5741",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:50.979639"
+  },
+  {
+    "product_id": "prod_mould-x_3cdb9743",
+    "category_id": "cat_chlorinated_cleaners_sanitisers_7029fa",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:51.397683"
+  },
+  {
+    "product_id": "prod_virattack_601cfa32",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:51.817381"
+  },
+  {
+    "product_id": "prod_super-deo_b50df84f",
+    "category_id": "cat_restoration_fa842a",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:52.236857"
+  },
+  {
+    "product_id": "prod_kooka-kleena_6f94012b",
+    "category_id": "cat_oven_grill_cleaning_products_20b1bd",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:52.654637"
+  },
+  {
+    "product_id": "prod_ph-7_54e01195",
+    "category_id": "cat_all_purpose_floor_cleaning_products_5e9cb1",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:53.074156"
+  },
+  {
+    "product_id": "prod_scale-force_59dc099a",
+    "category_id": "cat_specialty_cleaning_products_1acb54",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:53.493542"
+  },
+  {
+    "product_id": "prod_ocean-air_d6215ecd",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:53.914022"
+  },
+  {
+    "product_id": "prod_lollyshop_86ab1ba9",
+    "category_id": "cat_detergent_deodorisers_50bd35",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:54.332647"
+  },
+  {
+    "product_id": "prod_ammodet_81d78098",
+    "category_id": "cat_heavy_duty_detergents_79a02b",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:54.750427"
+  },
+  {
+    "product_id": "prod_jetsol_b791aa87",
+    "category_id": "cat_spray_wipe_cleaning_products_57aad8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:55.172412"
+  },
+  {
+    "product_id": "prod_graffiti-remover_00d9869f",
+    "category_id": "cat_graffiti_removers_f55aba",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:55.592273"
+  },
+  {
+    "product_id": "prod_single-step_30690684",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:56.013392"
+  },
+  {
+    "product_id": "prod_flash-dry_c0d72ec0",
+    "category_id": "cat_glass_cleaners_631ec0",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:56.432281"
+  },
+  {
+    "product_id": "prod_truck-wash_ea33b685",
+    "category_id": "cat_vehicle_cleaning_products_46605d",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:56.851354"
+  },
+  {
+    "product_id": "prod_splendour_1730d5d9",
+    "category_id": "cat_furniture_polish_6338d6",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:57.273795"
+  },
+  {
+    "product_id": "prod_everfresh_ed5fe689",
+    "category_id": "cat_carpet_cleaners_d6f5cf",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:57.693084"
+  },
+  {
+    "product_id": "prod_oil-stain-remover_515cc0db",
+    "category_id": "cat_concrete_cleaners_removers_efbd7a",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:58.113018"
+  },
+  {
+    "product_id": "prod_rf-12_1d15bf8f",
+    "category_id": "cat_cleaning_sanitising_6fdcb8",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:58.530501"
+  },
+  {
+    "product_id": "prod_spot-wiz_8eeb09d8",
+    "category_id": "cat_carpet_cleaner_with_spotters_and_stain_removers_for_tough_marks_9aa894",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:58.948852"
+  },
+  {
+    "product_id": "prod_amazon-g5_39b24779",
+    "category_id": "cat_prespraying_hot_water_extraction_formulations_2a9d91",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:59.366647"
+  },
+  {
+    "product_id": "prod_leather-care_f4e34729",
+    "category_id": "cat_leather_cleaner_9c8d70",
+    "primary": true,
+    "created_at": "2026-07-09T02:48:59.784392"
+  },
+  {
+    "product_id": "prod_counterflu_e6964af6",
+    "category_id": "cat_disinfectant_antibacterial_detergent_0f115d",
+    "primary": true,
+    "created_at": "2026-07-09T02:49:00.203389"
+  },
+  {
+    "product_id": "prod_autobrite_79c0f861",
+    "category_id": "cat_floor_maintainers_38ebf9",
+    "primary": true,
+    "created_at": "2026-07-09T02:49:00.691252"
+  }
+]
