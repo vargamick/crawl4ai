@@ -39,9 +39,11 @@ templates). Commit.
 ### Phase 2 — Model + normalizer (ported, pydantic v2)
 Port `model/product.py` (ProductSchema + Media/Document/Category), `normalize/normalizer.py`,
 `output/markdown.py`, `util/` helpers, and the `enrich/documents.py` document classifier per
-`MIGRATION_MAP.md`. Upgrade to pydantic v2. Copy the old baseline output into
-`tests/fixtures/baseline_0.7.4/`. Write `tests/test_normalizer.py` and `tests/test_markdown.py` against those
-fixtures. Commit when green.
+`MIGRATION_MAP.md`. Upgrade to pydantic v2. **Extend `ProductSchema` with nullable `sku`, `price`, and
+`attributes: dict[str,list[str]]`** — the API supplies these and the old schema has no home for them
+(see `PROJECT_SPEC.md` §4.6). Keep `JSONNormalizer` + `AgarCatalogData` otherwise unchanged so the **same 8
+output files** are recreated (see §4.5). Copy the old baseline output into `tests/fixtures/baseline_0.7.4/`.
+Write `tests/test_normalizer.py` and `tests/test_markdown.py` against those fixtures. Commit when green.
 
 ### Phase 3 — Primary source: WooCommerce Store API
 Implement `sources/base.py` (the `ProductSource` protocol) and `sources/woo_store_api.py`:
@@ -73,9 +75,12 @@ HTTP-CSS, normalize both, diff each against `tests/fixtures/baseline_0.7.4/`, an
 1. `pip install .` then `python -c "import playwright"` **fails** (no browser stack pulled);
    `pip install .[crawl]` then the same import succeeds.
 2. `harvest --client agar` (needs outbound HTTPS to agar.com.au) returns **192 products** with `sku`,
-   `categories`, and `attributes` populated; JSON + markdown written.
+   `categories`, and `attributes` populated, and writes **all 8 files** — `agar_products`, `agar_media`,
+   `agar_categories`, `agar_product_categories`, `agar_documents`, `agar_summary`, `agar_catalog_complete`,
+   `agar_catalog_legacy` — plus markdown. The `agar_documents` file is **non-empty** (DocumentEnricher ran).
 3. `harvest compare --client agar` reports **≥ parity** vs the baseline fixture (the API should meet or beat
-   the HTTP-CSS baseline on product count and field coverage) and lists the document delta.
+   the HTTP-CSS baseline on product count and field coverage), asserts the **new `sku`/`attributes` fields
+   are present**, and lists the SDS/PDS document delta.
 4. `pytest` green; `ruff check` clean; `harvest --help` self-documents.
 
 If outbound network is restricted in your environment: the Store API is plain HTTPS and works through a

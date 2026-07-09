@@ -97,9 +97,10 @@ whole pages (the Store API) overrides `harvest()` to paginate directly.
 ### 4.2 `WooCommerceStoreAPISource` (PRIMARY)
 - Endpoint from config: `GET {base}/wp-json/wc/store/v1/products?per_page=100&page=N`.
 - Anonymous — **no key** (verified). Read `X-WP-Total` / `X-WP-TotalPages` for pagination.
-- Map each record → `ProductSchema`:
-  `name→product_name, slug→id seed, sku, short_description+description→description, images[]→MediaSchema,
-  categories[].name→CategorySchema, attributes[] (Code/Perfume/pH Level/Sizes)→spec fields, prices, stock`.
+- Map each record → `ProductSchema` (extended per §4.6):
+  `name→product_name, slug→id seed, sku→sku, short_description+description→description, images[]→MediaSchema,
+  categories[].name→CategorySchema (+ ProductCategoryRelation), attributes[]→attributes (Code/Perfume/pH
+  Level/Sizes), prices→price`.
 - Use `?_fields=` projection to keep payloads small.
 
 ### 4.3 `DocumentEnricher` (`enrich/documents.py`)
@@ -114,11 +115,36 @@ Skippable via `--no-documents`.
 - `Crawl4aiSource` — `[crawl]` extra; wraps crawl4ai `AsyncWebCrawler` (or its HTTP strategy) for generic
   sites. Import lazily so core installs stay light.
 
-### 4.5 Output contract
-`JSONNormalizer` (ported) emits the **same 3DN file set** as today so downstream doesn't change:
-`agar_products`, `agar_media`, `agar_categories`, `agar_product_categories`, `agar_documents`,
-`agar_summary`, plus `agar_catalog_complete` / `agar_catalog_legacy`. `MarkdownGenerator` emits per-product
-markdown. Optional `postgres.py` upserts the normalized rows.
+### 4.5 Output contract & ingestion fidelity (must not change downstream)
+The old scrape emits **8 files** and the Flask/Postgres ingestion loads **5 entity types** — both from the
+same in-memory `AgarCatalogData`. The rebuild reuses `JSONNormalizer` + `AgarCatalogData` **unchanged**, so
+all of it is recreated from the API source, source-independent:
+
+| Emitted file | DB table (ingestion) | Populated from |
+|---|---|---|
+| `agar_products` | `agar_products` | `ProductSchema` |
+| `agar_media` | `agar_media` | `MediaSchema` (API `images[]`) |
+| `agar_categories` | `agar_categories` | `CategorySchema` (API `categories[]`) |
+| `agar_product_categories` | `agar_product_categories` | `ProductCategoryRelation` |
+| `agar_documents` | `agar_documents` | `DocumentSchema` ← **needs the DocumentEnricher** |
+| `agar_summary` | `agar_scraping_jobs` (counts) | derived |
+| `agar_catalog_complete` / `agar_catalog_legacy` | — | aggregates |
+
+Plus per-product markdown via `MarkdownGenerator`, and the optional `postgres.py` sink.
+
+**Two fidelity requirements (verified gaps in the current schema):**
+1. **`documents` requires the `DocumentEnricher`** — SDS/PDS aren't in the Store API, so without the
+   per-page fetch the documents file/table is near-empty.
+2. **Extend the model for the API's new richness.** The ported `ProductSchema` and the `agar_products`
+   table have **no `sku` / `price` / `attributes` fields** — add them (§4.6) plus the matching DB
+   migration, or the SKU + pH/size/code the API provides is dropped. Categories & images need no schema
+   change and come out *more complete* (API returns all of them, vs the scrape's one each).
+
+### 4.6 Model extension (new fields the API brings)
+Add to `ProductSchema` (and mirror in the `agar_products` DDL + legacy format):
+`sku: str | None`, `price: str | None`, `attributes: dict[str, list[str]]` (Code / Perfume / pH Level /
+Sizes). Keep them nullable so fallback sources that can't supply them still validate. Downstream migration:
+`ALTER TABLE agar_products ADD COLUMN sku …, price …, attributes JSONB`.
 
 ---
 

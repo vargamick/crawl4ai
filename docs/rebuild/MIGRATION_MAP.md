@@ -20,6 +20,18 @@ Port these public symbols verbatim, then upgrade to pydantic v2:
   string (notably in `generate_product_id` and any f-string building output paths).
 - Replace any `@validator` with `@field_validator`; `.dict()`/`.json()` → `.model_dump()`/`.model_dump_json()`.
 
+**Extend `ProductSchema` (the API brings fields the old schema never had).** The current schema/table stop
+at `product_id, product_name, product_url, description, category_ids, metadata` — there is **no `sku`,
+`price`, or `attributes` field** anywhere (verified in `schemas.py`, `json_normalizer.py`,
+`database_integration.py`). Add nullable `sku`, `price`, `attributes: dict[str,list[str]]`, and — if the
+Postgres sink is ported — the matching `ALTER TABLE agar_products ADD COLUMN …` migration + a line in the
+legacy format. Without this the harvested SKU / pH / size / code is silently dropped from the files and DB.
+
+**Output-contract fidelity.** Because `JSONNormalizer` + `AgarCatalogData` are ported unchanged, the new
+pipeline recreates the **same 8 files and 5 ingestion tables** from the API source (see `PROJECT_SPEC.md`
+§4.5). The one behavioural requirement: the **`agar_documents`** file only populates if the
+**`DocumentEnricher`** runs (SDS/PDS aren't in the Store API).
+
 ### `clients/agar/utils.py` (399 L) → `src/agar_catalog/util/`
 Cherry-pick (they have no external coupling): `generate_product_id`, `generate_media_id`,
 `generate_document_id`, `generate_category_id`, `clean_text`, `extract_urls_from_text`,
